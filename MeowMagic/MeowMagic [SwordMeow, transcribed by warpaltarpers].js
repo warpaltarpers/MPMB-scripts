@@ -30,9 +30,35 @@ SpellsList["locate bizarre creature"] = {
 	components: "V",
 	duration: "Instantaneous",
 	save: "Int",
+	description: "Find closest aberration, fey, or elemental within 10 miles; creature can make Int saving throw to avoid being detected",
+	descriptionMetric: "Find closest aberration, fey, or elemental within 16 kilometres; creature can make Int saving throw to avoid being detected",
 	descriptionFull: "Describe or name a specific kind of aberration, fey, or elemental. You " +
 	"learn the location of the closest creature of that kind to you within 10 miles, if at least one is present." +
 	"An unwilling creature can make an Intelligence saving throw to avoid being located," +
 	" and if successful, knows your location at the moment of casting the spell," +
 	" knows that you attempted to locate it, and is immune to this spell cast by you for 24 hours.",
+};
+
+SpellsList["wheel of force"] = {
+	name: "Wheel of Force",
+	regExpSearch: /^(?=.*wheel)(?=.*force).*$/i,
+	classes: ["druid", "sorcerer", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 3,
+	school: "Evoc",
+	time: "1 action",
+	range: "Self (30 ft. radius)",
+	components: "V, S, M\u0192",
+	compMaterial: "A fan",
+	duration: "Instantaneous",
+	save: "Str",
+	description: "Each creature within 30 feet must make Str save; creatures that fail save are incapcitated until end of their next turn",
+	descriptionMetric: "Each creature within 9 metres must make Str save; creatures that fail save are incapcitated until end of their next turn",
+	descriptionFull: "A swirl of wind erupts from you. Choose clockwise or counterclockwise " +
+	"when you cast this spell. Each creature in a 30 foot radius around you must make a " +
+	"Strength saving throw. Huge and larger creatures automatically succeed. On a failed save, " +
+	"a creature is rotated around you in the direction of your choice half or a quarter " +
+	"of the circumference of the circle (you choose when you cast the spell). Each creature " +
+	"that failed the save is then incapcitated until the end of their next turn. While incapcitated " +
+	"by this spell, a creature has a speed of 0, and attack rolls against it have advantage.",
 }
