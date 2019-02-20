@@ -61,4 +61,28 @@ SpellsList["wheel of force"] = {
 	"of the circumference of the circle (you choose when you cast the spell). Each creature " +
 	"that failed the save is then incapcitated until the end of their next turn. While incapcitated " +
 	"by this spell, a creature has a speed of 0, and attack rolls against it have advantage.",
-}
+};
+
+SpellsList["zone of lies"] = {
+	name: "Zone of Lies",
+	regExpSearch: /^(?=.*zone)(?=.*lies).*$/i,
+	classes: ["bard", "warlock"],
+	source: ["MeowMagic", 0],
+	level: 2,
+	school: "Ench",
+	time: "1 action",
+	range: "60 feet",
+	components: "M\u0192",
+	compMaterial: "A silver tongue",
+	duration: "10 minutes",
+	save: "Cha",
+	description: "You make a 15 foot radius sphere. On a failed Cha save, creatures can't discern lies from truth.",
+	descriptionMetric: "You make a 4.5 metre radius sphere. On a failed Cha save, creatures can't discern lies from truth.",
+	descriptionFull: "You create a magical zone that fosters deceit in a 15-foot radius sphere centered on a point of your choice within range. " +
+	"Until the spell ends, a creature that enters the spell's area for the first time on turn or starts its turn there must make a Charisma saving throw. " +
+	"On a failed save, a creature can't discern lies from truth while in the radius, as with making a Wisdom (Insight) check or another way. " +
+	"A creature that fails the save and that can automatically discern lies such as one with the Divine Awareness trait, can't automatically discern them," +
+	" but can make Wisdom (Insight) checks to determine truth as normal.\nYou know whether each creature succeeds or fails on its saving throw. " +
+	"However, creatures affected by this spell don't know if they are or not. Any Wisdom (Insight) checks they make to determine truth are inconclusive. " +
+	"If this spell affects another player character, the DM makes their saving throw in secret.",
+};
