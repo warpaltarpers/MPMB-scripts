@@ -107,6 +107,7 @@ SpellsList["crown of ice"] = {
 SpellsList["mass freeze"] = {
 	name: "Mass Freeze",
 	regExpSearch: /^(?=.*freeze)(?=.*mass).*$/i,
+	classes: ["druid", "sorcerer"],
 	source: ["MeowMagic", 0],
 	level: 5,
 	school: "Evoc",
@@ -125,6 +126,7 @@ SpellsList["mass freeze"] = {
 SpellsList["call of justice"] = {
 	name: "Call of Justice",
 	regExpSearch: /^(?=.*justice).*$/i,
+	classes: ["cleric"],
 	source: ["MeowMagic", 0],
 	level: 9,
 	school: "Conj",
@@ -139,4 +141,53 @@ SpellsList["call of justice"] = {
 	"The creature can't exact payment or trade for its services—it will attempt to fulfill your prayer if it is in accordance with its ideals or not contrary." +
 	"\nIf your prayer is contrary to its nature, or once your prayer is fulfilled or you lose concentration, the creature returns to its previous location, leaving a thin glowing halo on the ground where " +
 	"it disappeared, which can't be dispelled and fades after seven days."
+};
+
+SpellsList["divine lance"] = {
+	name: "Divine",
+	regExpSearch: /^(?=.*divine)(?=.*lance).*$/i,
+	classes: ["paladin", "warlock"],
+	source: ["MeowMagic", 0],
+	level: 3,
+	school: "Conj",
+	time: "1 action",
+	range: "10 feet",
+	components: "V, S",
+	duration: "Instantaneous",
+	description: "While impaled with the lance, it brilliantly shines within them, causing them to take 3d6 radiant damage at the start of each of their turns.",
+};
+
+SpellsList["profane lance"] = {
+	name: "Profane",
+	regExpSearch: /^(?=.*profane)(?=.*lance).*$/i,
+	classes: ["paladin", "warlock"],
+	source: ["MeowMagic", 0],
+	level: 3,
+	school: "Conj",
+	time: "1 action",
+	range: "10 feet",
+	components: "V, S",
+	duration: "Instantaneous",
+	description: "While impaled with the lance, the target is crippled by a corruption running through them. The target's speed is halved, it can't take reactions, " +
+	"and it has disadvantage on Strength (Athletics) and Dexterity (Acrobatics) checks.",
+};
+
+SpellsList["divine profane lance"] = {
+	name: "Divine/Profane Lance",
+	regExpSearch: /^(?=.*profane)(?=.*divine)(?=.*lance).*$/i,
+	classes: ["paladin", "warlock"],
+	source: ["MeowMagic", 0],
+	level: 3,
+	school: "Conj",
+	time: "1 action",
+	range: "10 feet",
+	components: "V, S",
+	duration: "Instantaneous",
+	description: "You conjure a lance in two open hands, or enchant a lance you are already holding. " +
+	"On a hit, you deal the normal damage of hitting the creature with the lance, an additional 5d6 damage, and you impale the target with the lance.",
+	descriptionFull: "You conjure a lance in two open hands, or enchant a lance you are already holding. Make a melee attack with the weapon against a creature within range. " +
+	"You ignore disadvantage on the attack roll from being within 5 feet of the target. On a hit, you deal the normal damage of hitting the creature with the lance, an additional 5d6 damage, and you impale the target with the lance. " +
+	"On a miss it deals half as much damage, and the effect ends (the lance disappearing if conjured).\nA creature can remove the lance from the target as an action, causing the target no additional damage. " +
+	"Additionally, choose divine or profane. The added damage is radiant for the former and necrotic for the latter. On a hit, the spell causes another effect.",
+	dependencies: ["divine lance", "profane lance"],
 };
