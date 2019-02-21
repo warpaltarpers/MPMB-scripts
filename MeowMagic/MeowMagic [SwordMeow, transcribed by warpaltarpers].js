@@ -437,3 +437,40 @@ SpellsList["starsee"] = {
 	description: "A stellar map appears above your head; you can see in dim as if bright; +5 to passive perception and any Search action",
 	descriptionFull: "You can only cast this spell at dusk, night, or dawn. A stellar map appears above your head, revealing stars and constellations, named as they are in this land (or else unnamed). Until the spell ends, you add +5 to your passive perception and any ability check made with the Search action, and you can see in dim light as if it were bright.",
 };
+
+SpellsList["storm of crows"] = {
+	name: "Storm of Crows",
+	regExpSearch: /^(?=.storm*)(?=.crows*).*$/i,
+	classes: ["druid", "cleric", "sorcerer", "warlock"],
+	source: ["MeowMagic", 0],
+	level: 5,
+	school: "Conj",
+	time: "1 action",
+	range: "180 feet",
+	components: "V, S",
+	duration: "Concentration, up to 1 minute",
+	save: "Con",
+	description: "A murder of crows appears; any creature under cloud makes Con save; blinded on fail, end on success",
+	descriptionFull: "A tempestuous murder of crows appears, centered on a point you can see within range and spreading to a radius of 45 feet. Crows cry, winds buffer, and fire roars. Each creature under the cloud (no more than 90 feet beneath the cloud) when it appears must make a Constitution saving throw. " +
+	"On a failed save, a creature becomes blinded for 1 minute. A blinded creature can repeat the save at the end of each of their turns, ending the effect on a success. At the start of each of your turns until the spell ends, the following effects alternate taking place. When you cast this spell, choose the order of the effects.\n" +
+	"Flock\nCrows dive and swarm. The area under the cloud becomes complete magical darkness until the start of your next turn and each creature takes 1d6 slashing damage.\n" +
+	"Flames\nYou call five pillars of fire from the cloud to strike five creatures or objects of your choice beneath the cloud. A given creature or object can't he struck by more than one pillar. A struck creature must make a Dexterity saving throw. The creature takes 5d6 fire damage on a failed save, or half as much damage on a successful one.",
+};
+
+SpellsList["glasswings"] = {
+	name: "Glasswings",
+	regExpSearch: /^(?=.glasswings*).*$/i,
+	classes: ["bard", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 2,
+	school: "Conj",
+	time: "1 action",
+	range: "Self",
+	components: "S",
+	duration: "Instantaneous",
+	description: "",
+	descriptionFull: "Wings of glass unfold from your back. You gain a flying speed of 30 feet. Additionally, if you are adjacent to a creature, you can give up some or all of your " +
+	"remaining flying speed to strike it with your glass cut wings. Make a melee spell attack against the creature. On a hit, it takes 1d6 slashing damage for every 5 remaining movement you gave up, to a maximum of 30. " +
+	"Additionally, the creature's speed is reduced by 15 until the end of its next turn. The spell ends at the end of your turn, the wings shattering to glitter and fading away.\n" +
+	"When you cast this spell using a spell slot of 3rd level or higher, you gain an additional 10 feet of flying speed for each slot level above 2nd, and you can gain damage to a maximum increased by the same amount.",
+};
