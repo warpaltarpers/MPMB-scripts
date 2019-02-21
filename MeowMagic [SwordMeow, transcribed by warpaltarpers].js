@@ -552,3 +552,22 @@ SpellsList["corrode inner flesh"] = {
 	"Any creature other than you caught in the radius must make a Constitution saving throw, taking 4d4 acid damage and another 2d4 acid damage at the end of its next turn, or half the initial damage on and no damage at the end of its next turn a success.\n" +
 	"When you cast this spell using a spell slot of 6th level or higher, the initial damage the first target takes increases by 2d4 for each slot level above 5th.",
 };
+
+SpellsList["mantis knight blade"] = {
+	name: "Mantis Knight Blade",
+	regExpSearch: /^(?=.mantis*)(?=.knight*)(?=.blade*).*$/i,
+	classes: ["druid", "ranger"],
+	source: ["MeowMagic", 0],
+	level: 2,
+	school: "Conj",
+	time: "1 bonus action",
+	range: "Self",
+	components: "V, S, M\u0192",
+	compMaterial: "A staff worth at least 5gp",
+	duration: "Concentration, up to 1 minute",
+	description: "You summon a blade capable of 2d6 slashing damage; if you roll same result on both dice, you make another attack.",
+	descriptionFull: "You magically part a nonmagical staff, summoning a weapon of the feywild used by the nimblest of their knights, the Mantis. This magic weapon counts as a simple melee weapon with which you are proficient. It deals 2d6 slashing damage on a hit and has the finesse property. " +
+	"When you roll the same result on both of the first two damage dice, you can immediately make another attack against the same target, potentially provoking this feature again. Additionally, when you attack charmed targets with this weapon, you make the attack roll with advantage. " +
+	"The spell ends if you cast it again or if you let go of the weapon. When the spell ends, the staff grows back together, the weapon returning to its Mantis in the feywild.\n" +
+	"When you cast this spell using a 3rd-or 4th-level spell slot, the damage increases to 3d6. When you cast it using a 5th- or 6th-level spell slot, the damage increases to 4d6. When you cast it using a spell slot of 7th level or higher, the damage increases to 5d6.",
+};
