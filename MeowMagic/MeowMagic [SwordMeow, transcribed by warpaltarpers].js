@@ -48,7 +48,7 @@ SpellsList["wheel of force"] = {
 	school: "Evoc",
 	time: "1 action",
 	range: "Self (30 ft. radius)",
-	components: "V, S, M\u0192",
+	components: "V, S, M",
 	compMaterial: "A fan",
 	duration: "Instantaneous",
 	save: "Str",
@@ -72,7 +72,7 @@ SpellsList["zone of lies"] = {
 	school: "Ench",
 	time: "1 action",
 	range: "60 feet",
-	components: "M\u0192",
+	components: "M",
 	compMaterial: "A silver tongue",
 	duration: "10 minutes",
 	save: "Cha",
@@ -201,7 +201,7 @@ SpellsList["dress undress"] = {
 	school: "Trans",
 	time: "1 action",
 	range: "Touch",
-	components: "V, S, M\u0192",
+	components: "V, S, M",
 	compMaterial: "A safety pin",
 	duration: "Instantaneous",
 	description: "A willing creature you touch instantly dons up to 10 unworn and uncarried articles of clothing you can see within 30 feet of you, or doffs as many articles it is wearing.",
@@ -221,7 +221,7 @@ SpellsList["five point celestial brigade"] = {
 	school: "Conj",
 	time: "1 action",
 	range: "90 feet",
-	components: "V, S, M\u0192",
+	components: "V, S, M",
 	compMaterial: "A feather from a bird of prey",
 	duration: "Instantaneous",
 	save: "Cha",
@@ -263,8 +263,48 @@ SpellsList["eyes of ichor"] = {
 	components: "S",
 	duration: "Up to 1 round",
 	description: "Until the end of your next turn, you are blinded, but know the location of every creature within 60 feet of you not behind full cover from you.",
+	descriptionMetric: "Until the end of your next turn, you are blinded, but know the location of every creature within 18 metres of you not behind full cover from you.",
 	descriptionFull: "For the duration, your eyes cover in a golden light. Until the end of your next turn, you are blinded, but know the location of every creature within 60 feet of you not behind full cover from you. " +
 	"You know the size, type, and potential race of these creatures, can determine if they are shapechangers and using a false or true form, and can see these creatures even into the Ethereal Plane. " +
 	"While blinded from this spell, you can see. the creatures within range and you don't make attacks against them with disadvantage, nor do they attack you with advantage. " +
 	"Finally, you have advantage on Wisdom (Insight) checks made against any creature you can see with this spell.",
+};
+
+SpellsList["true dragons breath"] = {
+	name: "True Dragon's Breath",
+	regExpSearch: /^(?=.dragon*)(?=.breath*).*$/i,
+	classes: ["sorcerer", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 8,
+	school: "Trans",
+	time: "1 bonus action",
+	range: "Touch",
+	components: "V, S, M\u2020",
+	compMaterial: "A ghost pepper",
+	duration: "Concentration, up to 10 minutes",
+	save: "Dex",
+	description: "Willing touched creature can use an action to exhale energy of the chosen type; each targeted creature makes Dex save; 12d6 if failed, half if success.",
+	descriptionFull: "You touch one willing creature and imbue it with the immense power to breathe out a magical frenzy from its mouth, provided it has one. Choose acid, cold, fire, lightning, or poison. " +
+	"Until the spell ends, the creature can use an action to exhale energy of the chosen type in a 30-foot cone or 30 foot long, 5 foot wide line (it chooses each time it takes the action). " +
+	"Each creature in that area must make a Dexterity saving throw, taking 12d6 damage of the chosen type on a failed save, or half as much damage on a successful one.",
+};
+
+SpellsList["blood money"] = {
+	name: "Blood Money",
+	regExpSearch: /^(?=.blood*)(?=.money*).*$/i,
+	classes: ["warlock", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 3,
+	school: "Conj",
+	time: "1 action",
+	range: "60 feet",
+	components: "V, S, M\u0192",
+	compMaterial: "up to 30gp",
+	duration: "Instantaneous",
+	save: "Dex",
+	description: "Target makes Dex save; On fail, damage equal to number of coins used to cast, half if succeed",
+	descriptionFull: "You vaporize a bag of money, only for it to hail down in a torrent on a creature within range. The target must make a Dexterity saving throw. " +
+	"On a failure, it is magically dealt slashing damage equal to the number of coins you used to cast this spell, or half as much damage on a success. " +
+	"Dragons, goblins, and xorns have disadvantage on their saving throw against this spell If you reduce one of those creatures to 0 hitpoints with this spell, one newly minted gold coin emerges from its corpse. " +
+	"After the damage is dealt, the coins splash around the target, and can he picked up and reused with this spell.\nWhen you cast this spell using a spell slot of 4th level or higher, you can use up to 5 additional coins for the spell for each slot level above 3rd.",
 };
