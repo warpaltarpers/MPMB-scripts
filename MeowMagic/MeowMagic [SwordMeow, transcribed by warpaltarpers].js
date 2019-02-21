@@ -348,59 +348,59 @@ SpellsList["deadline"] = {
 };
 
 SpellsList["greater entomb"] = {
-  	name: "Greater Entomb",
-  	regExpSearch: /^(?=.greater*)(?=.entomb*).*$/i,
-  	classes: ["cleric", "druid", "paladin", "ranger", "warlock"],
-  	source: ["MeowMagic", 0],
-  	level: 5,
-  	school: "Necro",
-  	time: "1 action",
-  	range: "30 feet",
-  	components: "V, S, M",
-  	compMaterial: "A lock",
-  	duration: "Concentration, up to 1 minute",
-  	save: "Con",
-  	description: "You entomb a creature; on a failed Con save, creature takes 5d12 damage; damage continues on each failed save, until success",
-  	descriptionFull: "You choose a creature within range to construct a tomb around, keeping them trapped inside its walls. The target must make a Constitution saving throw. On a failure, it is locked within and pierced with a thousand spikes, and magically dealt 5d12 piercing damage. " +
-		"The target makes the saving throw at the end of each of its turns, taking the same damage on a failure. On any success, the tomb shatters apart and fades away, freeing the target. The creature has total cover while the tomb lasts and can't move or escape by any means other than teleporting. " +
-		"\nAn undead target has disadvantage on its first saving throw against this spell.\nA creature that fails every save against this spell or is reduced to 0 hitpoints while inside is locked within. The duration becomes permanent. A dispel magic spell can end the spell only if it is cast at 5th-level or higher on the tomb. " +
-		"The tomb has 50 hitpoints, 15 AC, immunity to poison and psychic damage, and resistance to all other damage except force.\nWhen you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d12 for each slot level above 5th.",
+	name: "Greater Entomb",
+	regExpSearch: /^(?=.greater*)(?=.entomb*).*$/i,
+	classes: ["cleric", "druid", "paladin", "ranger", "warlock"],
+	source: ["MeowMagic", 0],
+	level: 5,
+	school: "Necro",
+	time: "1 action",
+	range: "30 feet",
+	components: "V, S, M",
+	compMaterial: "A lock",
+	duration: "Concentration, up to 1 minute",
+	save: "Con",
+	description: "You entomb a creature; on a failed Con save, creature takes 5d12 damage; damage continues on each failed save, until success",
+	descriptionFull: "You choose a creature within range to construct a tomb around, keeping them trapped inside its walls. The target must make a Constitution saving throw. On a failure, it is locked within and pierced with a thousand spikes, and magically dealt 5d12 piercing damage. " +
+	"The target makes the saving throw at the end of each of its turns, taking the same damage on a failure. On any success, the tomb shatters apart and fades away, freeing the target. The creature has total cover while the tomb lasts and can't move or escape by any means other than teleporting. " +
+	"\nAn undead target has disadvantage on its first saving throw against this spell.\nA creature that fails every save against this spell or is reduced to 0 hitpoints while inside is locked within. The duration becomes permanent. A dispel magic spell can end the spell only if it is cast at 5th-level or higher on the tomb. " +
+	"The tomb has 50 hitpoints, 15 AC, immunity to poison and psychic damage, and resistance to all other damage except force.\nWhen you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d12 for each slot level above 5th.",
   };
 
-	SpellsList["black fireball"] = {
-	  	name: "Black Fireball",
-	  	regExpSearch: /^(?=.black*)(?=.fireball*).*$/i,
-	  	classes: ["sorcerer", "warlock", "wizard"],
-	  	source: ["MeowMagic", 0],
-	  	level: 5,
-	  	school: "Evoc",
-	  	time: "1 action",
-	  	range: "180 feet",
-	  	components: "V, S, M",
-	  	compMaterial: "Sulfur and ash",
-	  	duration: "Concentration, up to 1 round",
-	  	save: "Dex",
-	  	description: "Each creature makes Dex save, takes 6d6 fire and 6d6 necrotic on fail, half on save",
-	  	descriptionFull: "A maelstrom of swirling black fire appears near your hands. On your next turn, you choose a spot within range as an action, provided this spell hasn't ended. The maelstrom disappears from your hands and reappears centered on that point, grown exponentially. " +
-			"Each creature in a 30-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 6d6 fire and 6d6 necrotic damage on a failed save, or half as much damage on a successful one. " +
-			"\nThe maelstrom spreads around corners. It ignites flammable objects in the area that aren't being worn or carried, and it withers nonmagical, normal plants.\nWhen you cast this spell using a spell slot of 6th level or higher, the fire damage or the necrotic damage (your choice) increases by 1d6 for each slot level above 5th.",
-	  };
+SpellsList["black fireball"] = {
+	name: "Black Fireball",
+	regExpSearch: /^(?=.black*)(?=.fireball*).*$/i,
+	classes: ["sorcerer", "warlock", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 5,
+	school: "Evoc",
+	time: "1 action",
+	range: "180 feet",
+	components: "V, S, M",
+	compMaterial: "Sulfur and ash",
+	duration: "Concentration, up to 1 round",
+	save: "Dex",
+	description: "Each creature makes Dex save, takes 6d6 fire and 6d6 necrotic on fail, half on save",
+	descriptionFull: "A maelstrom of swirling black fire appears near your hands. On your next turn, you choose a spot within range as an action, provided this spell hasn't ended. The maelstrom disappears from your hands and reappears centered on that point, grown exponentially. " +
+	"Each creature in a 30-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 6d6 fire and 6d6 necrotic damage on a failed save, or half as much damage on a successful one. " +
+	"\nThe maelstrom spreads around corners. It ignites flammable objects in the area that aren't being worn or carried, and it withers nonmagical, normal plants.\nWhen you cast this spell using a spell slot of 6th level or higher, the fire damage or the necrotic damage (your choice) increases by 1d6 for each slot level above 5th.",
+};
 
-		SpellsList["mustangs flame alchemy"] = {
-		  	name: "Mustang's Flame Alchemy",
-		  	regExpSearch: /^(?=.mustang*)(?=.flame*)(?=.alchemy*).*$/i,
-		  	classes: ["sorcerer", "wizard"],
-		  	source: ["MeowMagic", 0],
-		  	level: 3,
-		  	school: "Trans",
-		  	time: "1 action",
-		  	range: "60 feet",
-		  	components: "S, M",
-		  	compMaterial: "An inscribed magic circle",
-		  	duration: "Instantaneous",
-		  	save: "Con",
-		  	description: "Any creature chosen or in a chosen space is a target and must make a Con save; 3d10 on fail and is blinded or deafened until next turn; half on save with no effects",
-		  	descriptionFull: "A spark erupts into a torrent of flame from your hand. Choose up to eight creatures within range. If you don't know their location or can't see them, you can choose a 5 foot cube in place of one or more of the creatures. " +
-				"Any creature chosen or in a chosen space is a target and must make a Constitution saving throw. A target takes 3d10 fire damage on a failed saving throw and is blinded or deafened (your choice) until the start of their next turn, or takes half as much damage on a success and isn't blinded or deafened.\n" +
-				"When you cast this spell using a spell slot of 4th level or higher, the fire damage increases by 1d10 for each slot level above 3rd.",
-		  };
+SpellsList["mustangs flame alchemy"] = {
+	name: "Mustang's Flame Alchemy",
+	regExpSearch: /^(?=.mustang*)(?=.flame*)(?=.alchemy*).*$/i,
+	classes: ["sorcerer", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 3,
+	school: "Trans",
+	time: "1 action",
+	range: "60 feet",
+	components: "S, M",
+	compMaterial: "An inscribed magic circle",
+	duration: "Instantaneous",
+	save: "Con",
+	description: "Any creature chosen or in a chosen space is a target and must make a Con save; 3d10 on fail and is blinded or deafened until next turn; half on save with no effects",
+	descriptionFull: "A spark erupts into a torrent of flame from your hand. Choose up to eight creatures within range. If you don't know their location or can't see them, you can choose a 5 foot cube in place of one or more of the creatures. " +
+	"Any creature chosen or in a chosen space is a target and must make a Constitution saving throw. A target takes 3d10 fire damage on a failed saving throw and is blinded or deafened (your choice) until the start of their next turn, or takes half as much damage on a success and isn't blinded or deafened.\n" +
+	"When you cast this spell using a spell slot of 4th level or higher, the fire damage increases by 1d10 for each slot level above 3rd.",
+};
