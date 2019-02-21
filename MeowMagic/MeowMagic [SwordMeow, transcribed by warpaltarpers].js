@@ -86,3 +86,38 @@ SpellsList["zone of lies"] = {
 	"However, creatures affected by this spell don't know if they are or not. Any Wisdom (Insight) checks they make to determine truth are inconclusive. " +
 	"If this spell affects another player character, the DM makes their saving throw in secret.",
 };
+
+SpellsList["crown of ice"] = {
+	name: "Crown of Ice",
+	regExpSearch: /^(?=.*crown)(?=.*ice).*$/i,
+	source: ["MeowMagic", 0],
+	level: 4,
+	school: "Abjur",
+	time: "1 bonus action",
+	range: "Self",
+	components: "S",
+	duration: "Concentration, up to 1 hour",
+	save: "Con",
+	description: "Any creature that targets you with an attack must first make a Con saving throw; speed is 0 and creature is prone on failed save",
+	descriptionFull: "You don a crown of ice, marking your connection to an ancient ice monarch. Until the spell ends, any creature that targets you with an attack or a harmful spell must first make a Constitution saving throw. " +
+	"On a failed save, their speed is reduced to 0 and they become prone before they make their attack roll or cast the spell, and you gain advantage on any saving throw you must make against the attack or spell. " +
+	"Once a creature succeeds on the saving throw against this spell, it is immune to it for its duration.",
+};
+
+SpellsList["mass freeze"] = {
+	name: "Mass Freeze",
+	regExpSearch: /^(?=.*freeze)(?=.*mass).*$/i,
+	source: ["MeowMagic", 0],
+	level: 5,
+	school: "Evoc",
+	time: "1 action",
+	range: "60 feet",
+	components: "V, S",
+	duration: "Concentration, up to 1 minute",
+	save: "Con",
+	description: "Choose up to 6 creatures to make a Con save; paralyzed on fail; second fail is turned to ice; effect ends on success",
+	descriptionFull: "You choose up to 6 creatures within range who must each make a Constitution saving throw. Large and larger creatures have advantage on saving throws against this spell. " +
+	"On a failure, they are paralyzed. At the end of their next turn, they must make another Constitution saving throw. The spell ends on a success, but on a failure, they are petrified, turned to ice. " +
+	"The targets can repeat the saving throw at the end of each of their turns, ending the effect on a success. If the spell lasts for its entire duration for a creature that failed every save, it is " +
+	"permanently turned to ice, which does not melt naturally, even through a blazing summer.",
+};
