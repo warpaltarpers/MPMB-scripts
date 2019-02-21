@@ -586,3 +586,20 @@ SpellsList["opposing force"] = {
 	description: "Roll 1d10 + spellcasting mod and subtract that from damage being dealt to you; foe takes you rolled result in same damage type",
 	descriptionFull: "You revert some or all of the force of an attack against you back against the foe. Roll 1d10 + your spellcasting ability modifier (minimum of 1). You reduce the oncoming damage by the result, and the attacker takes the amount reduced in damage of the same type it dealt.",
 };
+
+SpellsList["gloves of ember"] = {
+	name: "Gloves of Ember",
+	regExpSearch: /^(?=.gloves*)(?=.ember*).*$/i,
+	classes: ["sorcerer", "warlock", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 0,
+	school: "Evoc",
+	time: "1 action",
+	range: "Self (5 foot radius)",
+	components: "V, S",
+	duration: "Special",
+	description: "Target takes 2d4 fire damage",
+	descriptionFull: "Your hands erupt in flaming gloves of ember, harmless to you but deadly to others. Make a melee spell attack against a creature within range. You have advantage if the target of the attack is a plant. On a hit, the target takes 2d4 fire damage. " +
+	"A creature reduced to 0 hitpoints with this spell burns for 1 minute, its body taking 1 fire damage at the start of each of your turns, unless a creature douses it as an action.\nThe gloves of ember dissipate at the start of your next turn. " +
+	"While they last, you can attack with them as an opportunity attack, with the same attack and damage.\nThis spell's damage increases by 2d4 when you reach Sth level (4d4), 11th level (6d4), and 17th level (8d4).",
+};
