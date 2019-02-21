@@ -571,3 +571,18 @@ SpellsList["mantis knight blade"] = {
 	"The spell ends if you cast it again or if you let go of the weapon. When the spell ends, the staff grows back together, the weapon returning to its Mantis in the feywild.\n" +
 	"When you cast this spell using a 3rd-or 4th-level spell slot, the damage increases to 3d6. When you cast it using a 5th- or 6th-level spell slot, the damage increases to 4d6. When you cast it using a spell slot of 7th level or higher, the damage increases to 5d6.",
 };
+
+SpellsList["opposing force"] = {
+	name: "Opposing Force",
+	regExpSearch: /^(?=.opposing*)(?=.force*).*$/i,
+	classes: ["sorcerer", "warlock", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 2,
+	school: "Abjur",
+	time: "1 reaction, which you take when you take bludgeoning, piercing, or slashing damage from a melee attack",
+	range: "Self",
+	components: "S",
+	duration: "Instantaneous",
+	description: "Roll 1d10 + spellcasting mod and subtract that from damage being dealt to you; foe takes you rolled result in same damage type",
+	descriptionFull: "You revert some or all of the force of an attack against you back against the foe. Roll 1d10 + your spellcasting ability modifier (minimum of 1). You reduce the oncoming damage by the result, and the attacker takes the amount reduced in damage of the same type it dealt.",
+};
