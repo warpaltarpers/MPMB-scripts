@@ -232,3 +232,21 @@ SpellsList["five point celestial brigade"] = {
 	"On a success, the creature takes half as much damage and isn't knocked prone. If the target has 30 hitpoints or fewer remaining after taking damage from this spell, it must succeed on a Constitution saving throw or die." +
 	"\nWhen you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d6 radiant and 1d6 piercing for each slot level above 5th.",
 };
+
+SpellsList["palantirs inverse eye"] = {
+	name: "Palantír's Inverse Eye",
+	regExpSearch: /^(?=.palantir*)(?=.inverse*).*$/i,
+	classes: ["wizard"],
+	source: ["MeowMagic", 0],
+	level: 5,
+	school: "Div",
+	time: "1 reaction, which you take when you realize you are being targeted by a scrying spell or being observed with a clairvoyance or arcane eye spell",
+	range: "Self",
+	components: "S",
+	duration: "Up to 1 minute",
+	description: "You create a visible sensor of your own; they must make a Cha saving throw or take 5d6 force damage, or half as much on a success.",
+	descriptionFull: "When you take the reaction to cast this spell, you create a visible sensor of your own that appears in the hands of whoever is observing you and cast the spell that triggered your reaction. " +
+	"For the duration, you can see the creature even if they go invisible or into the Ethereal Plane and can use your action to attempt to harm them with the sensor. " +
+	"They must make a Charisma saving throw or take 5d6 force damage, or half as much on a success. The sensor moves with them, following them if they move. " +
+	"If they teleport away, the sensor fades immediately after.\nWhen you cast this spell using a spell slot of 6th level or higher, the force damage you deal with spell increases by 1 d6 per slot level above 5th.",
+};
