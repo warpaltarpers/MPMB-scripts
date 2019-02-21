@@ -329,3 +329,20 @@ SpellsList["animate lord"] = {
 	"Once animated, you can't dismiss or deanimate the mummy lord.\nYou can't cast this spell again while the mummy lord you animated previously still exists, even if you don't control it anymore. The creature is animated for 24 hours, after which it and its heart would turn to dust. " +
 	"To keep the creature animated for another 24 hours, you must cast this spell on the creature before the current 24-hour period ends. When you cast the spell on a mummy lord you animated, the range is unlimited if you are both on the same plane. This use of the spell keeps the current mummy lord animated rather than animating a new one.",
 };
+
+SpellsList["deadline"] = {
+	name: "Deadline",
+	regExpSearch: /^(?=.deadline*).*$/i,
+	classes: ["warlock", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 1,
+	school: "Necro",
+	time: "1 action",
+	range: "Self (15 foot line)",
+	components: "V, S",
+	duration: "Instantaneous",
+	save: "Con",
+	description: "Creatures make Con save; 3d6 necrotic on fail; gain 1d6 hitpoints if at least on target takes damage",
+	descriptionFull: "You attempt to pull the life from creatures in a line 15 feet long and 5 feet wide in a direction you choose. Each creature in the line must make a Constitution saving throw taking 3d6 necrotic damage on a failed save. " +
+	"If at least one target takes damage from this spell, you additionally regain 1d6 hitpoints.\nWhen you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 2nd.",
+};
