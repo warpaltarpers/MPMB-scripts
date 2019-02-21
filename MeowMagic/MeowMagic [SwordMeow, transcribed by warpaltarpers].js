@@ -493,3 +493,22 @@ SpellsList["maegis"] = {
 	"Until the spell ends, the target has resistance to all damage except force damage. As an action, you can dismiss this spell and cause the aegis to explode. " +
 	"Each creature of your choice that you can see within 30 feet of the aegis wearer must make a Dexterity saving throw. On a failure, they take 6d12 force damage, or half as much on a success.",
 };
+
+SpellsList["call treant spirit"] = {
+	name: "Call Treant Spirit",
+	regExpSearch: /^(?=.treant*)(?=.spirit*).*$/i,
+	classes: ["druid", "ranger", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 4,
+	school: "Conj",
+	time: "1 action",
+	range: "Touch",
+	components: "V, S",
+	duration: "Instantaneous",
+	description: "You awaken a tree's spirit; it will answer three questions or fight for you (for two attacks)",
+	descriptionFull: "You touch a Large or Huge tree, awakening its spirit for a moment. You must immediately direct it to fight with you or to answer up to 3 questions it may or may not know the answer to, but will " +
+	"generally attempt to answer honestly unless you are known by it to be an enemy of wilderness. If you direct it to fight, you choose a target within 30 feet of the tree, and the tree animates, uprooting itself, charging towards the target. " +
+	"The treant spirit has 50 hitpoints, AC of 15, and resistance  to all damage except fire. It can make two attacks against the target, forgoing either or both for a shove or grapple attempt as normal. " +
+	"The treant spirit uses your spellcasting ability modifier for all its saves, ability checks, and attack rolls, and is proficient with its attacks and Athletics (your proficiency bonus). " +
+	"On a hit, the target takes 3d6+6 force damage, or half as much on a miss. After answering 3 questions or making its attacks, the tree takes root in its current location, ends any grapples, becomes a normal tree once again, and the spell ends.",
+};
