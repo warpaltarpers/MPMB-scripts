@@ -250,3 +250,21 @@ SpellsList["palantirs inverse eye"] = {
 	"They must make a Charisma saving throw or take 5d6 force damage, or half as much on a success. The sensor moves with them, following them if they move. " +
 	"If they teleport away, the sensor fades immediately after.\nWhen you cast this spell using a spell slot of 6th level or higher, the force damage you deal with spell increases by 1 d6 per slot level above 5th.",
 };
+
+SpellsList["eyes of ichor"] = {
+	name: "Eyes of Ichor",
+	regExpSearch: /^(?=.eyes*)(?=.ichor*).*$/i,
+	classes: ["cleric", "druid", "paladin"],
+	source: ["MeowMagic", 0],
+	level: 2,
+	school: "Div",
+	time: "1 bonus action",
+	range: "Self",
+	components: "S",
+	duration: "Up to 1 round",
+	description: "Until the end of your next turn, you are blinded, but know the location of every creature within 60 feet of you not behind full cover from you.",
+	descriptionFull: "For the duration, your eyes cover in a golden light. Until the end of your next turn, you are blinded, but know the location of every creature within 60 feet of you not behind full cover from you. " +
+	"You know the size, type, and potential race of these creatures, can determine if they are shapechangers and using a false or true form, and can see these creatures even into the Ethereal Plane. " +
+	"While blinded from this spell, you can see. the creatures within range and you don't make attacks against them with disadvantage, nor do they attack you with advantage. " +
+	"Finally, you have advantage on Wisdom (Insight) checks made against any creature you can see with this spell.",
+};
