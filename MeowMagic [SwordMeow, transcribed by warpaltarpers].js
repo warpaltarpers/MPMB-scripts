@@ -531,3 +531,24 @@ SpellsList["prayer for the wicked"] = {
 	"Finally, the soldiers attacks become magical.\nThis spell can't be dispelled by dispel magic. You can discharge any number of soldiers at any time or disband the army, causing them to lose the benefits of the spell. " +
 	"A soldier who dies also loses the spell's benefits. You can't cast this spell again while any creature remains in the army.",
 };
+
+SpellsList["corrode inner flesh"] = {
+	name: "Corrode Inner Flesh",
+	regExpSearch: /^(?=.corrode*)(?=.flesh*).*$/i,
+	classes: ["druid", "sorcerer", "warlock", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 5,
+	school: "Evoc",
+	time: "1 action",
+	range: "Touch",
+	components: "V, S, M\u2020",
+	compMaterial: "A vial of acid worth 25gp or more, which the spell consumes",
+	duration: "Instantaneous",
+	save: "Con",
+	description: "A creature you touch must make Con save; on fail, 12d4 acid damage and 6d4 acid damage at end of turn; half initial and no damage at end on success",
+	descriptionFull: "You shove an acid vial inside the body of a creature and exponentially intensify the acid within. Any creature that lacks an organic body is immune to this spell, such as elementals, constructs, and creatures with the incorporeal movement feature. " +
+	"A creature you touch must make a Constitution saving throw. On a failed save, the target is eaten from the inside out by corrosion, taking 12d4 acid damage and another 6d4 acid damage at the end of its next turn. " +
+	"On a success, a creature takes half the initial damage and no damage at the end of its next turn. If a creature is reduced to 0 hitpoints by the acid damage from this spell, it explodes in a radius of 15 feet. " +
+	"Any creature other than you caught in the radius must make a Constitution saving throw, taking 4d4 acid damage and another 2d4 acid damage at the end of its next turn, or half the initial damage on and no damage at the end of its next turn a success.\n" +
+	"When you cast this spell using a spell slot of 6th level or higher, the initial damage the first target takes increases by 2d4 for each slot level above 5th.",
+};
