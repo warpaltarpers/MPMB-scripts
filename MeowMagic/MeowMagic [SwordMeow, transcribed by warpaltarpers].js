@@ -366,3 +366,22 @@ SpellsList["greater entomb"] = {
 		"\nAn undead target has disadvantage on its first saving throw against this spell.\nA creature that fails every save against this spell or is reduced to 0 hitpoints while inside is locked within. The duration becomes permanent. A dispel magic spell can end the spell only if it is cast at 5th-level or higher on the tomb. " +
 		"The tomb has 50 hitpoints, 15 AC, immunity to poison and psychic damage, and resistance to all other damage except force.\nWhen you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d12 for each slot level above 5th.",
   };
+
+	SpellsList["black fireball"] = {
+	  	name: "Black Fireball",
+	  	regExpSearch: /^(?=.black*)(?=.fireball*).*$/i,
+	  	classes: ["sorcerer", "warlock", "wizard"],
+	  	source: ["MeowMagic", 0],
+	  	level: 5,
+	  	school: "Evoc",
+	  	time: "1 action",
+	  	range: "180 feet",
+	  	components: "V, S, M",
+	  	compMaterial: "Sulfur and ash",
+	  	duration: "Concentration, up to 1 round",
+	  	save: "Dex",
+	  	description: "Each creature makes Dex save, takes 6d6 fire and 6d6 necrotic on fail, half on save",
+	  	descriptionFull: "A maelstrom of swirling black fire appears near your hands. On your next turn, you choose a spot within range as an action, provided this spell hasn't ended. The maelstrom disappears from your hands and reappears centered on that point, grown exponentially. " +
+			"Each creature in a 30-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 6d6 fire and 6d6 necrotic damage on a failed save, or half as much damage on a successful one. " +
+			"\nThe maelstrom spreads around corners. It ignites flammable objects in the area that aren't being worn or carried, and it withers nonmagical, normal plants.\nWhen you cast this spell using a spell slot of 6th level or higher, the fire damage or the necrotic damage (your choice) increases by 1d6 for each slot level above 5th.",
+	  };
