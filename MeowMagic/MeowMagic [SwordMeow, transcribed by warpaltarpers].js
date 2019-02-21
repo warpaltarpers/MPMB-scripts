@@ -118,6 +118,25 @@ SpellsList["mass freeze"] = {
 	description: "Choose up to 6 creatures to make a Con save; paralyzed on fail; second fail is turned to ice; effect ends on success",
 	descriptionFull: "You choose up to 6 creatures within range who must each make a Constitution saving throw. Large and larger creatures have advantage on saving throws against this spell. " +
 	"On a failure, they are paralyzed. At the end of their next turn, they must make another Constitution saving throw. The spell ends on a success, but on a failure, they are petrified, turned to ice. " +
-	"The targets can repeat the saving throw at the end of each of their turns, ending the effect on a success. If the spell lasts for its entire duration for a creature that failed every save, it is " +
+	"The targets can repeat the saving throw at the end of each of their turns, ending the effect on a success.\nIf the spell lasts for its entire duration for a creature that failed every save, it is " +
 	"permanently turned to ice, which does not melt naturally, even through a blazing summer.",
+};
+
+SpellsList["call of justice"] = {
+	name: "Call of Justice",
+	regExpSearch: /^(?=.*justice).*$/i,
+	source: ["MeowMagic", 0],
+	level: 9,
+	school: "Conj",
+	time: "1 minute",
+	range: "Self",
+	components: "V",
+	duration: "Concentration, up to 1 hour",
+	description: "You pray to a lesser deity or great celestial, calling for its aid.",
+	descriptionFull: "You pray to a lesser deity or great celestial, calling for its aid. The being, or its avatar, appears in front of you. " +
+	"It likely takes the statistics, abilities, actions, and so on of the solar (Monster Manual 18) but the DM can rule it to use the statistics of another creature (though it should not have a significantly higher or lower CR than the solar). " +,
+	"It acts on your turn in combat. A lesser deity or great celestial has no binding to you or requirement to behave as you wish. You can ask the creature as part of casting the spell what you wish for it to do. " +
+	"The creature can't exact payment or trade for its services—it will attempt to fulfill your prayer if it is in accordance with its ideals or not contrary." +
+	"\nIf your prayer is contrary to its nature, or once your prayer is fulfilled or you lose concentration, the creature returns to its previous location, leaving a thin glowing halo on the ground where " +
+	"it disappeared, which can't be dispelled and fades after seven days."
 };
