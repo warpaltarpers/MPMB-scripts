@@ -308,3 +308,24 @@ SpellsList["blood money"] = {
 	"Dragons, goblins, and xorns have disadvantage on their saving throw against this spell If you reduce one of those creatures to 0 hitpoints with this spell, one newly minted gold coin emerges from its corpse. " +
 	"After the damage is dealt, the coins splash around the target, and can he picked up and reused with this spell.\nWhen you cast this spell using a spell slot of 4th level or higher, you can use up to 5 additional coins for the spell for each slot level above 3rd.",
 };
+
+SpellsList["animate lord"] = {
+	name: "Animate Lord",
+	regExpSearch: /^(?=.animate*)(?=.lord*).*$/i,
+	classes: ["cleric", "warlock", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 9,
+	school: "Necro",
+	time: "1 minute",
+	range: "Touch",
+	components: "V, S, M\u2020",
+	compMaterial: "A black diamond worth at least 10,000gp, which the spell consumes",
+	duration: "Concentration, special",
+	description: "You control an undead mummy lord with a telepathic link; the spell continues for 24 hours, even if concentration is dropped, though you lose control until concentrating again.",
+	descriptionFull: "This spell can only be cast in a desert or similarly dry environment. You instill great power into a mummified Medium or Small humanoid. You must have that humanoid's heart to cast this spell and you cast it on their corpse. The corpse becomes a mummy lord under your control (the DM has the statistics for the creature). " +
+	"\nYou form a telepathic link with the mummy lord and can communicate back and forth across any distance if you are both on the same plane. You can issue basic or complex orders, from guarding a corridor, to animating lesser undead in a certain time and place, or even greater intelligent commands, such as forming a cult. " +
+	"It acts on your initiative while controlled by you.\nIf the mummy lord dies, it isn't gone forever. It rises from dust in close proximity to its heart. If you still have its heart, it remains under your control Its heart has 5 AC, 25 hitpoints, and immunity to all damage except fire. If it is destroyed, the spell ends, and the mummy lord perishes. " +
+	"\nYou can drop concentration on this spell at any point and the spell will not end. If you are no longer concentrating on it, the mummy lord acts of its own accord, and the mummy lord is no longer under your direct control. It may well continue to follow your direction, or it may plot to take its heart from you. " +
+	"Once animated, you can't dismiss or deanimate the mummy lord.\nYou can't cast this spell again while the mummy lord you animated previously still exists, even if you don't control it anymore. The creature is animated for 24 hours, after which it and its heart would turn to dust. " +
+	"To keep the creature animated for another 24 hours, you must cast this spell on the creature before the current 24-hour period ends. When you cast the spell on a mummy lord you animated, the range is unlimited if you are both on the same plane. This use of the spell keeps the current mummy lord animated rather than animating a new one.",
+};
