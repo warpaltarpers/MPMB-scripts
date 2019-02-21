@@ -385,3 +385,22 @@ SpellsList["greater entomb"] = {
 			"Each creature in a 30-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 6d6 fire and 6d6 necrotic damage on a failed save, or half as much damage on a successful one. " +
 			"\nThe maelstrom spreads around corners. It ignites flammable objects in the area that aren't being worn or carried, and it withers nonmagical, normal plants.\nWhen you cast this spell using a spell slot of 6th level or higher, the fire damage or the necrotic damage (your choice) increases by 1d6 for each slot level above 5th.",
 	  };
+
+		SpellsList["mustangs flame alchemy"] = {
+		  	name: "Mustang's Flame Alchemy",
+		  	regExpSearch: /^(?=.mustang*)(?=.flame*)(?=.alchemy*).*$/i,
+		  	classes: ["sorcerer", "wizard"],
+		  	source: ["MeowMagic", 0],
+		  	level: 3,
+		  	school: "Trans",
+		  	time: "1 action",
+		  	range: "60 feet",
+		  	components: "S, M",
+		  	compMaterial: "An inscribed magic circle",
+		  	duration: "Instantaneous",
+		  	save: "Con",
+		  	description: "Any creature chosen or in a chosen space is a target and must make a Con save; 3d10 on fail and is blinded or deafened until next turn; half on save with no effects",
+		  	descriptionFull: "A spark erupts into a torrent of flame from your hand. Choose up to eight creatures within range. If you don't know their location or can't see them, you can choose a 5 foot cube in place of one or more of the creatures. " +
+				"Any creature chosen or in a chosen space is a target and must make a Constitution saving throw. A target takes 3d10 fire damage on a failed saving throw and is blinded or deafened (your choice) until the start of their next turn, or takes half as much damage on a success and isn't blinded or deafened.\n" +
+				"When you cast this spell using a spell slot of 4th level or higher, the fire damage increases by 1d10 for each slot level above 3rd.",
+		  };
