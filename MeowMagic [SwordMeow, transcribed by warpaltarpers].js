@@ -512,3 +512,22 @@ SpellsList["call treant spirit"] = {
 	"The treant spirit uses your spellcasting ability modifier for all its saves, ability checks, and attack rolls, and is proficient with its attacks and Athletics (your proficiency bonus). " +
 	"On a hit, the target takes 3d6+6 force damage, or half as much on a miss. After answering 3 questions or making its attacks, the tree takes root in its current location, ends any grapples, becomes a normal tree once again, and the spell ends.",
 };
+
+SpellsList["prayer for the wicked"] = {
+	name: "Prayer for the Wicked",
+	regExpSearch: /^(?=.prayer*)(?=.wicked*).*$/i,
+	classes: ["bard", "cleric", "druid", "sorcerer", "warlock", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 9,
+	school: "Abjur",
+	time: "1 hour",
+	range: "Sight",
+	components: "V, M\u2020",
+	compMaterial: "A magic weapon, thrust into the heart of a titan, laid upon an altar to an extraplanar deity, all of which the spell consumes by burning it to ash when the spell is cast",
+	duration: "Until the army is no more",
+	description: "Any creature in sight are now your soldiers; can't be dispelled by dispel magic",
+	descriptionFull: "You prepare an army for interplanar war. Until the spell ends, any number of creatures you choose that you can see are soldiers in this army. Choose aberrations, celestials, elementals, fey, fiends, or undead. " +
+	"A soldier gains resistance to the damage dealt by the chosen type, has advantage on saving throws against those creatures, and any attack a soldier hits them with becomes a critical hit. " +
+	"Finally, the soldiers attacks become magical.\nThis spell can't be dispelled by dispel magic. You can discharge any number of soldiers at any time or disband the army, causing them to lose the benefits of the spell. " +
+	"A soldier who dies also loses the spell's benefits. You can't cast this spell again while any creature remains in the army.",
+};
