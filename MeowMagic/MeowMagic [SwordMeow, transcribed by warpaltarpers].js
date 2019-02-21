@@ -346,3 +346,23 @@ SpellsList["deadline"] = {
 	descriptionFull: "You attempt to pull the life from creatures in a line 15 feet long and 5 feet wide in a direction you choose. Each creature in the line must make a Constitution saving throw taking 3d6 necrotic damage on a failed save. " +
 	"If at least one target takes damage from this spell, you additionally regain 1d6 hitpoints.\nWhen you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 2nd.",
 };
+
+SpellsList["greater entomb"] = {
+  	name: "Greater Entomb",
+  	regExpSearch: /^(?=.greater*)(?=.entomb*).*$/i,
+  	classes: ["cleric", "druid", "paladin", "ranger", "warlock"],
+  	source: ["MeowMagic", 0],
+  	level: 5,
+  	school: "Necro",
+  	time: "1 action",
+  	range: "30 feet",
+  	components: "V, S, M",
+  	compMaterial: "A lock",
+  	duration: "Concentration, up to 1 minute",
+  	save: "Con",
+  	description: "You entomb a creature; on a failed Con save, creature takes 5d12 damage; damage continues on each failed save, until success",
+  	descriptionFull: "You choose a creature within range to construct a tomb around, keeping them trapped inside its walls. The target must make a Constitution saving throw. On a failure, it is locked within and pierced with a thousand spikes, and magically dealt 5d12 piercing damage. " +
+		"The target makes the saving throw at the end of each of its turns, taking the same damage on a failure. On any success, the tomb shatters apart and fades away, freeing the target. The creature has total cover while the tomb lasts and can't move or escape by any means other than teleporting. " +
+		"\nAn undead target has disadvantage on its first saving throw against this spell.\nA creature that fails every save against this spell or is reduced to 0 hitpoints while inside is locked within. The duration becomes permanent. A dispel magic spell can end the spell only if it is cast at 5th-level or higher on the tomb. " +
+		"The tomb has 50 hitpoints, 15 AC, immunity to poison and psychic damage, and resistance to all other damage except force.\nWhen you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d12 for each slot level above 5th.",
+  };
