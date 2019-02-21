@@ -298,7 +298,7 @@ SpellsList["blood money"] = {
 	school: "Conj",
 	time: "1 action",
 	range: "60 feet",
-	components: "V, S, M\u0192",
+	components: "V, S, M\u2020",
 	compMaterial: "up to 30gp",
 	duration: "Instantaneous",
 	save: "Dex",
