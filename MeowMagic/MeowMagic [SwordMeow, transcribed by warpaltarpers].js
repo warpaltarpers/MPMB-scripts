@@ -422,3 +422,18 @@ SpellsList["onyx skull"] = {
 	"On a failure, the onyx skull's teeth scissor and crunch, and each creature takes 5d10 necrotic damage or half as much on a success. Undead creatures take an additional d10 of damage. The skull then collapses, leaving a thin layer of ash behind.\n" +
 	"When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d10 for every second slot level above 3rd.",
 };
+
+SpellsList["starsee"] = {
+	name: "Starsee",
+	regExpSearch: /^(?=.starsee*).*$/i,
+	classes: ["druid", "ranger", "warlock", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 1,
+	school: "Div",
+	time: "1 action",
+	range: "Self",
+	components: "S",
+	duration: "Concentration, up to 1 minute",
+	description: "A stellar map appears above your head; you can see in dim as if bright; +5 to passive perception and any Search action",
+	descriptionFull: "You can only cast this spell at dusk, night, or dawn. A stellar map appears above your head, revealing stars and constellations, named as they are in this land (or else unnamed). Until the spell ends, you add +5 to your passive perception and any ability check made with the Search action, and you can see in dim light as if it were bright.",
+};
