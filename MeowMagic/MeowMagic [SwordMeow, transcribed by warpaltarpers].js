@@ -474,3 +474,22 @@ SpellsList["glasswings"] = {
 	"Additionally, the creature's speed is reduced by 15 until the end of its next turn. The spell ends at the end of your turn, the wings shattering to glitter and fading away.\n" +
 	"When you cast this spell using a spell slot of 3rd level or higher, you gain an additional 10 feet of flying speed for each slot level above 2nd, and you can gain damage to a maximum increased by the same amount.",
 };
+
+SpellsList["maegis"] = {
+	name: "Maegis",
+	regExpSearch: /^(?=.maegis*).*$/i,
+	classes: ["sorcerer", "warlock", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 7,
+	school: "Abjur",
+	time: "1 action",
+	range: "Touch",
+	components: "V, S, M\u2020",
+	compMaterial: "An ornate shield worth 1,000sp, which the spell consumes",
+	duration: "Concentration, up to 1 hour",
+	save: "Dex",
+	description: "Each targeted creature must make Dex save; 6d12 force damage on fail, half on save",
+	descriptionFull: "You shatter a valuable shield, moving its thousand tiny pieces over the skin of a creature, a protective magic filling in the gaps between each piece, forming its aegis. " +
+	"Until the spell ends, the target has resistance to all damage except force damage. As an action, you can dismiss this spell and cause the aegis to explode. " +
+	"Each creature of your choice that you can see within 30 feet of the aegis wearer must make a Dexterity saving throw. On a failure, they take 6d12 force damage, or half as much on a success.",
+};
