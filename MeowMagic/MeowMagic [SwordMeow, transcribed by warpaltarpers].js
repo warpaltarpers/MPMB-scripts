@@ -209,4 +209,26 @@ SpellsList["dress undress"] = {
 	descriptionFull: "A willing creature you touch instantly dons up to 10 unworn and uncarried articles of clothing you can see within 30 feet of you, or doffs as many articles it is wearing. " +
 	"If you doff clothing from it, it appears folded at your feet. Any donned clothing is worn in the order you wish, with any twists, ties, bows, or specific spacing and detail you desire. " +
 	"The clothing can't be behind glass or any other obstruction.\nWhen you reach 5th level, you can don or doff light armor when you cast this spell, At 11th, you can don or doff medium armor, and heavy armor at 17th.",
-}
+};
+
+SpellsList["five point celestial brigade"] = {
+	name: "Five Point Celestial Brigade",
+	nameShort: "Celestial Brigade",
+	regExpSearch: /^(?=.*five)(?=.*point)(?=.*celestial)(?=.*brigade).*$/i,
+	classes: ["cleric", "paladin"],
+	source: ["MeowMagic", 0],
+	level: 5,
+	school: "Conj",
+	time: "1 action",
+	range: "90 feet",
+	components: "V, S, M\u0192",
+	compMaterial: "A feather from a bird of prey",
+	duration: "Instantaneous",
+	save: "Cha",
+	description: "You mark a creature within range for the wrath of heaven. On a failure, celestials appear around the creature, blitzing it with angelic weapons. " +
+	"The target takes 546 radiant and 5d6 piercing damage, and it is knocked prone.",
+	descriptionFull: "You mark a creature within range for the wrath of heaven. The target can make a Charisma saving throw to avoid the celestial incursion. " +
+	"On a failure, celestials appear around the creature, blitzing it with angelic weapons. The target takes 546 radiant and 5d6 piercing damage, and it is knocked prone. " +
+	"On a success, the creature takes half as much damage and isn't knocked prone. If the target has 30 hitpoints or fewer remaining after taking damage from this spell, it must succeed on a Constitution saving throw or die." +
+	"\nWhen you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d6 radiant and 1d6 piercing for each slot level above 5th.",
+};
