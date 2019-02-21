@@ -404,3 +404,21 @@ SpellsList["mustangs flame alchemy"] = {
 	"Any creature chosen or in a chosen space is a target and must make a Constitution saving throw. A target takes 3d10 fire damage on a failed saving throw and is blinded or deafened (your choice) until the start of their next turn, or takes half as much damage on a success and isn't blinded or deafened.\n" +
 	"When you cast this spell using a spell slot of 4th level or higher, the fire damage increases by 1d10 for each slot level above 3rd.",
 };
+
+SpellsList["onyx skull"] = {
+	name: "Onyx Skull",
+	regExpSearch: /^(?=.onyx*)(?=.skull*).*$/i,
+	classes: ["cleric", "paladin", "sorcerer", "warlock", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 3,
+	school: "Necro",
+	time: "1 action",
+	range: "Self (30 foot radius)",
+	components: "V, S",
+	duration: "Instantaneous",
+	save: "Con",
+	description: "Each creature caught in half-ring makes Con save; on fail, 5d10 necrotic, half on save",
+	descriptionFull: "An ethereal onyx skull spawns all around you and bites down. You choose a half ring 60 feet in diameter, 10 feet high, and 1 foot thick within range. The ring must be centered on you. Each creature caught with any part of the half ring in their space must make a Constitution saving throw. " +
+	"On a failure, the onyx skull's teeth scissor and crunch, and each creature takes 5d10 necrotic damage or half as much on a success. Undead creatures take an additional d10 of damage. The skull then collapses, leaving a thin layer of ash behind.\n" +
+	"When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d10 for every second slot level above 3rd.",
+};
