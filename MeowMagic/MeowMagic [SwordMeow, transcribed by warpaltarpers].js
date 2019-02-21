@@ -191,3 +191,22 @@ SpellsList["divine profane lance"] = {
 	"Additionally, choose divine or profane. The added damage is radiant for the former and necrotic for the latter. On a hit, the spell causes another effect.",
 	dependencies: ["divine lance", "profane lance"],
 };
+
+SpellsList["dress undress"] = {
+	name: "Dress/Undress",
+	regExpSearch: /^(?=.*dress)(?=.*undress).*$/i,
+	classes: ["bard", "sorcerer", "warlock", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 0,
+	school: "Trans",
+	time: "1 action",
+	range: "Touch",
+	components: "V, S, M\u0192",
+	compMaterial: "A safety pin",
+	duration: "Instantaneous",
+	description: "A willing creature you touch instantly dons up to 10 unworn and uncarried articles of clothing you can see within 30 feet of you, or doffs as many articles it is wearing.",
+	descriptionMetric: "A willing creature you touch instantly dons up to 10 unworn and uncarried articles of clothing you can see within 9 metres of you, or doffs as many articles it is wearing.",
+	descriptionFull: "A willing creature you touch instantly dons up to 10 unworn and uncarried articles of clothing you can see within 30 feet of you, or doffs as many articles it is wearing. " +
+	"If you doff clothing from it, it appears folded at your feet. Any donned clothing is worn in the order you wish, with any twists, ties, bows, or specific spacing and detail you desire. " +
+	"The clothing can't be behind glass or any other obstruction.\nWhen you reach 5th level, you can don or doff light armor when you cast this spell, At 11th, you can don or doff medium armor, and heavy armor at 17th.",
+}
