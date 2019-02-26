@@ -645,3 +645,20 @@ SpellsList["amelias painted tie"] = {
 	description: "Two creatures are in the loops of an infinity symbol. When the first creature loses health, the second regains that much health",
 	descriptionFull: "When you cast this spell, choose two creatures you can see within range. An infinity symbol appears between them, each of them in the center of a loop. When the first creature is damaged, the second creature regains an amount of health equal to the damage dealt. This lasts until the end of your next turn when spell ends or 80 damage is dealt to the first creature, whichever comes first.\nWhen you cast this spell with a spell slot of 6th level or higher, the second creature regains health until the spell ends or an additional 20 damage is dealt per spell slot above 5th level.",
 };
+
+SpellsList["entomb"] = {
+	name: "Entomb",
+	regExpSearch: /^(?=.entomb*).*$/i,
+	classes: ["cleric", "druid", "paladin", "ranger", "warlock"],
+	source: ["MeowMagic", 0],
+	level: 3,
+	school: "Necro",
+	time: "1 action",
+	range: "30 feet",
+	components: "V, S, M",
+	compMaterial: "A handful of nails",
+	duration: "Instantaneous",
+	save: "Con",
+	description: "You construct a coffin around a creature and must make a Con save; 5d12 piercing damage and trapped on a fail, half damage and not trapped on a success",
+	descriptionFull: "You choose a creature within range to magically construct a coffin around, shutting them inside with overlaying chains. The target must make a Constitution saving throw. On a failure, it is locked inside, stabbed with a thousand blades, and magically dealt 5d12 piercing damage. The coffin turns to ash at the start of its next turn. The creature has total cover while it lasts and can't move or escape by any means other than teleporting. On a success, the creature takes half as much damage and the coffin immediately fades.\nAn undead that has advantage on saving throws against or is immune to effects that turn undead has disadvantage on its saving throw against this spell.\nWhen you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d12 for each slot level above 3rd.",
+};
