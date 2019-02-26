@@ -614,3 +614,19 @@ SpellsList["freeze"] = {
 	description: "You freeze a creature you touch; they must make a Con save; they're frozen on the first fail, and turned to ice on a second fail; creature makes Con save each turn, and spell ends on success",
 	descriptionFull: "You grasp the flesh or armaments of a creature and disperse their heat to the air, freezing them. The target must make a Constitution saving throw. On a failure, it is paralyzed. At the end of its next turn, it must make another Constitution saving throw, and it does so with advantage if it is Large or larger. The spell ends on a success, but on a failure, they are petrified, turned to ice. The creature can repeat the saving throw at the end of each of its turns, ending the effect completely on a success.\nIf the spell lasts for its entire duration and the creature failed every save, it is permanently turned to ice, which does not melt naturally, even through a blazing summer.",
 };
+
+SpellsList["fracture spirit"] = {
+	name: "Fracture Spirit",
+	regExpSearch: /^(?=.fracture*)(?=.spirit*).*$/i,
+	classes: ["bard", "sorcerer", "warlock", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 3,
+	school: "Illus",
+	time: "1 action",
+	range: "Self",
+	components: "S",
+	duration: "Concentration, up to 1 minute",
+	save: "Int",
+	description: "You create illusory images of yourself every 5 feet, staying in space but still appearing as if it were you",
+	descriptionFull: "When you cast this spell, you magically replicate a hall of mirrors for yourself in thin air. For the duration an illusory double of you spawns every 5 feet that you move, staying in that space but still appearing as if it were you; for example, if you speak, they all seem to speak. When you end your turn under this spell, you can immediately choose one double to swap places with.\nA creature with truesight sees the illusions and you for the reality, and any creature can make an Intelligence (Investigation) check as an action against your spell save DC to determine which is the real you, if any, among those it can see. On a success, it knows which is real until you make more doubles. A double dissipates upon being attacked or forced to save or contest an ability check, and all doubles dissipate when the spell ends.",
+};
