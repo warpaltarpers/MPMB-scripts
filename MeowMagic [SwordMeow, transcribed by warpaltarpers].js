@@ -630,3 +630,18 @@ SpellsList["fracture spirit"] = {
 	description: "You create illusory images of yourself every 5 feet, staying in space but still appearing as if it were you",
 	descriptionFull: "When you cast this spell, you magically replicate a hall of mirrors for yourself in thin air. For the duration an illusory double of you spawns every 5 feet that you move, staying in that space but still appearing as if it were you; for example, if you speak, they all seem to speak. When you end your turn under this spell, you can immediately choose one double to swap places with.\nA creature with truesight sees the illusions and you for the reality, and any creature can make an Intelligence (Investigation) check as an action against your spell save DC to determine which is the real you, if any, among those it can see. On a success, it knows which is real until you make more doubles. A double dissipates upon being attacked or forced to save or contest an ability check, and all doubles dissipate when the spell ends.",
 };
+
+SpellsList["amelias painted tie"] = {
+	name: "Amelia's Painted Tie",
+	regExpSearch: /^(?=.amelia*)(?=.painted*)(?=.tie*).*$/i,
+	classes: ["bard", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 5,
+	school: "Necro",
+	time: "1 action",
+	range: "60 feet",
+	components: "V, S",
+	duration: "Up to 1 round",
+	description: "Two creatures are in the loops of an infinity symbol. When the first creature loses health, the second regains that much health",
+	descriptionFull: "When you cast this spell, choose two creatures you can see within range. An infinity symbol appears between them, each of them in the center of a loop. When the first creature is damaged, the second creature regains an amount of health equal to the damage dealt. This lasts until the end of your next turn when spell ends or 80 damage is dealt to the first creature, whichever comes first.\nWhen you cast this spell with a spell slot of 6th level or higher, the second creature regains health until the spell ends or an additional 20 damage is dealt per spell slot above 5th level.",
+};
