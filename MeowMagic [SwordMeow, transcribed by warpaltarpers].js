@@ -598,3 +598,19 @@ SpellsList["aspect of pride"] = {
 	description: "Choose a point; every creature within 5 feet must make a Dex save; creature takes 6d12 piercing on failed save",
 	descriptionFull: "If you are in complete darkness when you cast or for the duration of the spell, the spell immediately fails and ends. For the duration, black shadowy tendrils with many eyes and teeth surround you, waiting for a command.\nWhen you cast the spell, a tendril stretches out to a point you can see within range. Each creature within 5 feet of that point must make a Dexterity saving throw. A creature takes 6d12 piercing damage on a failed save and is moved 10 feet in any direction of your choice except up. On each of your turns until the spell ends, you can use your action to outstretch tendrils again, targeting the same point or a different one.\nWhen you cast this spell using a spell slot of 7th or higher level, the damage increases by 1d12 for each slot level above 6th.",
 };
+
+SpellsList["freeze"] = {
+	name: "Freeze",
+	regExpSearch: /^(?=.freeze*).*$/i,
+	classes: ["druid", "sorcerer"],
+	source: ["MeowMagic", 0],
+	level: 3,
+	school: "Trans",
+	time: "1 action",
+	range: "Touch",
+	components: "V, S",
+	duration: "Concentration, up to 1 minute",
+	save: "Con",
+	description: "You freeze a creature you touch; they must make a Con save; they're frozen on the first fail, and turned to ice on a second fail; creature makes Con save each turn, and spell ends on success",
+	descriptionFull: "You grasp the flesh or armaments of a creature and disperse their heat to the air, freezing them. The target must make a Constitution saving throw. On a failure, it is paralyzed. At the end of its next turn, it must make another Constitution saving throw, and it does so with advantage if it is Large or larger. The spell ends on a success, but on a failure, they are petrified, turned to ice. The creature can repeat the saving throw at the end of each of its turns, ending the effect completely on a success.\nIf the spell lasts for its entire duration and the creature failed every save, it is permanently turned to ice, which does not melt naturally, even through a blazing summer.",
+};
