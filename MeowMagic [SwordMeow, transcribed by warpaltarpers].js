@@ -740,3 +740,19 @@ SpellsList["lesser passwall"] = {
 	description: "You create a passage that lasts for a minute; any creature still in the passage takes 4d6 bludgeoning damage",
 	descriptionFull: "A passage appears at a point of your choice that you can see on a wooden, plaster, or stone surface (such as a wall, a ceiling, or a floor) within range, and lasts for the duration. You choose the opening's dimensions: up to 3 feet wide, 4 feet tall, and 5 feet deep. The passage creates no instability in a structure surrounding it. A Medium sized creature must squeeze to move through the opening if the opening is created at its maximum dimensions.\nWhen the opening disappears, any creatures or objects still in the passage created by the spell are ejected to an unoccupied space nearest to the surface on which you cast the spell and take 4d6 bludgeoning damage.",
 };
+
+SpellsList["cold iron strike"] = {
+	name: "Cold Iron Strike",
+	regExpSearch: /^(?=.cold*)(?=.iron*)(?=.strike*).*$/i,
+	classes: ["atavist", "ranger", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 3,
+	school: "Conj",
+	time: "1 action",
+	range: "Self (30 foot line)",
+	components: "S, M",
+	compMaterial: "A melee weapon made of iron",
+	duration: "Instantaneous",
+	description: "You melee attack up to 3 creatures within a 30 foot line from you; each hit is 4d10 cold damage",
+	descriptionFull: "You flourish the weapon used in casting and then disappear in a flash of iron. Choose up to three creatures in a line extending 30 feet from you and make a melee spell attack against each. On a hit, a target takes 4d10 cold damage and can't take reactions until the end of your next turn. You can then teleport to an unoccupied space you can see within 5 feet of the last target of the spell. Fey take an additional 1d10 cold damage from this spell.",
+};
