@@ -1,5 +1,5 @@
 # MPMB Scripts
-Scripts made by warpaltarpers for the popular "Character Record Sheet" by MorePurpleMoreBetter
+Scripts made by warpaltarpers for the popular ["Character Record Sheet"](https://github.com/morepurplemorebetter/MPMBs-Character-Record-Sheet) by [MorePurpleMoreBetter](https://github.com/morepurplemorebetter)
 
 ## Table of Contents
 * **Races**
