@@ -550,3 +550,18 @@ SpellsList["saving hand"] = {
 	description: "Target regains hitpoints equal to 3d10 + spellcasting ability mod; each creature within 30ft make Str save, get moved 15ft back on fail",
 	descriptionFull: "You leap to the air, flying towards a creature within range, taking their hand and rejuvenating them. They regain a number of hitpoints equal to 3d10 + your spellcasting ability modifier, can immediately stand if they are prone, and lose one disease or condition afflicting them, which could be blinded, deafened, or poisoned. Additionally, after you heal the target, each creature of your choice within 30 feet of you must succeed on a Strength saving throw or be pushed back 15 feet by a blast of divine light emitted from your hands.",
 };
+
+SpellsList["lilianders hellspear"] = {
+	name: "Liliander's Hellspear",
+	regExpSearch: /^(?=.liliander*)(?=.hellspear*).*$/i,
+	classes: ["paladin", "ranger", "warlock", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 3,
+	school: "Evoc",
+	time: "1 action",
+	range: "60 feet",
+	components: "V, S",
+	duration: "Instantaneous",
+	description: "Target(s) take 3d10 piercing and 3d10 psychic, and their speed drops to 0 until start of your next turn",
+	descriptionFull: "You summon a burning incorporeal spear and launch it towards a target within range. Make a ranged spell attack against that target. If there are any creatures 10 feet or less directly behind the target from you in a line and the attack roll would also hit them, they are also hit. On a hit, a creature takes 3d10 piercing and 3d10 fire damage. Additionally, their speed drops to 0 until the start of your next turn, when the spear dissipates.\nWhen you cast this spell using a spell slot of 4th level or higher, the piercing damage or the fire damage (your choice) increases by Id 10 for each slot level above 3rd. ",
+};
