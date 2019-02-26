@@ -530,6 +530,23 @@ SpellsList["fist"] = {
 	range: "Self",
 	components: "V, S",
 	duration: "Concentration, up to 1 minute",
-	description: "",
+	description: "Choose to Punch, Crush, or Toss target",
 	descriptionFull: "A magic gauntlet envelops your fist. You can't wield a weapon in this hand and you can't cast spells with a casting time of 1 action or longer. Your AC becomes 17 if it wasn't already higher, and when you cast this spell and as an action while the spell lasts, you can choose an option below. When the spell ends, the gauntlet fades slowly, and the spell's effects last until the end of your next turn.\nPunch\nMake a melee spell attack against a creature within 5 feet of you, and add your Strength modifier to the attack roll On a hit, a target takes 3d6 + your Strength modifier in bludgeoning damage and is grappled by you if it is Huge or smaller. Grapple and shove checks with this hand are Athletics (Strength) + your spellcasting ability modifier, and you can grapple and shove Huge creatures.\nCrush\nYou smash a grappled creature in your fist. The target automatically takes 2d6 + your Strength modifier in bludgeoning damage and is restrained until the end of your next turn or until your grapple ends.\nToss\nYou toss a Huge or smaller creature within 5 feet of you back a number of feet away from you up to 5 x (your spellcasting ability + your Strength modifiers). A creature can make a Strength saving throw to avoid being tossed. A tossed creature takes 3d6 bludgeoning damage, or twice as much if it collides with an object or creature that is a size smaller than it or larger. If you toss a creature you are grappling, you can choose to toss it down or any horizontal direction, and you can toss it twice as far, ending the grapple on either a success or fail.",
+};
+
+SpellsList["saving hand"] = {
+	name: "Saving Hand",
+	regExpSearch: /^(?=.saving*)(?=.hand*).*$/i,
+	classes: ["cleric", "druid", "paladin"],
+	source: ["MeowMagic", 0],
+	level: 3,
+	school: "Evoc",
+	time: "1 action",
+	range: "60 feet",
+	components: "V, S",
+	compMaterial: "Clasping hands with the target",
+	duration: "Instantaneous",
+	save: "Str",
+	description: "Target regains hitpoints equal to 3d10 + spellcasting ability mod; each creature within 30ft make Str save, get moved 15ft back on fail",
+	descriptionFull: "You leap to the air, flying towards a creature within range, taking their hand and rejuvenating them. They regain a number of hitpoints equal to 3d10 + your spellcasting ability modifier, can immediately stand if they are prone, and lose one disease or condition afflicting them, which could be blinded, deafened, or poisoned. Additionally, after you heal the target, each creature of your choice within 30 feet of you must succeed on a Strength saving throw or be pushed back 15 feet by a blast of divine light emitted from your hands.",
 };
