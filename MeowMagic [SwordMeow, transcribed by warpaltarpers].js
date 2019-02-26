@@ -692,3 +692,19 @@ SpellsList["reach of the astral dreadnought"] = {
 	description: "You summon an astral dreadnought that swallows your target if you reduce the target to 0 hitpoints across three attacks",
 	descriptionFull: "You momentarily conjoin parts of the astral and your current plane, allowing an astral dreadnought through via your summons. Choose one creature you can seen within 90 feet of you as the target for the astral dreadnought. Make three melee or ranged spell attacks against it. If the first or second hit, they each deal 3d6+9 slashing damage.\nIf the third hits, it deals 5d10+9 piercing damage. If the target is Huge or smaller and this damage reduces it to 0 hit points, the astral dreadnought swallows it. The swallowed target, along with everything it is wearing and carrying, appears in an unoccupied space on the floor of the dreadnought's Demiplanar Donjon. This is a demiplane that can be entered by no other means except a wish spell or the astral dreadnought's Donjon Visit ability. A creature can leave the demiplane only by using magic that enables planar travel, such as the plane shift spell. The demiplane resembles a stone cave roughly 1,000 feet in diameter with a ceiling 100 feet high. Like a stomach, it contains the remains of the dreadnought's past meals. The dreadnought can't be harmed from within the demiplane. If the dreadnought dies, the demiplane disappears, and everything inside it appears around the corpse. The demiplane is otherwise indestructible.\nAfter you make the three attacks, the planes realign and the dreadnought is shunted to the astral once more. While conjured by you, the dreadnought is a façade, and not a true creature. Additionally, this spell fails if cast on the astral plane.",
 };
+
+SpellsList["shooting star"] = {
+	name: "Shooting Star",
+	regExpSearch: /^(?=.shooting*)(?=.star*).*$/i,
+	classes: ["bard", "druid", "ranger", "sorcerer", "warlock", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 4,
+	school: "Evoc",
+	time: "1 action",
+	range: "Self (120 foot line)",
+	components: "S",
+	duration: "Instantaneous",
+	save: "Dex",
+	description: "Targeted creature must make Dex save; 5d4 force, 5d4 radiant, and 5d4 piercing on fail, half on save; on fail, next creature in line must make save; continues until success of 120 feet",
+	descriptionFull: "The first creature in a line stretching 120 feet from you must make a Dexterity saving throw or take 5d4 force, 5d4 radiant, and 5d4 piercing damage, or half as much on a success. On a failure, the star pierces through them and on to the next creature in the line, who must make the same saving throw, taking the same damage or half. The star continues until a creature succeeds or it travels 120 feet.\nWhen you cast this spell using a spell slot of 5th level or higher, the range increases by 30 feet per slot level above 4th.",
+};
