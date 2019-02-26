@@ -2,13 +2,9 @@
 	Subject:	Spells by SwordMeow
 	Effect:		Made by SwordMeow and found on reddit.com/r/meowmagic; permission given by SwordMeow
 	Sheet:		v12.999 (2018-02-19)
-
-	Please note that there is no code here to update drop-down boxes because the rop-down boxes in the spell selection dialogues are generated automatically and will include any spells you add correctly
-
-	If you are looking for a way to add a cantrip/spell to the drop-down boxes in the attack sections, then you will have to look at the WeaponsList syntax and add the cantrip/spell as a weapon (as well)
 */
 
-var iFileName = "MeowMagic [SwordMeow, transcribed by warpaltarpers]"; // Optional; This is how the file will be named in the sheet if you import it as a file and not copy-paste its content. Only the first occurrence of this variable will be used
+var iFileName = "MeowMagic [SwordMeow, transcribed by warpaltarpers].js"; // Optional; This is how the file will be named in the sheet if you import it as a file and not copy-paste its content. Only the first occurrence of this variable will be used
 RequiredSheetVersion(12.999); // Optional; This is the minimum required version number of the sheet for the script to work. If the sheet being used to import the script is of an earlier version, the user will be warned
 
 SourceList["MeowMagic"] = {
@@ -712,7 +708,7 @@ SpellsList["shooting star"] = {
 SpellsList["self petrification"] = {
 	name: "Self Petrification",
 	regExpSearch: /^(?=.self*)(?=.petrification*).*$/i,
-	classes: ["bard", "warlock" "wizard"],
+	classes: ["bard", "warlock", "wizard"],
 	source: ["MeowMagic", 0],
 	ritual: true,
 	level: 4,
