@@ -565,3 +565,20 @@ SpellsList["lilianders hellspear"] = {
 	description: "Target(s) take 3d10 piercing and 3d10 psychic, and their speed drops to 0 until start of your next turn",
 	descriptionFull: "You summon a burning incorporeal spear and launch it towards a target within range. Make a ranged spell attack against that target. If there are any creatures 10 feet or less directly behind the target from you in a line and the attack roll would also hit them, they are also hit. On a hit, a creature takes 3d10 piercing and 3d10 fire damage. Additionally, their speed drops to 0 until the start of your next turn, when the spear dissipates.\nWhen you cast this spell using a spell slot of 4th level or higher, the piercing damage or the fire damage (your choice) increases by Id 10 for each slot level above 3rd. ",
 };
+
+SpellsList["objectify"] = {
+	name: "Objectify",
+	regExpSearch: /^(?=.objectify*).*$/i,
+	classes: ["bard", "warlock", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 2,
+	school: "Trans",
+	time: "1 action",
+	range: "30 feet",
+	components: "V, S, M",
+	compMaterial: "A piece of a mimic's corpse",
+	duration: "Concentration, up to 1 hour",
+	save: "Wis",
+	description: "You transform a creature into a nonmagical object with 10 temporary hit points",
+	descriptionFull: "Choose one creature you can see within range. You transform that creature into a nonmagical object. An unwilling creature can make a Wisdom saving throw, and if it succeeds, isn't affected by this spell. A target can make a Wisdom saving throw at the end of each of its turns, ending the effect on a success.\nThe target transforms along with whatever it is wearing and carrying into that form, as long as the object's size is no larger than the creature's size. The target gains 10 temporary hit points. These temporary hit points can't be replaced by temporary hit points from another source. A target reverts to its normal form when it has no more temporary hit points, dies, or the spell ends. If the spell ends before then, the creature loses all its temporary hit points and reverts to its normal form. The creature has no memory of time spent in this form after the spell ends and it returns to its normal form.",
+};
