@@ -662,3 +662,17 @@ SpellsList["entomb"] = {
 	description: "You construct a coffin around a creature and must make a Con save; 5d12 piercing damage and trapped on a fail, half damage and not trapped on a success",
 	descriptionFull: "You choose a creature within range to magically construct a coffin around, shutting them inside with overlaying chains. The target must make a Constitution saving throw. On a failure, it is locked inside, stabbed with a thousand blades, and magically dealt 5d12 piercing damage. The coffin turns to ash at the start of its next turn. The creature has total cover while it lasts and can't move or escape by any means other than teleporting. On a success, the creature takes half as much damage and the coffin immediately fades.\nAn undead that has advantage on saving throws against or is immune to effects that turn undead has disadvantage on its saving throw against this spell.\nWhen you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d12 for each slot level above 3rd.",
 };
+
+SpellsList["ice shield"] = {
+	name: "Ice Shield",
+	regExpSearch: /^(?=.ice*)(?=.shield*).*$/i,
+	classes: ["druid", "sorcerer"],
+	source: ["MeowMagic", 0],
+	level: 2,
+	school: "Abjur",
+	time: "1 reaction, which you take when you fail a Dexterity or Constitution saving throw that deals damage",
+	range: "Self",
+	components: "V, S",
+	duration: "1 round",
+	description: "A shield of ice coalesces to protect you from oncoming danger. Until the start of your next turn, you gain 2d6+6 temporary hitpoints, which can be lost by the triggering effect.",
+};
