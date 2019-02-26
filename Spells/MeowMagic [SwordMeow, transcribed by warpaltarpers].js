@@ -15,7 +15,7 @@ SourceList["MeowMagic"] = {
 	name : "MeowMagic Subreddit",
 	abbreviation : "MeowMagic",
 	url : "https://www.reddit.com/r/meowmagic/",
-	date : "2019/2/20"
+	date : "2019/2/13"
 };
 
 SpellsList["locate bizarre creature"] = {
