@@ -708,3 +708,19 @@ SpellsList["shooting star"] = {
 	description: "Targeted creature must make Dex save; 5d4 force, 5d4 radiant, and 5d4 piercing on fail, half on save; on fail, next creature in line must make save; continues until success of 120 feet",
 	descriptionFull: "The first creature in a line stretching 120 feet from you must make a Dexterity saving throw or take 5d4 force, 5d4 radiant, and 5d4 piercing damage, or half as much on a success. On a failure, the star pierces through them and on to the next creature in the line, who must make the same saving throw, taking the same damage or half. The star continues until a creature succeeds or it travels 120 feet.\nWhen you cast this spell using a spell slot of 5th level or higher, the range increases by 30 feet per slot level above 4th.",
 };
+
+SpellsList["self petrification"] = {
+	name: "Self Petrification",
+	regExpSearch: /^(?=.self*)(?=.petrification*).*$/i,
+	classes: ["bard", "warlock" "wizard"],
+	source: ["MeowMagic", 0],
+	ritual: true,
+	level: 4,
+	school: "Trans",
+	time: "1 minute",
+	range: "Self",
+	components: "V, S",
+	duration: "Varies",
+	description: "You petrify yourself into stone for 1 minute to 1 year with as many conditions as you want; revert immediately if you take damage",
+	descriptionFull: "You petrify yourself into stone. You can choose how long you remain petrified, from as little time as a minute to as long as a year. If you take damage while petrified in this way, you immediately revert. Additionally, you can set any number of conditions for you to revert early of the duration, such as a word someone speaks to your petrified form or an amount of blood poured over your stone.\nWhen you cast this spell using a spell slot of 5th level or higher, the amount of time you can petrify yourself multiplies by five years for each slot level above 4th.",
+};
