@@ -724,3 +724,19 @@ SpellsList["self petrification"] = {
 	description: "You petrify yourself into stone for 1 minute to 1 year with as many conditions as you want; revert immediately if you take damage",
 	descriptionFull: "You petrify yourself into stone. You can choose how long you remain petrified, from as little time as a minute to as long as a year. If you take damage while petrified in this way, you immediately revert. Additionally, you can set any number of conditions for you to revert early of the duration, such as a word someone speaks to your petrified form or an amount of blood poured over your stone.\nWhen you cast this spell using a spell slot of 5th level or higher, the amount of time you can petrify yourself multiplies by five years for each slot level above 4th.",
 };
+
+SpellsList["lesser passwall"] = {
+	name: "Lesser Passwall",
+	regExpSearch: /^(?=.lesser*)(?=.passwall*).*$/i,
+	classes: ["druid", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 3,
+	school: "Trans",
+	time: "1 action",
+	range: "Touch",
+	components: "V, S, M",
+	compMaterial: "One sesame seed",
+	duration: "1 minute",
+	description: "You create a passage that lasts for a minute; any creature still in the passage takes 4d6 bludgeoning damage",
+	descriptionFull: "A passage appears at a point of your choice that you can see on a wooden, plaster, or stone surface (such as a wall, a ceiling, or a floor) within range, and lasts for the duration. You choose the opening's dimensions: up to 3 feet wide, 4 feet tall, and 5 feet deep. The passage creates no instability in a structure surrounding it. A Medium sized creature must squeeze to move through the opening if the opening is created at its maximum dimensions.\nWhen the opening disappears, any creatures or objects still in the passage created by the spell are ejected to an unoccupied space nearest to the surface on which you cast the spell and take 4d6 bludgeoning damage.",
+};
