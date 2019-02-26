@@ -676,3 +676,19 @@ SpellsList["ice shield"] = {
 	duration: "1 round",
 	description: "A shield of ice coalesces to protect you from oncoming danger. Until the start of your next turn, you gain 2d6+6 temporary hitpoints, which can be lost by the triggering effect.",
 };
+
+SpellsList["reach of the astral dreadnought"] = {
+	name: "Reach of the Astral Dreadnought",
+	regExpSearch: /^(?=.reach*)(?=.astral*)(?=.dreadnought*).*$/i,
+	classes: ["bard", "sorcerer", "warlock", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 7,
+	school: "Conj",
+	time: "1 action",
+	range: "Self (90 foot radius)",
+	components: "V, S, M",
+	compMaterial: "A cord of silver",
+	duration: "Instantaneous",
+	description: "You summon an astral dreadnought that swallows your target if you reduce the target to 0 hitpoints across three attacks",
+	descriptionFull: "You momentarily conjoin parts of the astral and your current plane, allowing an astral dreadnought through via your summons. Choose one creature you can seen within 90 feet of you as the target for the astral dreadnought. Make three melee or ranged spell attacks against it. If the first or second hit, they each deal 3d6+9 slashing damage.\nIf the third hits, it deals 5d10+9 piercing damage. If the target is Huge or smaller and this damage reduces it to 0 hit points, the astral dreadnought swallows it. The swallowed target, along with everything it is wearing and carrying, appears in an unoccupied space on the floor of the dreadnought's Demiplanar Donjon. This is a demiplane that can be entered by no other means except a wish spell or the astral dreadnought's Donjon Visit ability. A creature can leave the demiplane only by using magic that enables planar travel, such as the plane shift spell. The demiplane resembles a stone cave roughly 1,000 feet in diameter with a ceiling 100 feet high. Like a stomach, it contains the remains of the dreadnought's past meals. The dreadnought can't be harmed from within the demiplane. If the dreadnought dies, the demiplane disappears, and everything inside it appears around the corpse. The demiplane is otherwise indestructible.\nAfter you make the three attacks, the planes realign and the dreadnought is shunted to the astral once more. While conjured by you, the dreadnought is a façade, and not a true creature. Additionally, this spell fails if cast on the astral plane.",
+};
