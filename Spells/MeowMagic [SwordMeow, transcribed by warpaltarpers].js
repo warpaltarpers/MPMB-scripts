@@ -196,7 +196,7 @@ SpellsList["five point celestial brigade"] = {
 
 SpellsList["palantirs inverse eye"] = {
 	name: "Palantír's Inverse Eye",
-	regExpSearch: /^(?=.palantir*)(?=.inverse*).*$/i,
+	regExpSearch: /^(?=.*palantir)(?=.*inverse).*$/i,
 	classes: ["wizard"],
 	source: ["MeowMagic", 0],
 	level: 5,
@@ -211,7 +211,7 @@ SpellsList["palantirs inverse eye"] = {
 
 SpellsList["eyes of ichor"] = {
 	name: "Eyes of Ichor",
-	regExpSearch: /^(?=.eyes*)(?=.ichor*).*$/i,
+	regExpSearch: /^(?=.*eyes)(?=.*ichor).*$/i,
 	classes: ["cleric", "druid", "paladin"],
 	source: ["MeowMagic", 0],
 	level: 2,
@@ -227,7 +227,7 @@ SpellsList["eyes of ichor"] = {
 
 SpellsList["true dragons breath"] = {
 	name: "True Dragon's Breath",
-	regExpSearch: /^(?=.dragon*)(?=.breath*).*$/i,
+	regExpSearch: /^(?=.*dragon)(?=.*breath).*$/i,
 	classes: ["sorcerer", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 8,
@@ -244,7 +244,7 @@ SpellsList["true dragons breath"] = {
 
 SpellsList["blood money"] = {
 	name: "Blood Money",
-	regExpSearch: /^(?=.blood*)(?=.money*).*$/i,
+	regExpSearch: /^(?=.*blood)(?=.*money).*$/i,
 	classes: ["warlock", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 3,
@@ -261,7 +261,7 @@ SpellsList["blood money"] = {
 
 SpellsList["animate lord"] = {
 	name: "Animate Lord",
-	regExpSearch: /^(?=.animate*)(?=.lord*).*$/i,
+	regExpSearch: /^(?=.*animate)(?=.*lord).*$/i,
 	classes: ["cleric", "warlock", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 9,
@@ -277,7 +277,7 @@ SpellsList["animate lord"] = {
 
 SpellsList["deadline"] = {
 	name: "Deadline",
-	regExpSearch: /^(?=.deadline*).*$/i,
+	regExpSearch: /^(?=.*deadline).*$/i,
 	classes: ["warlock", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 1,
@@ -293,7 +293,7 @@ SpellsList["deadline"] = {
 
 SpellsList["greater entomb"] = {
 	name: "Greater Entomb",
-	regExpSearch: /^(?=.greater*)(?=.entomb*).*$/i,
+	regExpSearch: /^(?=.*greater)(?=.*entomb).*$/i,
 	classes: ["cleric", "druid", "paladin", "ranger", "warlock"],
 	source: ["MeowMagic", 0],
 	level: 5,
@@ -310,7 +310,7 @@ SpellsList["greater entomb"] = {
 
 SpellsList["black fireball"] = {
 	name: "Black Fireball",
-	regExpSearch: /^(?=.black*)(?=.fireball*).*$/i,
+	regExpSearch: /^(?=.*black)(?=.*fireball).*$/i,
 	classes: ["sorcerer", "warlock", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 5,
@@ -327,7 +327,7 @@ SpellsList["black fireball"] = {
 
 SpellsList["mustangs flame alchemy"] = {
 	name: "Mustang's Flame Alchemy",
-	regExpSearch: /^(?=.mustang*)(?=.flame*)(?=.alchemy*).*$/i,
+	regExpSearch: /^(?=.*mustang)(?=.*flame)(?=.*alchemy).*$/i,
 	classes: ["sorcerer", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 3,
@@ -344,7 +344,7 @@ SpellsList["mustangs flame alchemy"] = {
 
 SpellsList["onyx skull"] = {
 	name: "Onyx Skull",
-	regExpSearch: /^(?=.onyx*)(?=.skull*).*$/i,
+	regExpSearch: /^(?=.*onyx)(?=.*skull).*$/i,
 	classes: ["cleric", "paladin", "sorcerer", "warlock", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 3,
@@ -360,7 +360,7 @@ SpellsList["onyx skull"] = {
 
 SpellsList["starsee"] = {
 	name: "Starsee",
-	regExpSearch: /^(?=.starsee*).*$/i,
+	regExpSearch: /^(?=.*starsee).*$/i,
 	classes: ["druid", "ranger", "warlock", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 1,
@@ -375,7 +375,7 @@ SpellsList["starsee"] = {
 
 SpellsList["storm of crows"] = {
 	name: "Storm of Crows",
-	regExpSearch: /^(?=.storm*)(?=.crows*).*$/i,
+	regExpSearch: /^(?=.*storm)(?=.*crows).*$/i,
 	classes: ["druid", "cleric", "sorcerer", "warlock"],
 	source: ["MeowMagic", 0],
 	level: 5,
@@ -391,7 +391,7 @@ SpellsList["storm of crows"] = {
 
 SpellsList["glasswings"] = {
 	name: "Glasswings",
-	regExpSearch: /^(?=.glasswings*).*$/i,
+	regExpSearch: /^(?=.*glasswings).*$/i,
 	classes: ["bard", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 2,
@@ -406,7 +406,7 @@ SpellsList["glasswings"] = {
 
 SpellsList["maegis"] = {
 	name: "Maegis",
-	regExpSearch: /^(?=.maegis*).*$/i,
+	regExpSearch: /^(?=.*maegis).*$/i,
 	classes: ["sorcerer", "warlock", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 7,
@@ -423,7 +423,7 @@ SpellsList["maegis"] = {
 
 SpellsList["call treant spirit"] = {
 	name: "Call Treant Spirit",
-	regExpSearch: /^(?=.treant*)(?=.spirit*).*$/i,
+	regExpSearch: /^(?=.*treant)(?=.*spirit).*$/i,
 	classes: ["druid", "ranger", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 4,
@@ -438,7 +438,7 @@ SpellsList["call treant spirit"] = {
 
 SpellsList["prayer for the wicked"] = {
 	name: "Prayer for the Wicked",
-	regExpSearch: /^(?=.prayer*)(?=.wicked*).*$/i,
+	regExpSearch: /^(?=.*prayer)(?=.*wicked).*$/i,
 	classes: ["bard", "cleric", "druid", "sorcerer", "warlock", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 9,
@@ -454,7 +454,7 @@ SpellsList["prayer for the wicked"] = {
 
 SpellsList["corrode inner flesh"] = {
 	name: "Corrode Inner Flesh",
-	regExpSearch: /^(?=.corrode*)(?=.flesh*).*$/i,
+	regExpSearch: /^(?=.*corrode)(?=.*flesh).*$/i,
 	classes: ["druid", "sorcerer", "warlock", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 5,
@@ -471,7 +471,7 @@ SpellsList["corrode inner flesh"] = {
 
 SpellsList["mantis knight blade"] = {
 	name: "Mantis Knight Blade",
-	regExpSearch: /^(?=.mantis*)(?=.knight*)(?=.blade*).*$/i,
+	regExpSearch: /^(?=.*mantis)(?=.*knight)(?=.*blade).*$/i,
 	classes: ["druid", "ranger"],
 	source: ["MeowMagic", 0],
 	level: 2,
@@ -487,7 +487,7 @@ SpellsList["mantis knight blade"] = {
 
 SpellsList["opposing force"] = {
 	name: "Opposing Force",
-	regExpSearch: /^(?=.opposing*)(?=.force*).*$/i,
+	regExpSearch: /^(?=.*opposing)(?=.*force).*$/i,
 	classes: ["sorcerer", "warlock", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 2,
@@ -502,7 +502,7 @@ SpellsList["opposing force"] = {
 
 SpellsList["gloves of ember"] = {
 	name: "Gloves of Ember",
-	regExpSearch: /^(?=.gloves*)(?=.ember*).*$/i,
+	regExpSearch: /^(?=.*gloves)(?=.*ember).*$/i,
 	classes: ["sorcerer", "warlock", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 0,
@@ -517,7 +517,7 @@ SpellsList["gloves of ember"] = {
 
 SpellsList["fist"] = {
 	name: "Fist",
-	regExpSearch: /^(?=.fist*).*$/i,
+	regExpSearch: /^(?=.*fist).*$/i,
 	classes: ["wizard"],
 	source: ["MeowMagic", 0],
 	level: 3,
@@ -532,7 +532,7 @@ SpellsList["fist"] = {
 
 SpellsList["saving hand"] = {
 	name: "Saving Hand",
-	regExpSearch: /^(?=.saving*)(?=.hand*).*$/i,
+	regExpSearch: /^(?=.*saving)(?=.*hand).*$/i,
 	classes: ["cleric", "druid", "paladin"],
 	source: ["MeowMagic", 0],
 	level: 3,
@@ -549,7 +549,7 @@ SpellsList["saving hand"] = {
 
 SpellsList["lilianders hellspear"] = {
 	name: "Liliander's Hellspear",
-	regExpSearch: /^(?=.liliander*)(?=.hellspear*).*$/i,
+	regExpSearch: /^(?=.*liliander)(?=.*hellspear).*$/i,
 	classes: ["paladin", "ranger", "warlock", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 3,
@@ -564,7 +564,7 @@ SpellsList["lilianders hellspear"] = {
 
 SpellsList["objectify"] = {
 	name: "Objectify",
-	regExpSearch: /^(?=.objectify*).*$/i,
+	regExpSearch: /^(?=.*objectify).*$/i,
 	classes: ["bard", "warlock", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 2,
@@ -581,7 +581,7 @@ SpellsList["objectify"] = {
 
 SpellsList["aspect of pride"] = {
 	name: "Aspect of Pride",
-	regExpSearch: /^(?=.aspect*)(?=.pride*).*$/i,
+	regExpSearch: /^(?=.*aspect)(?=.*pride).*$/i,
 	classes: ["bard", "sorcerer", "warlock", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 6,
@@ -597,7 +597,7 @@ SpellsList["aspect of pride"] = {
 
 SpellsList["freeze"] = {
 	name: "Freeze",
-	regExpSearch: /^(?=.freeze*).*$/i,
+	regExpSearch: /^(?=.*freeze).*$/i,
 	classes: ["druid", "sorcerer"],
 	source: ["MeowMagic", 0],
 	level: 3,
@@ -613,7 +613,7 @@ SpellsList["freeze"] = {
 
 SpellsList["fracture spirit"] = {
 	name: "Fracture Spirit",
-	regExpSearch: /^(?=.fracture*)(?=.spirit*).*$/i,
+	regExpSearch: /^(?=.*fracture)(?=.*spirit).*$/i,
 	classes: ["bard", "sorcerer", "warlock", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 3,
@@ -629,7 +629,7 @@ SpellsList["fracture spirit"] = {
 
 SpellsList["amelias painted tie"] = {
 	name: "Amelia's Painted Tie",
-	regExpSearch: /^(?=.amelia*)(?=.painted*)(?=.tie*).*$/i,
+	regExpSearch: /^(?=.*amelia)(?=.*painted)(?=.*tie).*$/i,
 	classes: ["bard", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 5,
@@ -644,7 +644,7 @@ SpellsList["amelias painted tie"] = {
 
 SpellsList["entomb"] = {
 	name: "Entomb",
-	regExpSearch: /^(?=.entomb*).*$/i,
+	regExpSearch: /^(?=.*entomb).*$/i,
 	classes: ["cleric", "druid", "paladin", "ranger", "warlock"],
 	source: ["MeowMagic", 0],
 	level: 3,
@@ -661,7 +661,7 @@ SpellsList["entomb"] = {
 
 SpellsList["ice shield"] = {
 	name: "Ice Shield",
-	regExpSearch: /^(?=.ice*)(?=.shield*).*$/i,
+	regExpSearch: /^(?=.*ice)(?=.*shield).*$/i,
 	classes: ["druid", "sorcerer"],
 	source: ["MeowMagic", 0],
 	level: 2,
@@ -675,7 +675,7 @@ SpellsList["ice shield"] = {
 
 SpellsList["reach of the astral dreadnought"] = {
 	name: "Reach of the Astral Dreadnought",
-	regExpSearch: /^(?=.reach*)(?=.astral*)(?=.dreadnought*).*$/i,
+	regExpSearch: /^(?=.*reach)(?=.*astral)(?=.*dreadnought).*$/i,
 	classes: ["bard", "sorcerer", "warlock", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 7,
@@ -691,7 +691,7 @@ SpellsList["reach of the astral dreadnought"] = {
 
 SpellsList["shooting star"] = {
 	name: "Shooting Star",
-	regExpSearch: /^(?=.shooting*)(?=.star*).*$/i,
+	regExpSearch: /^(?=.*shooting)(?=.*star).*$/i,
 	classes: ["bard", "druid", "ranger", "sorcerer", "warlock", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 4,
@@ -707,7 +707,7 @@ SpellsList["shooting star"] = {
 
 SpellsList["self petrification"] = {
 	name: "Self Petrification",
-	regExpSearch: /^(?=.self*)(?=.petrification*).*$/i,
+	regExpSearch: /^(?=.*self)(?=.*petrification).*$/i,
 	classes: ["bard", "warlock", "wizard"],
 	source: ["MeowMagic", 0],
 	ritual: true,
@@ -723,7 +723,7 @@ SpellsList["self petrification"] = {
 
 SpellsList["lesser passwall"] = {
 	name: "Lesser Passwall",
-	regExpSearch: /^(?=.lesser*)(?=.passwall*).*$/i,
+	regExpSearch: /^(?=.*lesser)(?=.*passwall).*$/i,
 	classes: ["druid", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 3,
@@ -739,7 +739,7 @@ SpellsList["lesser passwall"] = {
 
 SpellsList["cold iron strike"] = {
 	name: "Cold Iron Strike",
-	regExpSearch: /^(?=.cold*)(?=.iron*)(?=.strike*).*$/i,
+	regExpSearch: /^(?=.*cold)(?=.*iron)(?=.*strike).*$/i,
 	classes: ["atavist", "ranger", "wizard"],
 	source: ["MeowMagic", 0],
 	level: 3,
