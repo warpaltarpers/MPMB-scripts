@@ -2,9 +2,11 @@ var iFileName = "Gemstone Dragonborn [Matt Colville, transcribed by warpaltarper
 RequiredSheetVersion(12.999);
 
 // Source
-SourceList["MCSF"] = {
-	name : "Matt Colville's Strongholds and Followers",
-	abbreviation : "MCSF",
+SourceList["DnD-B:GD"] = {
+	name : "D&D Beyond: Gemstone Dragonborn",
+	abbreviation : "DnD-B:GD",
+	group: "D&D Beyond",
+	url: "https://www.dndbeyond.com/characters/subraces/56123-gemstone-dragonborn",
 };
 
 // Psionic abilities
@@ -12,7 +14,7 @@ SpellsList["amplify"] = {
 	name: "Amplify",
 	regExpSearch: /^(?=.*amplify).*$/i,
 	classes: [],
-	source: ["MCSF", 0],
+	source: ["DnD-B:GD", 0],
 	level: 0,
 	time: "1 a",
 	range: "Self",
@@ -26,7 +28,7 @@ SpellsList["flay"] = {
 	name: "Flay",
 	regExpSearch: /^(?=.*flay).*$/i,
 	classes: [],
-	source: ["MCSF", 0],
+	source: ["DnD-B:GD", 0],
 	level: 0,
 	time: "1 bns",
 	range: "Self",
@@ -40,7 +42,7 @@ SpellsList["flay"] = {
 RaceList["gemstone dragonborn"] = {
 	regExpSearch: /^(?=.*gemstone)(?=.*dragonborn).*$/i,
 	name: "Gemstone Dragonborn",
-	source: ["MCSF", 0], // Don't currently have access to source, will adjust in future
+	source: ["DnD-B:GD", 0], // Don't currently have access to source, will adjust in future
 	plural: "Gemstone Dragonborns",
 	size: 3,
 	speed: {
