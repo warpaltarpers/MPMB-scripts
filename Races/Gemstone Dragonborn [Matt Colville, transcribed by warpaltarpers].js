@@ -45,7 +45,7 @@ ArmourList["crystal armor"] = {
 	name: "Crystal Armor",
 	source: ["DnD-B:GD", 0],
 	type: "",
-	ac: +1,
+	ac: 12,
 	stealthdis: false,
 }
 
