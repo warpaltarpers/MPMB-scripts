@@ -58,7 +58,7 @@ RaceList["gemstone dragonborn"] = {
 	spellcastingAbility: 4,
 	spellcastingBonus: {
 		name: "Limited Psionics",
-		spells: ["amplify", "flay"],,
+		spells: ["amplify", "flay"],
 		prepared: true,
 		oncelr: true,
 	}
