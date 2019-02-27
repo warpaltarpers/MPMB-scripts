@@ -752,3 +752,18 @@ SpellsList["cold iron strike"] = {
 	description: "You melee attack up to 3 creatures within a 30 foot line from you; each hit is 4d10 cold damage",
 	descriptionFull: "You flourish the weapon used in casting and then disappear in a flash of iron. Choose up to three creatures in a line extending 30 feet from you and make a melee spell attack against each. On a hit, a target takes 4d10 cold damage and can't take reactions until the end of your next turn. You can then teleport to an unoccupied space you can see within 5 feet of the last target of the spell. Fey take an additional 1d10 cold damage from this spell.",
 };
+
+SpellsList["feebleform"] = {
+	name: "Feebleform",
+	regExpSearch: /^(?=.*feebleform).*$/i,
+	classes: ["Atavist"],
+	source: ["MeowMagic", 0],
+	level: 7,
+	school: "Necro",
+	time: "1 a",
+	range: "Touch",
+	components: "V, S",
+	duration: "Instantaneous",
+	description: "Target takes 3d6 necrotic and must make Con save; Str and Con become 1 on fail",
+	descriptionFull: "You attempt to obliterate the physical form of a creature. The target takes 3d6 necrotic damage and must make a Constitution saving throw.\nOn a failed save, the target's Strength and Constitution scores become 1. The creature's hitpoint maximum lowers to match its new Constitution when it finishes a short or long rest, but can't fall below half of its previous maximum. The creature can't lift weapons or any other objects larger than two sizes smaller than it.\nAt the end of every 30 days, the creature can repeat its saving throw against this spell If it succeeds on its saving throw, the spell ends.\nThe spell can also be ended by greater restoration, heal, regenerate, or wish.",
+};
