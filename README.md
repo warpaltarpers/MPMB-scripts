@@ -4,7 +4,7 @@ Scripts made by warpaltarpers for the popular ["Character Record Sheet"](https:/
 ## Table of Contents
 * **Races**
   * **[Awakened Cat (WIP)](https://github.com/warpaltarpers/MPMB-scripts/blob/master/Races/Awakened%20Cat%20%5BPolygonist%2C%20transcribed%20by%20warpaltarpers%5D.js)** by *Polygonist* <sup>[1](https://homebrewery.naturalcrit.com/share/SJHYdnaiVz)</sup>
-  * **[Gemstone Dragonborn](https://github.com/warpaltarpers/MPMB-scripts/blob/22719/Races/Gemstone%20Dragonborn%20%5BMatt%20Colville%2C%20transcribed%20by%20warpaltarpers%5D.js)** by *Matt Colville* <sup>[2](https://www.dndbeyond.com/characters/subraces/56123-gemstone-dragonborn)</sup>, requested by *[u/ZakkyD1121](https://www.reddit.com/r/mpmb/comments/avce7e/would_love_a_script_for_the_gemstone_dragonborn/)*
+  * **[Gemstone Dragonborn](https://github.com/warpaltarpers/MPMB-scripts/blob/master/Races/Gemstone%20Dragonborn%20%5BMatt%20Colville%2C%20transcribed%20by%20warpaltarpers%5D.js)** by *Matt Colville* <sup>[2](https://www.dndbeyond.com/characters/subraces/56123-gemstone-dragonborn)</sup>, requested by *[u/ZakkyD1121](https://www.reddit.com/r/mpmb/comments/avce7e/would_love_a_script_for_the_gemstone_dragonborn/)*
 * **Spells**
   * **[MeowMagic (*continually updates*)](https://github.com/warpaltarpers/MPMB-scripts/blob/master/Spells/MeowMagic%20%5BSwordMeow%2C%20transcribed%20by%20warpaltarpers%5D.js)** by *SwordMeow* <sup>[3](https://www.reddit.com/r/meowmagic/)</sup>
 
