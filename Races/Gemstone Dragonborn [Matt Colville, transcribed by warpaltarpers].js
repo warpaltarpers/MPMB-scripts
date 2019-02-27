@@ -39,7 +39,6 @@ SpellsList["flay"] = {
 };
 
 // Crystal Armor
-
 ArmourList["crystal armor"] = {
 	regExpSearch: /^(?=.*crystal).*$/i,
 	name: "Crystal Armor",
