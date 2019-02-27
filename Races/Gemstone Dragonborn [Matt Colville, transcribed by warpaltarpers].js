@@ -38,6 +38,17 @@ SpellsList["flay"] = {
 	psionic: true,
 };
 
+// Crystal Armor
+
+ArmourList["crystal armor"] = {
+	regExpSearch: /^(?=.*crystal).*$/i,
+	name: "Crystal Armor",
+	source: ["DnD-B:GD", 0],
+	type: "",
+	ac: +1,
+	stealthdis: false,
+}
+
 // Race
 RaceList["gemstone dragonborn"] = {
 	regExpSearch: /^(?=.*gemstone)(?=.*dragonborn).*$/i,
