@@ -50,6 +50,7 @@ ClassList["death knight"] = {
       "defense": {
         name: "Defense",
         description: "\n  While you are wearing armor, you gain a +1 bonus to AC.",
+        // add calc change
       },
     },
 
