@@ -10,17 +10,18 @@ SourceList["DnD-B:GD"] = {
 };
 
 // Psionic abilities
-SpellsList["amplify"] = {
-	name: "Amplify",
-	regExpSearch: /^(?=.*amplify).*$/i,
+SpellsList["distance"] = {
+	name: "Distance",
+	regExpSearch: /^(?=.*distance).*$/i,
 	classes: [],
 	source: ["DnD-B:GD", 0],
 	level: 0,
 	time: "1 a",
-	range: "Self",
-	duration: "1 min",
-	description: "The dragon focuses the power of its mind and wreaths its teeth, claws, and tail in glowing psionic force. For the next minute, all of its melee attacks deal an extra 3d8 psychic damage.",
-	firstCol: "4",
+	range: "30 feet",
+	duration: "Instantaneous",
+	save: "Int",
+	description: "Space contorts and twists. Choose any number of targets the dragon can see within 30 feet. Each target must succeed on an Intelligence saving throw or be pushed back 30 feet.",
+	firstCol: "1/target",
 	psionic: true,
 };
 
@@ -33,6 +34,7 @@ SpellsList["flay"] = {
 	time: "1 bns",
 	range: "Self",
 	duration: "1 round",
+	save: "Int",
 	description: "As a bonus action, the dragon blasts pure psionic energy from its eyes, frying the brains of all creatures in a 60-foot cone. Each creature in that area must make an Intelligence saving throw. On a failed save, it takes psychic damage of a d6 per 2 charges spent, or half as much damage on a successful one.",
 	firstCol: "2/d6",
 	psionic: true,
