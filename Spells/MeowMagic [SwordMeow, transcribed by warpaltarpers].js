@@ -767,3 +767,19 @@ SpellsList["feebleform"] = {
 	description: "Target takes 3d6 necrotic and must make Con save; Str and Con become 1 on fail",
 	descriptionFull: "You attempt to obliterate the physical form of a creature. The target takes 3d6 necrotic damage and must make a Constitution saving throw.\nOn a failed save, the target's Strength and Constitution scores become 1. The creature's hitpoint maximum lowers to match its new Constitution when it finishes a short or long rest, but can't fall below half of its previous maximum. The creature can't lift weapons or any other objects larger than two sizes smaller than it.\nAt the end of every 30 days, the creature can repeat its saving throw against this spell If it succeeds on its saving throw, the spell ends.\nThe spell can also be ended by greater restoration, heal, regenerate, or wish.",
 };
+
+SpellsList["skinscales"] = {
+	name: "Skinscales",
+	regExpSearch: /^(?=.*skinscales).*$/i,
+	classes: ["druid", "sorcerer"],
+	source: ["MeowMagic", 0],
+	level: 2,
+	school: "Abjur",
+	time: "1 a",
+	range: "Touch",
+	components: "V, S, M",
+	compMaterial: "A bit of shredded snakeskin",
+	duration: "1 hr",
+	description: "Creature can reduce incoming damage by twice spellcasting mod as reaction",
+	descriptionFull: "You touch a willing creature and grant it supernatural scaly defenses. For the duration the creature can reduce incoming damage by twice the caster's spellcasting ability modifier as a reaction. The spell ends once the creature has reduced damage in this way three times.\nThe creature can reduce damage one additional time for every spell level above 2nd.",
+};
