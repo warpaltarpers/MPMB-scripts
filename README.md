@@ -4,7 +4,7 @@ Scripts made by warpaltarpers for the popular ["Character Record Sheet"](https:/
 ## Table of Contents
 * **Classes**
   * **[Death Knight (WIP)](https://github.com/warpaltarpers/MPMB-scripts/blob/master/Classes/Death%20Knight%20%5BDisgracedRonin%2C%20transcribed%20by%20warpaltarpers%5D.js)**, requested by *[u/DisgracedRonin](https://www.reddit.com/r/mpmb/comments/ar6t1o/death_knight_class/)*
-  * **Illriger** (COMING SOON), by *Matt Colville*, requested by *[u/Majidae](https://www.reddit.com/r/mpmb/comments/ammpm6/is_anybody_working_on_an_Illriger_script/)*
+  * **Illrigger** (COMING SOON), by *Matt Colville*, requested by *[u/Majidae](https://www.reddit.com/r/mpmb/comments/ammpm6/is_anybody_working_on_an_Illrigger_script/)*
   * **Warden** (COMING SOON), by *Mage Hand Press*, requested by *[u/Exiled_Eclipse](https://www.reddit.com/r/mpmb/comments/aq8bg8/a_humble_request_mage_hand_press_warden_class/)*
 * **Races**
   * **[Awakened Cat (WIP)](https://github.com/warpaltarpers/MPMB-scripts/blob/master/Races/Awakened%20Cat%20%5BPolygonist%2C%20transcribed%20by%20warpaltarpers%5D.js)** by *Polygonist* <sup>[1](https://homebrewery.naturalcrit.com/share/SJHYdnaiVz)</sup>
