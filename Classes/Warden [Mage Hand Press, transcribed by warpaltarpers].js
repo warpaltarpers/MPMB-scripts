@@ -17,7 +17,6 @@ AddSubClass(
 		regExpSearch: /^(?=.*bloodwrath)(?=.*guardian).*$/i,
 		subname: "Bloodwrath Guardian",
 		source: ["MHP:W", 4],
-		fullname: "Bloodwrath Guardian Warden",
 		features: {
 			"subclassfeature3": {
 				name: "Feral Trance",
@@ -42,6 +41,43 @@ AddSubClass(
 				source: ["MHP:W", 5],
 				minLevel: 20,
 				description: "\n	At 20th level, as an action, you can transform into a hunched thing of fur and shadow, an echo of the Primal Beast. For 1 minute, you gain the following features:\n	\u2022	You gain all the benefits of Feral Trance.\n	\u2022	You gain temporary HP equal to twice your level.\n	\u2022	Once per turn, when you hit a creature with a melee weapon attack, you can wound the target. At the start of each of the wounded creature's turns, it takes 1d8 necrotic damage for each time you've wounded it, and it can then make a Constitution saving throw (save DC equals 8 + your proficiency bonus + your Strength modifier), ending the effect of all such wounds on itself on a success. Alternatively, the wounded creature, or a creature within 5 feet of it, can use an action to make a DC 15 Wisdom (Medicine) check, ending the effect of such wounds on it on a success.\n	Once you use this feature, you can't use it again until you finish a long rest.",
+			},
+		}
+	}
+);
+
+// Champion's Call - Verdant Protector
+AddSubClass(
+	"warden",
+	"verdant protector",
+	{
+		regExpSearch: /^(?=.*verdant)(?=.*protector).*$/i,
+		subname: "Verdant Protector",
+		source: ["MHP:W", 5],
+		features: {
+			"subclassfeature3": {
+				name: "Green Mark",
+				source: ["MHP:W", 5],
+				minLevel: 3,
+				description: "\n	Starting at 3rd level, when you mark a creature, the plants of the earth come alive to hinder its progress. While this creature is within 30 feet of you, the ground it walks on is difficult terrain.",
+			},
+			"subclassfeature6": {
+				name: "Verdant Skin",
+				source: ["MHP:W", 5],
+				minLevel: 6,
+				description: "\n	At 6th level, you gain proficiency in the Stealth skill, if you did not have it before. Additionally, you can use your action to draw a thick mass of vines and leaves to conceal you. Until you move, you have a advantage on Dexterity (Stealth) checks you make to hide among vegetation.",
+			},
+			"subclassfeature13": {
+				name: "Mettle",
+				source: ["MHP:W", 5],
+				minLevel: 13,
+				description: "\n	At 13th level, your determination allows you to shrug off effects that would otherwise harm you. When you are subjected to an effect that allows you to make a Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.",
+			},
+			"subclassfeature20": {
+				name: "Form of the Oak Sentinel",
+				source: ["MHP:W", 5],
+				minLevel: 20,
+				description: "\n	Starting at 20th level, you can use your action to transform into an oak sentinel, a bark-covered titan of the forest. For 1 minute, you gain the following features:\n	\u2022	Your AC becomes 20, if it was lower.\n	\u2022	Your attacks have Reach, if they did not have it before.\n	\u2022	When you use Warden’s Grasp as a bonus action, you can make an attack against each creature affected, with a separate attack roll for each target.\n	Once you use this feature, you can't use it again until you finish a long rest.",
 			},
 		}
 	}
