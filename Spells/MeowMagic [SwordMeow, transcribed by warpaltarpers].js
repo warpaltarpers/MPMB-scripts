@@ -799,3 +799,20 @@ SpellsList["snakemake"] = {
 	description: "You turn any non-artifact item you are holding into a giant constrictor snake under your control",
 	descriptionFull: "When you cast this spell, you turn any non-artifact item you are holding into a giant constrictor snake under your control, the stats of which can be found in the Monster Manual on page 324. When you cast this spell, and as an action on each of your subsequent turns, you can control the action of the creature, using its senses when you do so. If it could take a reaction, you must use your reaction to do so. If you don't control the creature, it takes the Dodge action if there are hostile creatures around it, or otherwise does nothing. When you are controlling the creature and it deals damage, you are healed for half the damage it dealt. The snake turns hack into the object when the spell ends or when it is killed.\nWhen you cast this spell in a spell slot of 4th level or higher, the creature gains one additional hit die and deals an additional die of damage for each of its actions for each slot level above 3rd.",
 };
+
+SpellsList["bind"] = {
+	name: "Bind",
+	regExpSearch: /^(?=.*bind).*$/i,
+	classes: ["bard", "cleric", "warlock", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 3,
+	school: "Abjur",
+	time: "1 a",
+	range: "Touch",
+	components: "V, S, M\u0192\u2020",
+	compMaterial: "A pair of manacles worth at least 2gp, which the spell consumes",
+	duration: "Instantaneous",
+	description: "Crea speed 10ft, can't speak or move more than 60ft away from caster",
+	descriptionMetric: "Crea speed 3m, can't speak or move more than 18m away from caster",
+	descriptionFull: "You grasp the wrists of an unconscious Huge or smaller creature with less than 5 hitpoints remaining and create a magical bind that holds its hands together, with similar binds appearing around its ankles and mouth. While bound, the creature can't speak, its speed is reduced to 10 feet, it can't fly if it could, and it can't move more than 60 feet away from the caster unless the caster allows it.\nWhen you cast this spell, set a code word in your mind. When you speak it, regardless of where you are, the creature is released and the spell ends. Otherwise, the spell ends after 3 days.",
+};
