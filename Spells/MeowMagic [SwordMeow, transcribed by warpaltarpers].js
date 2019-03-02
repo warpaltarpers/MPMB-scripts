@@ -783,3 +783,19 @@ SpellsList["skinscales"] = {
 	description: "Creature can reduce incoming damage by twice spellcasting mod as reaction",
 	descriptionFull: "You touch a willing creature and grant it supernatural scaly defenses. For the duration the creature can reduce incoming damage by twice the caster's spellcasting ability modifier as a reaction. The spell ends once the creature has reduced damage in this way three times.\nThe creature can reduce damage one additional time for every spell level above 2nd.",
 };
+
+SpellsList["snakemake"] = {
+	name: "Snakemake",
+	regExpSearch: /^(?=.*snakemake).*$/i,
+	classes: ["druid", "ranger", "wizard"],
+	source: ["MeowMagic", 0],
+	level: 3,
+	school: "Trans",
+	time: "1 a",
+	range: "Touch",
+	components: "V, S, M",
+	compMaterial: "An object you are holding",
+	duration: "Instantaneous",
+	description: "You turn any non-artifact item you are holding into a giant constrictor snake under your control",
+	descriptionFull: "When you cast this spell, you turn any non-artifact item you are holding into a giant constrictor snake under your control, the stats of which can be found in the Monster Manual on page 324. When you cast this spell, and as an action on each of your subsequent turns, you can control the action of the creature, using its senses when you do so. If it could take a reaction, you must use your reaction to do so. If you don't control the creature, it takes the Dodge action if there are hostile creatures around it, or otherwise does nothing. When you are controlling the creature and it deals damage, you are healed for half the damage it dealt. The snake turns hack into the object when the spell ends or when it is killed.\nWhen you cast this spell in a spell slot of 4th level or higher, the creature gains one additional hit die and deals an additional die of damage for each of its actions for each slot level above 3rd.",
+};
