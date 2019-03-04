@@ -812,8 +812,25 @@ SpellsList["bind"] = {
 	range: "Touch",
 	components: "V, S, M\u0192\u2020",
 	compMaterial: "A pair of manacles worth at least 2gp, which the spell consumes",
-	duration: "Instantaneous",
+	duration: "Up to 3 days",
 	description: "Crea speed 10ft, can't speak or move more than 60ft away from caster",
 	descriptionMetric: "Crea speed 3m, can't speak or move more than 18m away from caster",
-	descriptionFull: "You grasp the wrists of an unconscious Huge or smaller creature with less than 5 hitpoints remaining and create a magical bind that holds its hands together, with similar binds appearing around its ankles and mouth. While bound, the creature can't speak, its speed is reduced to 10 feet, it can't fly if it could, and it can't move more than 60 feet away from the caster unless the caster allows it.\nWhen you cast this spell, set a code word in your mind. When you speak it, regardless of where you are, the creature is released and the spell ends. Otherwise, the spell ends after 3 days.",
+	descriptionFull: "You grasp the wrists of an unconscious Huge or smaller creature with 0 hitpoints remaining and create a magical bind that holds its hands together, with similar binds appearing around its ankles and mouth. While bound, the creature can't speak, its speed is reduced to 10 feet, it can't fly if it could, and it can't move more than 60 feet away from the caster unless the caster allows it. Additionally, it can't regain more than 1 hitpoint.\nWhen you cast this spell, set a code word in your mind. When you speak it, regardless of where you are, the creature is released and the spell ends. Otherwise, the spell ends after 3 days.",
+};
+
+SpellsList["field of chains"] = {
+	name: "Field of Chains",
+	regExpSearch: /^(?=.*field)(?=.*chains).*$/i,
+	classes: ["warlock", "wizard"],
+	source: ["MMSR", 0],
+	level: 5,
+	school: "Conj",
+	time: "1 a",
+	range: "60 feet",
+	components: "V, S, M",
+	compMaterial: "Two interlocked chain links",
+	duration: "Instantaneous",
+	save: "Str/Dex",
+	description: "Each creature takes 4d8 on fail, can attempt on each turn with same effect on fail",
+	descriptionFull: "You choose a number of targets you can see within range up to twice your spellcasting modifier. Chains leap from the ground or nearby objects and structures to grasp and hold the targets, each of which must make a Strength or Dexterity saving throw to avoid the effect (target's choice). On a failure, each target is restrained and is moved up to 15 feet in any direction you choose, bound by the chains from multiple angles. Additionally, a creature who failed the save takes 4d8 bludgeoning damage.\nA creature can attempt to break or slip free as an action, and repeats the save. On a success, its chains fade away. On a failure, it takes another 4d8 bludgeoning damage and remain chained.\nA creature killed by this spell is permanently chained to the ground, structure, or object it was chained to. If removed, the chains shatter into tiny flakes of iron.",
 };
