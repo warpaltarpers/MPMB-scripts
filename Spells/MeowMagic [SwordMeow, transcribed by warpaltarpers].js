@@ -810,7 +810,7 @@ SpellsList["bind"] = {
 	school: "Abjur",
 	time: "1 a",
 	range: "Touch",
-	components: "V, S, M\u0192\u2020",
+	components: "V, S, M\u2020",
 	compMaterial: "A pair of manacles worth at least 2gp, which the spell consumes",
 	duration: "Up to 3 days",
 	description: "Crea speed 10ft, can't speak or move more than 60ft away from caster",
@@ -833,4 +833,22 @@ SpellsList["field of chains"] = {
 	save: "Str/Dex",
 	description: "Each creature takes 4d8 on fail, can attempt on each turn with same effect on fail",
 	descriptionFull: "You choose a number of targets you can see within range up to twice your spellcasting modifier. Chains leap from the ground or nearby objects and structures to grasp and hold the targets, each of which must make a Strength or Dexterity saving throw to avoid the effect (target's choice). On a failure, each target is restrained and is moved up to 15 feet in any direction you choose, bound by the chains from multiple angles. Additionally, a creature who failed the save takes 4d8 bludgeoning damage.\nA creature can attempt to break or slip free as an action, and repeats the save. On a success, its chains fade away. On a failure, it takes another 4d8 bludgeoning damage and remain chained.\nA creature killed by this spell is permanently chained to the ground, structure, or object it was chained to. If removed, the chains shatter into tiny flakes of iron.",
+};
+
+SpellsList["lantern walker"] = {
+	name: "Lantern Walker",
+	regExpSearch: /^(?=.*lantern)(?=.*walker).*$/i,
+	classes: ["cleric", "wizard"],
+	source: ["MMSR", 0],
+	ritual: true,
+	level: 1,
+	school: "Trans",
+	time: "1 a",
+	range: "Touch",
+	components: "V, S, M\u0192",
+	compMaterial: "A lantern worth at least 5gp",
+	duration: "1 hour",
+	description: "Lantern sprouts legs, can be directed to move up to 30ft",
+	descriptionMetric:	"Lantern sprouts legs, can be directed to move up to 9m",
+	descriptionFull: "A lantern you hold for the casting of this spell sprouts metal legs. On your turn, you can direct it to move up to 30 feet. The latern shines light when lit as normal, whether it be a hooded, bullseye, or some other.\nAs an action while the spell lasts, you can look from the lantern's location, as if the lantern's wick was an eye. You are blind to your own senses until the end of your next turn. The lantern can't move more than a mile away from you, and if it becomes more than a mile away, the spell ends. The spell also ends if the lantern is the target of an attack or a spell that deals damage.\nThe lantern can walk up vertical surfaces, but not upside down. All of its attributes are 1. It can't take any actions.\nWhen the spell ends, the lantern returns to normal, and could be reused for the casting of this spell again.",
 };
