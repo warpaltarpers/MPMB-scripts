@@ -14,11 +14,11 @@ Name | Author | Script Version | Min. Sheet Version | Requested By
 -----|--------|----------------|--------------------|--------------
 [Awakened Cat](https://github.com/warpaltarpers/MPMB-scripts/blob/master/Races/Awakened%20Cat%20%5BPolygonist%2C%20transcribed%20by%20warpaltarpers%5D.js) | [u/Polygonist](https://homebrewery.naturalcrit.com/share/SJHYdnaiVz) | 0.1.0 | 12.999 | N/A
 [Gemstone Dragonborn](https://github.com/warpaltarpers/MPMB-scripts/blob/master/Races/Gemstone%20Dragonborn%20%5BMatt%20Colville%2C%20transcribed%20by%20warpaltarpers%5D.js) | [Matt Colville](https://www.dndbeyond.com/characters/subraces/56123-gemstone-dragonborn) | 1.1.1 | 12.999 | [u/ZakkyD1121](https://www.reddit.com/r/mpmb/comments/avce7e/would_love_a_script_for_the_gemstone_dragonborn/)
-  
+
 ### Spells
 Name | Author | Script Version | Min. Sheet Version | Requested By
 -----|--------|----------------|--------------------|--------------
-[MeowMagic](https://github.com/warpaltarpers/MPMB-scripts/blob/master/Spells/MeowMagic%20%5BSwordMeow%2C%20transcribed%20by%20warpaltarpers%5D.js) | [u/SwordMeow](https://www.reddit.com/user/SwordMeow) | 1.50.1 | 12.999 | N/A
+[MeowMagic](https://github.com/warpaltarpers/MPMB-scripts/blob/master/Spells/MeowMagic%20%5BSwordMeow%2C%20transcribed%20by%20warpaltarpers%5D.js) | [u/SwordMeow](https://www.reddit.com/user/SwordMeow) | 1.52.0 | 12.999 | N/A
 
 ## How to Download from GitHub
 1. Navigate to the script you'd like to download
