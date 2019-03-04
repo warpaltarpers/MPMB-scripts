@@ -805,6 +805,7 @@ SpellsList["bind"] = {
 	regExpSearch: /^(?=.*bind).*$/i,
 	classes: ["bard", "cleric", "warlock", "wizard"],
 	source: ["MMSR", 0],
+	ritual: true,
 	level: 3,
 	school: "Abjur",
 	time: "1 a",
