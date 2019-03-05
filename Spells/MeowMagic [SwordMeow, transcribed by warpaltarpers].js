@@ -852,3 +852,20 @@ SpellsList["lantern walker"] = {
 	descriptionMetric:	"Lantern sprouts legs, can be directed to move up to 9m",
 	descriptionFull: "A lantern you hold for the casting of this spell sprouts metal legs. On your turn, you can direct it to move up to 30 feet. The latern shines light when lit as normal, whether it be a hooded, bullseye, or some other.\nAs an action while the spell lasts, you can look from the lantern's location, as if the lantern's wick was an eye. You are blind to your own senses until the end of your next turn. The lantern can't move more than a mile away from you, and if it becomes more than a mile away, the spell ends. The spell also ends if the lantern is the target of an attack or a spell that deals damage.\nThe lantern can walk up vertical surfaces, but not upside down. All of its attributes are 1. It can't take any actions.\nWhen the spell ends, the lantern returns to normal, and could be reused for the casting of this spell again.",
 };
+
+SpellsList["snap star"] = {
+	name: "Snap Star",
+	regExpSearch: /^(?=.*snap)(?=.*star).*$/i,
+	classes: ["sorcerer", "warlock", "wizard"],
+	source: ["MMSR", 0],
+	level: 1,
+	school: "Evoc",
+	time: "1 a",
+	range: "30 feet",
+	components: "V, S",
+	duration: "Instantaneous",
+	save: "Con",
+	description: "Creatures in 15ft make Con save, blinded and 2d4 radiant damage on fail",
+	descriptionMetric: "Creatures in 4.5m make Con save, blinded and 2d4 radiant damage on fail",
+	descriptionFull: "You snap and create a tiny facsimile of a star at a point you can see within range. Each creature that isn't blinded and within 15 feet of the point must succeed on a Constitution saving throw or take 2d4 radiant damage and be blinded until the end of their next turn, or no effect on a success.\nWhen you cast this spell using a spell slot of 2nd level or higher, the radiant damage increases by 1d4 for each slot level above 1st.",
+};
