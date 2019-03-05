@@ -18,7 +18,7 @@ Name | Author | Script Version | Min. Sheet Version | Requested By
 ### Spells
 Name | Author | Script Version | Min. Sheet Version | Requested By
 -----|--------|----------------|--------------------|--------------
-[MeowMagic](https://github.com/warpaltarpers/MPMB-scripts/blob/master/Spells/MeowMagic%20%5BSwordMeow%2C%20transcribed%20by%20warpaltarpers%5D.js) | [u/SwordMeow](https://www.reddit.com/user/SwordMeow) | 1.52.0 | 12.999 | N/A
+[MeowMagic](https://github.com/warpaltarpers/MPMB-scripts/blob/master/Spells/MeowMagic%20%5BSwordMeow%2C%20transcribed%20by%20warpaltarpers%5D.js) | [u/SwordMeow](https://www.reddit.com/user/SwordMeow) | 1.53.0 | 12.999 | N/A
 
 ## How to Download from GitHub
 1. Navigate to the script you'd like to download
