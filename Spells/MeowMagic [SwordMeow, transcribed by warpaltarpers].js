@@ -816,3 +816,19 @@ SpellsList["snap star"] = {
 	descriptionMetric: "Creatures in 4.5m make Con save, blinded and 2d4 radiant damage on fail",
 	descriptionFull: "You snap and create a tiny facsimile of a star at a point you can see within range. Each creature that isn't blinded and within 15 feet of the point must succeed on a Constitution saving throw or take 2d4 radiant damage and be blinded until the end of their next turn, or no effect on a success.\nWhen you cast this spell using a spell slot of 2nd level or higher, the radiant damage increases by 1d4 for each slot level above 1st.",
 };
+
+SpellsList["reap"] = {
+	name: "Reap",
+	classes: ["warlock", "wizard"],
+	source: ["MMSR", 0],
+	level: 6,
+	school: "Conj",
+	time: "1 a",
+	range: "120 ft",
+	components: "S,M",
+	compMaterial: "A scythe",
+	duration: "Instantaneous",
+	save: "Wis",
+	description: "6d6 + 30 necrotic dmg; if below 10 hp after dmg, creature instantly slain",
+	descriptionFull: "Choose two points you can see within range. A colossal scythe appears and swings between the points before fading away. Each creature caught in its path must make a Wisdom saving throw. A creature takes 6d6 + 30 necrotic damage on a failed save. If this leaves a creature in its true form with less than 10 hitpoints, it is instantly slain and can't be resurrected by magic of lower than 6th level.\nWhen you cast this spell using a spell slot of 7th level or higher, the necrotic damage increases by 1d10 for each slot level above 6th.",
+};
