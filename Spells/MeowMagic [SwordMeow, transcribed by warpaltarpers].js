@@ -26,7 +26,6 @@ SpellsList["locate bizarre creature"] = {
 	duration: "Instantaneous",
 	save: "Int",
 	description: "Find closest aberration, fey, or elemental within 10 miles; creature can make Int saving throw to avoid being detected",
-	descriptionMetric: "Find closest aberration, fey, or elemental within 16 kilometres; creature can make Int saving throw to avoid being detected",
 	descriptionFull: "Describe or name a specific kind of aberration, fey, or elemental. You learn the location of the closest creature of that kind to you within 10 miles, if at least one is present. An unwilling creature can make an Intelligence saving throw to avoid being located, and if successful, knows your location at the moment of casting the spell, knows that you attempted to locate it, and is immune to this spell cast by you for 24 hours.",
 };
 
@@ -43,7 +42,6 @@ SpellsList["wheel of force"] = {
 	duration: "Instantaneous",
 	save: "Str",
 	description: "Each creature within 30 feet must make Str save; creatures that fail save are incapcitated until end of their next turn",
-	descriptionMetric: "Each creature within 9 metres must make Str save; creatures that fail save are incapcitated until end of their next turn",
 	descriptionFull: "A swirl of wind erupts from you. Choose clockwise or counterclockwise when you cast this spell. Each creature in a 30 foot radius around you must make a Strength saving throw. Huge and larger creatures automatically succeed. On a failed save, a creature is rotated around you in the direction of your choice half or a quarter of the circumference of the circle (you choose when you cast the spell). Each creature that failed the save is then incapcitated until the end of their next turn. While incapcitated by this spell, a creature has a speed of 0, and attack rolls against it have advantage.",
 };
 
@@ -60,7 +58,6 @@ SpellsList["zone of lies"] = {
 	duration: "10 minutes",
 	save: "Cha",
 	description: "You make a 15 foot radius sphere. On a failed Cha save, creatures can't discern lies from truth.",
-	descriptionMetric: "You make a 4.5 metre radius sphere. On a failed Cha save, creatures can't discern lies from truth.",
 	descriptionFull: "You create a magical zone that fosters deceit in a 15-foot radius sphere centered on a point of your choice within range. Until the spell ends, a creature that enters the spell's area for the first time on turn or starts its turn there must make a Charisma saving throw. On a failed save, a creature can't discern lies from truth while in the radius, as with making a Wisdom (Insight) check or another way. A creature that fails the save and that can automatically discern lies such as one with the Divine Awareness trait, can't automatically discern them, but can make Wisdom (Insight) checks to determine truth as normal.\nYou know whether each creature succeeds or fails on its saving throw. However, creatures affected by this spell don't know if they are or not. Any Wisdom (Insight) checks they make to determine truth are inconclusive. If this spell affects another player character, the DM makes their saving throw in secret.",
 };
 
@@ -161,7 +158,6 @@ SpellsList["dress undress"] = {
 	compMaterial: "A safety pin",
 	duration: "Instantaneous",
 	description: "A willing creature you touch instantly dons up to 10 unworn and uncarried articles of clothing you can see within 30 feet of you, or doffs as many articles it is wearing.",
-	descriptionMetric: "A willing creature you touch instantly dons up to 10 unworn and uncarried articles of clothing you can see within 9 metres of you, or doffs as many articles it is wearing.",
 	descriptionFull: "A willing creature you touch instantly dons up to 10 unworn and uncarried articles of clothing you can see within 30 feet of you, or doffs as many articles it is wearing. If you doff clothing from it, it appears folded at your feet. Any donned clothing is worn in the order you wish, with any twists, ties, bows, or specific spacing and detail you desire. The clothing can't be behind glass or any other obstruction.\nWhen you reach 5th level, you can don or doff light armor when you cast this spell, At 11th, you can don or doff medium armor, and heavy armor at 17th.",
 };
 
@@ -208,7 +204,6 @@ SpellsList["eyes of ichor"] = {
 	components: "S",
 	duration: "Up to 1 round",
 	description: "Until the end of your next turn, you are blinded, but know the location of every creature within 60 feet of you not behind full cover from you.",
-	descriptionMetric: "Until the end of your next turn, you are blinded, but know the location of every creature within 18 metres of you not behind full cover from you.",
 	descriptionFull: "For the duration, your eyes cover in a golden light. Until the end of your next turn, you are blinded, but know the location of every creature within 60 feet of you not behind full cover from you. You know the size, type, and potential race of these creatures, can determine if they are shapechangers and using a false or true form, and can see these creatures even into the Ethereal Plane. While blinded from this spell, you can see. the creatures within range and you don't make attacks against them with disadvantage, nor do they attack you with advantage. Finally, you have advantage on Wisdom (Insight) checks made against any creature you can see with this spell.",
 };
 
@@ -764,7 +759,6 @@ SpellsList["bind"] = {
 	compMaterial: "A pair of manacles worth at least 2gp, which the spell consumes",
 	duration: "Up to 3 days",
 	description: "Crea speed 10ft, can't speak or move more than 60ft away from caster",
-	descriptionMetric: "Crea speed 3m, can't speak or move more than 18m away from caster",
 	descriptionFull: "You grasp the wrists of an unconscious Huge or smaller creature with 0 hitpoints remaining and create a magical bind that holds its hands together, with similar binds appearing around its ankles and mouth. While bound, the creature can't speak, its speed is reduced to 10 feet, it can't fly if it could, and it can't move more than 60 feet away from the caster unless the caster allows it. Additionally, it can't regain more than 1 hitpoint.\nWhen you cast this spell, set a code word in your mind. When you speak it, regardless of where you are, the creature is released and the spell ends. Otherwise, the spell ends after 3 days.",
 };
 
@@ -797,7 +791,6 @@ SpellsList["lantern walker"] = {
 	compMaterial: "A lantern worth at least 5gp",
 	duration: "1 hour",
 	description: "Lantern sprouts legs, can be directed to move up to 30ft",
-	descriptionMetric:	"Lantern sprouts legs, can be directed to move up to 9m",
 	descriptionFull: "A lantern you hold for the casting of this spell sprouts metal legs. On your turn, you can direct it to move up to 30 feet. The latern shines light when lit as normal, whether it be a hooded, bullseye, or some other.\nAs an action while the spell lasts, you can look from the lantern's location, as if the lantern's wick was an eye. You are blind to your own senses until the end of your next turn. The lantern can't move more than a mile away from you, and if it becomes more than a mile away, the spell ends. The spell also ends if the lantern is the target of an attack or a spell that deals damage.\nThe lantern can walk up vertical surfaces, but not upside down. All of its attributes are 1. It can't take any actions.\nWhen the spell ends, the lantern returns to normal, and could be reused for the casting of this spell again.",
 };
 
@@ -813,7 +806,6 @@ SpellsList["snap star"] = {
 	duration: "Instantaneous",
 	save: "Con",
 	description: "Creatures in 15ft make Con save, blinded and 2d4 radiant damage on fail",
-	descriptionMetric: "Creatures in 4.5m make Con save, blinded and 2d4 radiant damage on fail",
 	descriptionFull: "You snap and create a tiny facsimile of a star at a point you can see within range. Each creature that isn't blinded and within 15 feet of the point must succeed on a Constitution saving throw or take 2d4 radiant damage and be blinded until the end of their next turn, or no effect on a success.\nWhen you cast this spell using a spell slot of 2nd level or higher, the radiant damage increases by 1d4 for each slot level above 1st.",
 };
 
