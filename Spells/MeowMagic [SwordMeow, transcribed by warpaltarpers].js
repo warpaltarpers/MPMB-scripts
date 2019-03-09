@@ -824,3 +824,18 @@ SpellsList["reap"] = {
 	description: "6d6 + 30 necrotic dmg; if below 10 hp after dmg, creature instantly slain",
 	descriptionFull: "Choose two points you can see within range. A colossal scythe appears and swings between the points before fading away. Each creature caught in its path must make a Wisdom saving throw. A creature takes 6d6 + 30 necrotic damage on a failed save. If this leaves a creature in its true form with less than 10 hitpoints, it is instantly slain and can't be resurrected by magic of lower than 6th level.\nWhen you cast this spell using a spell slot of 7th level or higher, the necrotic damage increases by 1d10 for each slot level above 6th.",
 };
+
+SpellsList["cone of wind"] = {
+	name: "Cone of Wind",
+	classes: ["druid", "ranger", "wizard"],
+	source: ["MMSR", 0],
+	level: 4,
+	school: "Conj",
+	time: "1 a",
+	range: "Self",
+	components: "V,S",
+	duration: "Instantaneous",
+	save: "Str",
+	description: "6d6 slashing on fail + move 15ft, half dmg on success + no move",
+	descriptionFull: "A sudden gale swirls and buffets in a 60-foot cone stretching from you. You choose to push or pull when you cast this spell. Each creature caught in the cone must make a Strength saving throw. Huge and larger creatures have advantage. On a failed save, a target is moved 15 feet closer or farther from you and takes 6d6 slashing damage. On a success, a creature isn't moved and takes half as much damage.\nWhen you cast this spell using a spell slot of 5th level or higher, the slashing damage increases by 1d6 for each slot level above 4th.",
+};
