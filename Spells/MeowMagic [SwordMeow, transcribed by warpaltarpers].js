@@ -853,3 +853,17 @@ SpellsList["form of wind"] = {
 	description: "Speed doubled, incorporeal, res to all dmg, move through obj and cre as if diff. terrain",
 	descriptionFull: "When you cast this spell, your physical body becomes a tempestuous wind until the start of your next turn. For the duration, your speed is doubled, you are incorporeal, you have resistance to all damage, and you can move through objects and creatures as if they were difficult terrain. If you end your turn in the space of a Large or smaller creature, you can make a spellcasting ability check contested by its Strength (Athletics). If you win the contest, the creature is shunted 5 feet to the nearest empty space. If you end your turn inside the space of an object, whichever of you is lighter than the other is similarly shunted 5 feet.",
 };
+
+SpellsList["thundersnap"] = {
+	name: "Thundersnap",
+	classes: ["bard", "sorcerer", "wizard"],
+	source: ["MMSR", 0],
+	level: 0,
+	school: "Evoc",
+	time: "1 a",
+	range: "30 ft",
+	components: "S",
+	duration: "Instantaneous",
+	description: "Ranged spell attack for 1d8 thunder damage",
+	descriptionFull: "You snap at a creature within range, which hears it at magnified volume. Make a ranged spell attack against it. On a hit, the target takes 1d8 thunder damage.\nOn a critical hit with this cantrip, you roll triple the damage dice, instead of double.\nAt 5th level, the thunder damage increases to 2d8. It increases to 3d8 at 11th level, and 4d8 at 17th.",
+};
