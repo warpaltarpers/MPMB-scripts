@@ -867,3 +867,18 @@ SpellsList["thundersnap"] = {
 	description: "Ranged spell attack for 1d8 thunder damage",
 	descriptionFull: "You snap at a creature within range, which hears it at magnified volume. Make a ranged spell attack against it. On a hit, the target takes 1d8 thunder damage.\nOn a critical hit with this cantrip, you roll triple the damage dice, instead of double.\nAt 5th level, the thunder damage increases to 2d8. It increases to 3d8 at 11th level, and 4d8 at 17th.",
 };
+
+SpellsList["devas mace"] = {
+	name: "Deva's Mace",
+	classes: ["cleric"],
+	source: ["MMSR", 0],
+	level: 5,
+	school: "Conj",
+	time: "1 a",
+	range: "5 ft",
+	components: "V,S,M\u0192",
+	compMaterial: "A mace worth at least 5 gp",
+	duration: "Instantaneous",
+	description: "Two melee spell attacks, 1d6+4 bldg. + 4d8 rad. dmg on hit",
+	descriptionFull: "You toss a mace up into the air and call a celestial for momentary service. Choose a creature within range. The image of a deva flickers into existence long enough to take hold of the mace, attempt to strike the creature, then depart. Make two melee spell attacks against the target. On a hit, the target takes 1d6 + 4 bludgeoning + 4d8 radiant damage. You then catch the mace.",
+};
