@@ -898,3 +898,18 @@ SpellsList["balors onslaught"] = {
 	description: "Two melee spell attacks, 2d6+8 slash + 3d6 fire, second attack 3d8 + 8 slash + 3d8 lightning",
 	descriptionFull: "The incarnation of fire and ash, the visage of a balor, appears behind you. You hold up the handle of the Iongsword and whip for it to take, which magnify in its hands. Choose a creature you can see within range. Make two melee spell attacks against the target.\nIf the first hits, the target takes 2d6+8 slashing damage + 3d6 fire damage, and the target must succeed on a Strength saving throw or you can pull it up to 25 feet closer to you. If the target succeeds or the first attack misses, the balor's visage moves closer to attack again, using the longsword.\nIf the second hits, the target takes 3d8+8 slashing damage + 3d8 lightning damage. If this hit is a critical hit, you roll triple the damage dice, instead of double.\nYou then catch the weapons, tossed back to you.",
 };
+
+SpellsList["conjure invisible stalker"] = {
+	name: "Conjure Invisible Stalker",
+	classes: ["warlock", "wizard"],
+	source: ["MMSR", 0],
+	level: 7,
+	school: "Conj",
+	time: "1 m",
+	range: "10 ft",
+	components: "V,S,M",
+	compMaterial: "Fog in a bottle",
+	duration: "Instantaneous",
+	description: "Summon invisible air elemental to hunt a creature down or retrieve an object",
+	descriptionFull: "You conjure and bind an air elemental to your will by the casting of this spell, and it appears within range. It is invisible, but you can see it. The invisible stalker (Monster Manual 192) must obey the letter of your commands, but isn't always an enthusiastic pawn. If you issue any order to it other than to hunt down a creature or retrieve an object, the spell ends. Between commands, the invisible stalker stays at your side, but won't necessarily proactively defend you unless you order it to hunt a creature down.\nThe invisible stalker returns to its plane when it is reduced to 0 hitpoints, when the spell ends, if you cast this spell again, or if you die and it has no tasks remaining.",
+};
