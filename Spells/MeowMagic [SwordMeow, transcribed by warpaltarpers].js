@@ -882,3 +882,19 @@ SpellsList["devas mace"] = {
 	description: "Two melee spell attacks, 1d6+4 bldg. + 4d8 rad. dmg on hit",
 	descriptionFull: "You toss a mace up into the air and call a celestial for momentary service. Choose a creature within range. The image of a deva flickers into existence long enough to take hold of the mace, attempt to strike the creature, then depart. Make two melee spell attacks against the target. On a hit, the target takes 1d6 + 4 bludgeoning + 4d8 radiant damage. You then catch the mace.",
 };
+
+SpellsList["balors onslaught"] = {
+	name: "Balor's Onslaught",
+	classes: ["warlock", "wizard"],
+	source: ["MMSR", 0],
+	level: 4,
+	school: "Conj",
+	time: "1 a",
+	range: "30 ft",
+	components: "V,S,M\u0192",
+	compMaterial: "A longsword worth at least 15gp and a whip worth at least 2 gp",
+	duration: "Instantaneous",
+	save: "Str",
+	description: "Two melee spell attacks, 2d6+8 slash + 3d6 fire, second attack 3d8 + 8 slash + 3d8 lightning",
+	descriptionFull: "The incarnation of fire and ash, the visage of a balor, appears behind you. You hold up the handle of the Iongsword and whip for it to take, which magnify in its hands. Choose a creature you can see within range. Make two melee spell attacks against the target.\nIf the first hits, the target takes 2d6+8 slashing damage + 3d6 fire damage, and the target must succeed on a Strength saving throw or you can pull it up to 25 feet closer to you. If the target succeeds or the first attack misses, the balor's visage moves closer to attack again, using the longsword.\nIf the second hits, the target takes 3d8+8 slashing damage + 3d8 lightning damage. If this hit is a critical hit, you roll triple the damage dice, instead of double.\nYou then catch the weapons, tossed back to you.",
+};
