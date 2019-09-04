@@ -112,7 +112,7 @@ AddSubClass(
         name: "Inescapable",
         source: ["DMG:WR", 6],
         minlevel: 6,
-        description: "\n  " + "Starting at 6th level, you add a double your proficiency bonus to grapple checks."
+        description: "\n  " + "Starting at 6th level, you add double your proficiency bonus to grapple checks."
       },
 
       "subclassfeature10": {
@@ -126,7 +126,56 @@ AddSubClass(
         name: "Indisputable Strength",
         source: ["DMG:WR", 6],
         minlevel: 14,
-        description: "\n  " + "Starting at 14th level, when you use a Signature Move that deals damage, you can spend additional Signature Move Points to deal an additional 1d6 Bludgeoning damage per point spent."
+        description: "\n  " + "Starting at 14th level, when you use a Signature Move that deals damage, you can spend additional Signature Move Points to deal an additional 1d6 bludgeoning damage per point spent."
+      },
+    }
+  }
+);
+
+// Title Belt - High-Flier Belt
+AddSubClass(
+  "wrestler",
+  "high-flier belt",
+  {
+    regExpSearch: /^(?=.*high)(?=.*flier).*$/i,
+    subname: "High-Flier Belt",
+    source: ["DMG:WR", 6],
+    features: {
+      "subclassfeature3": {
+        name: "Unarmored Movement",
+        source: ["DMG:WR", 6],
+        minlevel: 3,
+        description: "\n  " + "Starting at 3rd level your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases by 5 feet when you reach 6th leel, and again at 10th and 14th levels."
+        // TODO: Add eval to change these attributes
+      },
+
+      "subclassfeature3": {
+        name: "Top Rope Specialty",
+        source: ["DMG:WR", 6],
+        minlevel: 3,
+        description: "\n  " + "Starting at 3rd level, as a reaction, when you start falling, you take half falling damage or no falling damage if you land on another creature."
+      },
+
+      "subclassfeature6": {
+        name: "Separate",
+        source: ["DMG:WR", 6],
+        minlevel: 6,
+        description: "\n  " + "Starting at 6th level, while you have a grappled creature, you do not provoke attacks of opportunity."
+      },
+
+      "subclassfeature10": {
+        name: "Finishing Move: Top Rope Attack",
+        source: ["DMG:WR", 6],
+        minlevel: 10,
+        description: "\n  " + "Starting at 10th level, you can choose to spend 4 Signature Move points when you perform a Signature Move against a creature directly after moving or falling. If that Signature Move succeeds, you deal an additional 1d6 bludgeoning damage for every 10ft you move during this Signature Move.\n You can't use this feature again until you finish a long rest."
+      },
+
+      "subclassfeature14": {
+        name: "Indisputable Acrobatics",
+        source: ["DMG:WR", 6],
+        minlevel: 14,
+        description: "\n  " + "Starting at 14th level, you gain a climb and swim speed equal to your movement speed and your distance when you jump is doubled.\n Lastly, when falling, as a reaction, you cause yourself to take no falling damage whether or not you land on a creature."
+        // TODO: Change climb and swim speeds
       },
     }
   }
