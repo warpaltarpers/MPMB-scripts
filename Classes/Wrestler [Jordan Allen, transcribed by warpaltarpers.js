@@ -43,7 +43,11 @@ ClassList["wrestler"] = {
     },
 
     "signature moves": {
-      
+      name: "Signature Moves",
+      source: ["DMG:WR", 3],
+      minlevel: 2,
+      description: "\n  " + "Starting at 2nd level, you gain the ability to perform signature moves. You have a number of signature points determined by your level as showin in the Signature Points column of the Wrestler Table.\n You can spend these points to perform a signature move. You learn more signature moves as you level as detailed in the Learned Signature Moves column of the Wrestler Table. The signature moves are detailed at the end of the class page. You regain all Signature Move points wheny ou finish a short or long rest. When you level up, you can unlearn 1 Signature Move and learn a new one.\n Signature move DC = 8 + your proficiency bonus + your Charisma modifier",
+      // TODO: Figure out how to work Signature Moves into sheet; mix of Ki points a la Monk + spellsheet??
     },
 
     "title belt": {
