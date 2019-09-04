@@ -28,50 +28,57 @@ ClassList["wrestler"] = {
 
   features: {
     "unarmored defense": {
+      name: "Unarmored Defense",
+      source: ["DMG:WR", 3],
+      minlevel: 1,
+      description: "\n  " + "Starting at 1st level, while you are not wearing any armor or using a shield, your Armor Class equals 10 + your Charisma modifier + your Constitution modifier.",
+      // TODO: Set AC based on feature
+    },
+
+    "wrestling": {
+      name: "Wrestling",
+      source: ["DMG:WR", 3],
+      minlevel: 1,
+      description: "\n  " + "At 1st level, you gain the following benefits while you have a free hand.\n  You can roll 1d4 in place of the normal damage of your unarmed strike or while you are using an improvised weapon. This die changes as you gain Wrestler levels, as shown in the Unarmed Strike column of the Wrestler table.\n  You are considered one size larger when determining your size for grappling, shoving creatures, or your carrying weight. This feature does not stack with racial features such as Powerful Build.\n  You can use your bonus action to make an unarmed strike, applicable signature move, or use an improvised weapon strike against a creature you are grappling.",
+    },
+
+    "signature moves": {
       
     },
 
-    "wrestling" {
+    "title belt": {
 
     },
 
-    "signature moves" {
-      
-    },
-
-    "title belt" {
+    "grappler\'s stride": {
 
     },
 
-    "grappler\'s stride" {
+    "improved grapple": {
 
     },
 
-    "improved grapple" {
+    "re-adjust": {
 
     },
 
-    "re-adjust" {
+    "the bell rings": {
 
     },
 
-    "the bell rings" {
+    "ready to rumble": {
 
     },
 
-    "ready to rumble" {
+    "applauding aura": {
 
     },
 
-    "applauding aura" {
+    "master wrestler": {
 
     },
 
-    "master wrestler" {
-
-    },
-
-    "undisputed champion" {
+    "undisputed champion": {
 
     },
   },
