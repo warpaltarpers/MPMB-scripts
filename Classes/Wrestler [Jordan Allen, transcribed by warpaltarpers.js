@@ -5,7 +5,7 @@ SourceList["DMG:WR"] = {
     name: "Dungeon Master\'s Guild: Wrestler",
     abbreviation: "DMG:WR",
     url: "https://www.dmsguild.com/product/267850/The-Wrestler-A-Grapple-Based-Class",
-}
+};
 
 // Wrestler Class
 ClassList["wrestler"] = {
@@ -50,7 +50,11 @@ ClassList["wrestler"] = {
       // TODO: Figure out how to work Signature Moves into sheet; mix of Ki points a la Monk + spellsheet??
     },
 
-    "title belt": {
+    "subclassfeature3": {
+      name: "Title Belt",
+      source: ["DMG:WR", 3],
+      minlevel: 3,
+      description: "\n  " + "At 3rd level, you don a Title Belt that represents your style of fighting: Powerhouse Belt, High-Flier Belt, Technician Belt, or Spiritualist Belt. All belts are detailed at the end of the class. Your choice grants you features at 3rd level, and again at 6th, 10th, and 14th levels.",
 
     },
 
@@ -87,3 +91,43 @@ ClassList["wrestler"] = {
     },
   },
 };
+
+// Title Belt - Powerhouse Belt
+AddSubClass(
+  "wrestler",
+  "powerhouse belt",
+  {
+    regExpSearch: /^(?=.*powerhouse).*$/i,
+    subname: "Powerhouse Belt",
+    source: ["DMG:WR", 6],
+    features: {
+      "subclassfeature3": {
+        name: "Brutal Grapple",
+        source: ["DMG:WR", 6],
+        minlevel: 3,
+        description: "\n  " + "Starting at 3rd level, when you make a grapple attempt, you can choose for the grapple to have the following benefits:\n You gain bonus damage to attack rolls against the grappled creature. The bonus equals your Charisma modifier.\n The grappled creature has disadvantage against attempts to escape the Brutal Grapple.\n You have the advantage on the Brutal Grapple attempt.\n You can't use this feature again until you finish a short or long rest."
+      },
+
+      "subclassfeature6": {
+        name: "Inescapable",
+        source: ["DMG:WR", 6],
+        minlevel: 6,
+        description: "\n  " + "Starting at 6th level, you add a double your proficiency bonus to grapple checks."
+      },
+
+      "subclassfeature10": {
+        name: "Finishing Move: Powerhouse Slam",
+        source: ["DMG:WR", 6],
+        minlevel: 10,
+        description: "\n  " + "Starting at 10th level, you can choose to spend 5 additional Signature Move points when you perform a Signature Move against a grappled creature. If that Signature Move succeeds, up to ten other creatures of your choice within 60 feet of you that can see you must roll Wisdom saving throws against your Signature Move DC or become frightened for 1 minute. Creatures can repeat this saving throw at the end of their turn.\n You can't use this feature again until you finish a long rest."
+      },
+
+      "subclassfeature14": {
+        name: "Indisputable Strength",
+        source: ["DMG:WR", 6],
+        minlevel: 14,
+        description: "\n  " + "Starting at 14th level, when you use a Signature Move that deals damage, you can spend additional Signature Move Points to deal an additional 1d6 Bludgeoning damage per point spent."
+      },
+    }
+  }
+);
