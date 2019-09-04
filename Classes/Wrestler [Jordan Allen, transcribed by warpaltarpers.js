@@ -149,7 +149,7 @@ AddSubClass(
         // TODO: Add eval to change these attributes
       },
 
-      "subclassfeature3": {
+      "subclassfeature3": { // TODO: figure out what to name this
         name: "Top Rope Specialty",
         source: ["DG:WR", 6],
         minlevel: 3,
@@ -221,3 +221,81 @@ AddSubClass(
     }
   }
 );
+
+// Title Belt - Spiritualist Belt
+AddSubClass(
+  "wrestler",
+  "spiritualist belt",
+  {
+    regExpSearch: /^(?=.*spiritualist).*$/i,
+    subname: "Spiritualist Belt",
+    source: ["DG:WR", 8],
+
+    abilitySave: 6,
+    spellcastingFactor: spiritualistwrestler1,
+    spellcastingTable: spiritualistwrestlerSpellTable,
+    spellcastingKnown: {
+      cantrips: [0, 0, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+      spells: [0, 0, 3, 4, 4, 4, 5, 6, 6, 7, 8, 8, 9, 10, 10, 11, 11, 11, 12, 13],
+    },
+    spellcastingList: {
+      class: "wizard",
+      level: [0, 4],
+    },
+    // TODO: Figure out if spell school restrictions from file can be implemented
+
+    features: {
+      "subclassfeature3": {
+        name: "Magical Wrestling",
+        source: ["DG:WR", 8],
+        minlevel: 3,
+        description: "\n  " + "Starting at 3rd level, your grapples are now magical for the purpose of grappling incorporeal creatures such as ghosts and creatures immune to the grapples status effect."
+      },
+
+      "subclassfeature6": {
+        name: "Spell Grapple",
+        source: ["DG:WR", 8],
+        minlevel: 6,
+        description: "\n  " + "At 6th level, you can use your action to cast a cantrip and make a grapple attempt."
+      },
+
+      "subclassfeature10": {
+        name: "Finishing Move: Arcane Piledriver",
+        source: ["DG:WR", 8],
+        minlevel: 10,
+        description: "\n  " + "Starting at 10th level, while you are grappling a creature, as an action or bonus action, you can expend 6 Signature Move points to perform an arcane piledriver. As part of this action, cast a spell (you do not expend a spell slot). Yourself and the grappled creature are teleported in the air 10ft per the level of the spell in a piledriver position. If you are unable to teleport this far up, you instead teleport to the highest point. When you and the target creature hit the ground due to falling, the grappled creature is dealt 1d6 bludgeoning damage per 10ft fallen due to falling damage, additionally, when you hit the ground, the spell you casted triggers, if the spell or the falling damage would deal to you. it instead deals to none.\n At the end of the piledriver, you are unable to take anymore actions or bonus actions until your next turn. You cannot use this feature again until you finish a long rest."
+      },
+
+      "subclassfeature14": {
+        name: "Indisputable Spiritualist",
+        source: ["DG:WR", 8],
+        minlevel: 14,
+        description: "\n  " + "Starting at 14th level, you can make a grapple, signature move, or unarmed strike as a bonus action whenever you use your action to cast a spell."
+      },
+    }
+  }
+);
+
+spiritualistwrestlerSpellTable = [
+  [0, 0, 0, 0, 0, 0, 0, 0, 0], //lvl 0
+	[0, 0, 0, 0, 0, 0, 0, 0, 0], //lvl 1
+	[0, 0, 0, 0, 0, 0, 0, 0, 0], //lvl 2
+	[2, 0, 0, 0, 0, 0, 0, 0, 0], //lvl 3
+	[3, 0, 0, 0, 0, 0, 0, 0, 0], //lvl 4
+	[3, 0, 0, 0, 0, 0, 0, 0, 0], //lvl 5
+	[3, 0, 0, 0, 0, 0, 0, 0, 0], //lvl 6
+	[4, 2, 0, 0, 0, 0, 0, 0, 0], //lvl 7
+	[4, 2, 0, 0, 0, 0, 0, 0, 0], //lvl 8
+	[4, 2, 0, 0, 0, 0, 0, 0, 0], //lvl 9
+	[4, 3, 0, 0, 0, 0, 0, 0, 0], //lvl10
+	[4, 3, 0, 0, 0, 0, 0, 0, 0], //lvl11
+	[4, 3, 0, 0, 0, 0, 0, 0, 0], //lvl12
+	[4, 3, 2, 0, 0, 0, 0, 0, 0], //lvl13
+	[4, 3, 2, 0, 0, 0, 0, 0, 0], //lvl14
+	[4, 3, 2, 0, 0, 0, 0, 0, 0], //lvl15
+	[4, 3, 3, 0, 0, 0, 0, 0, 0], //lvl16
+	[4, 3, 3, 0, 0, 0, 0, 0, 0], //lvl17
+	[4, 3, 3, 0, 0, 0, 0, 0, 0], //lvl18
+	[4, 3, 3, 1, 0, 0, 0, 0, 0], //lvl19
+	[4, 3, 3, 1, 0, 0, 0, 0, 0], //lvl20
+];
