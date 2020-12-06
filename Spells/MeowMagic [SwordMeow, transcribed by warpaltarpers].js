@@ -972,7 +972,7 @@ SpellList["planar hounds"] = {
 	compMaterial: "",
 	duration: "Instantaneous",
 	save: "Str",
-	description: "30 ft cube; 7d6+1d6/SL>4 Cold, Fire, Necrotic, Psychic, or Radiant dmg and knocked prone; save halves, no prone; target chooses Str or Dex save",
+	description: "30 ft cube; 7d6+1d6/SL Cold, Fire, Necrotic, Psychic, or Radiant dmg and knocked prone; save halves, no prone; target chooses Str or Dex save",
 	descriptionFull: "You utter a command over canines and summon a pack aof planar hounds, which rage through a 30 ft cube within range before returning whence they came. Each creature in the area must make a Strength or Dexterity saving throw (target's choice). On a failed save, a creature takes 7d6 damage and is knocked prone, or it takes half as much damage on a success and itsn't knocked prone. You choose cold, fire, necrotic, psychic, or radiant damage.\n  " + toUni("At Higher Levels") + ": When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 for each slot level above 4th.",
 };
 
@@ -1020,6 +1020,22 @@ SpellList["double breath"] = {
 	compMaterial: "two dragon scales worth 100 gp each",
 	duration: "Instantaneous",
 	save: "Dex",
-	description: "All in each line 10d6+1d6/SL>5 Acid, Cold, Fire, Lighning, or Poison dmg; save halves; if creature in both lines, takes one line",
+	description: "All in each line 10d6+1d6/SL Acid, Cold, Fire, Lighning, or Poison dmg; save halves; if creature in both lines, takes one line",
 	descriptionFull: "You hold a dragon scale in each hand and your hands momentarily turn into dragon heads spouting breath. Two breaths shoot out from you, each 5 ft wide and 120 ft long in directions you choose. Choose acid, cold, fire, lightning, or poison.  Each creature in a line must make a Dexterity saving throw. A creature takes 10d6 damage of the chosen type on a failed save, or half as much damage on a successful one.\n  If a creature is within both of the spell's lines, it takes damage as if it were in one line.\n  " + toUni("At Higher Levels") + ": When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d6 for each spell level above 5th.",
+};
+
+SpellList["fiery leap"] = {
+	name: "Fiery Leap",
+	classes: ["sorcerer", "warlock", "wizard"],
+	source: ["MMSR", 0],
+	level: 2,
+	school: "Trans",
+	time: "1 a",
+	range: "30 ft",
+	components: "S,M",
+	compMaterial: "a ring with flames inscribed",
+	duration: "Instantaneous",
+	save: "Dex",
+	description: "All in your path 3d6+1d6/SL Fire dmg; save halved; no opportunity attk. on you",
+	descriptionFull: "You choose an unoccupied space you can see within range to leap toward, stringing fire behind you and beside you. Each creature other than you within 5 ft of the path between your space and the one you leap toward must make a Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much on a success. You don't provoke attacks of opportunity when leaping this way.\n  " + toUni("At Higher Levels") + ": When you cast this spell using a spell slot of 3rd level or higher, the fire damage increases by 1d6 for each slot level above 2nd.",
 };
