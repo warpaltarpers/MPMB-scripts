@@ -650,7 +650,7 @@ SpellsList["shooting star"] = {
 	level: 4,
 	school: "Evoc",
 	time: "1 a",
-	range: "Self (120 ft line)",
+	range: "120-ft line",
 	components: "S",
 	duration: "Instantaneous",
 	save: "Dex",
