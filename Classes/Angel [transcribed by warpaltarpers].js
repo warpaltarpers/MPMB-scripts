@@ -29,6 +29,7 @@ ClassList["angel"] = {
     level: [1, 5]
   },
   
+  // TODO: Ask about feature and stat changes per level on features
   features: {
     "immortal nature": {
       name: "Immortal Nature",
@@ -118,14 +119,83 @@ AddSubClass(
         source: null,
         minLevel: 1,
         description: "\n  After choosing this discipline at 1st level you learn the spell spare the dying, and you can cast it as a bonus action on your turn. When you cast this spell, you heal 1 hit point of a creature the first time you cast this on it.\nAfter restoring hit points of a creature in that manner, you can't do it again until that creature completes a short or a long rest.",
-        usages: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        usages: 1,
         spellcastingBonus: {
           name: "Mending Touch",
           spells: ["spare the dying"],
-          selection: ["spare the dying"],
           // TODO: Cast as bonus action?
-        }
+        },
+        action: ["bonus action", ""], // TODO: Necessary?
       },
+      
+      "subclassfeature3Pro": {
+        name: "Guardian Angel",
+        source: null,
+        minLevel: 3,
+        description: "\n  At 3rd level, whenever you use your action to cast a spell of 1st or 2nd level that restores hit points, the healed creature becomes resistant to all types of damage until the start of your next turn.",
+      },
+      
+      "subclassfeature7Pro": {
+        name: "Blessed Vigor",
+        source: null,
+        minLevel: 7,
+        description: "\n  At 7th level, you gain the power from your deity to protect any friendly creature in the area. You can give one willing friendly creature 2d10 temporary hit points, this adds an additional 1d10 at 14th level (3d10), and 17th level (4d10). This may be done once every short rest.",
+        additional: ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "3d10", "3d10", "3d10", "4d10", "4d10", "4d10", "4d10"], // TODO: Correct usage?
+        usages: 1,
+        recovery: "short rest"
+      },
+      
+      "subclassfeature14Pro": {
+        name: "Hands of Cure",
+        source: null,
+        minLevel: 14,
+        description: "\n  At 14th level, you can cast lesser restoration, healing word and cure wounds without using a spell slot. Each spell can be cast (1 + Wisdom modifier) per long rest.",
+        spellcastingBonus: {
+          name: "Hands of Cure",
+          spells: ["lesser restoration", "healing word", "cure wounds"],
+          prepared: true,
+          firstCol: // TODO: Set to 1 + WIS mod
+        },
+        spellFirstColTitle: "Nm",
+      },
+      
+      "subclassfeature17Pro": {
+        name: "Restorative Light",
+        source: null,
+        minLevel: 17,
+        description: "\n  At 17th level, you may add 1d10 to all healing done, and you can cast power word heal once per long rest.",
+        spellcastingBonus: {
+          name: "Restorative Light",
+          spells: ["power word heal"],
+          prepared: true,
+          oncelr: true
+        },
+      }
     },
   }
+);
+
+// Avenger Subclass
+AddSubClass(
+  "angel",
+  "avenger",
+  {
+    regExpSearch: /^(?=.*avenger).*$/i,
+    subname: "Avenger",
+    source: null,
+    features: {
+      "subclassfeature1Ave": {
+        name: "Militant Angel",
+        source: null,
+        minLevel: 1,
+        description: "\n  At 1st level, you gain proficiency in martial weapons. In addition, you can choose one of the following fighting styles:\nArchery: You gain a +2 bonus to attack rolls you make with ranged weapons.\nDefense: While you are wearing armor, you gain a +1 bonus to AC.\nDueling. When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\nGreat Weapon Fighting. When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.\nProtection. When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.\nTwo-Weapon Fighting. When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.",
+        choices: ["Archery", "Defense", "Dueling", "Great Weapon Fighting", "Protection", "Two-Weapon Fighting"],
+        
+        // Archery proficiency
+        "archery": {
+          
+        },
+      }
+    },
+  },
 );
