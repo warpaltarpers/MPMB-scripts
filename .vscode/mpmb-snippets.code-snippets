@@ -14,7 +14,7 @@
 			"\tcompMaterial: \"${9}\",",
 			"\tduration: \"${10}\",",
 			"\tsave: \"${11|Str,Dex,Con,Int,Wis,Cha|}\",",
-			"\tdescription: \" \",",
+			"\tdescription: \"$0\",",
 			"\tdescriptionFull: \"${12}\",",
 			"};"
 		],
