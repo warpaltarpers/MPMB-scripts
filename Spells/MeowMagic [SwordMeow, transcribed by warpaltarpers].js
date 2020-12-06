@@ -914,3 +914,18 @@ SpellsList["conjure invisible stalker"] = {
 	description: "Summon invisible air elemental to hunt a creature down or retrieve an object",
 	descriptionFull: "You conjure and bind an air elemental to your will by the casting of this spell, and it appears within range. It is invisible, but you can see it. The invisible stalker (Monster Manual 192) must obey the letter of your commands, but isn't always an enthusiastic pawn. If you issue any order to it other than to hunt down a creature or retrieve an object, the spell ends. Between commands, the invisible stalker stays at your side, but won't necessarily proactively defend you unless you order it to hunt a creature down.\nThe invisible stalker returns to its plane when it is reduced to 0 hitpoints, when the spell ends, if you cast this spell again, or if you die and it has no tasks remaining.",
 };
+
+SpellList["dogmatic edict"] = {
+	name: "Dogmatic Edict",
+	classes: ["bard", "wizard"],
+	source: ["MMSR", 0],
+	level: 5,
+	school: "Evoc",
+	time: "1 a",
+	range: "60 ft",
+	components: "V",
+	duration: "Instantaneous",
+	save: "Cha",
+	description: "Four 15 ft lines from point in range; 40 force dmg on fail, 20 on success",
+	descriptionFull: "You utter an edict of Law against the chaotic. Choose one point you can see within range. Four 15 ft long lines stretch out from that point facing in the exact cardinal directions. Each creature in a line must make a Charisma saving throw. A creature takes 40 force damage on a failed save, or 20 on a success.\nConstructs of Law, such as inevitables and those with the Axiomatic Mind feature, are immune to the damage of this spell.",
+};
