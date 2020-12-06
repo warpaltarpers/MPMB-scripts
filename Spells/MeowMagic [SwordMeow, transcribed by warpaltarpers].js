@@ -1007,3 +1007,19 @@ SpellList["pen"] = {
 	description: "Instantly write on object or willing creature with held liquid; one side + one side at levels 5, 11, 17",
 	descriptionFull: "You transform the liquid (most often ink) you are holding in a hand to an object or willing creature you touch. You instantly write any amount of desired text on the object or creature, which consumes as much liquid as if it had been written with a quill. It can only write onto one side of any object or creature per casting, such as a single page. If you attempt to write more than you have ink to support, the text stops when it runs out.\n  The spell fails if it is cast onto an object worn or carried by a creature other than you, unless the carrier or wearer is willing.\n  At 5th level, you can write on two sides of any object or creature per casting. You can write on three sides at 11th level, and four at 17th.",
 };
+
+SpellList["double breath"] = {
+	name: "Double Breath",
+	classes: ["sorcerer", "wizard"],
+	source: ["MMSR", 0],
+	level: 5,
+	school: "Trans",
+	time: "1 a",
+	range: "120-ft line",
+	components: "V,S,M\u0192",
+	compMaterial: "two dragon scales worth 100 gp each",
+	duration: "Instantaneous",
+	save: "Dex",
+	description: "All in each line 10d6+1d6/SL>5 Acid, Cold, Fire, Lighning, or Poison dmg; save halves; if creature in both lines, takes one line",
+	descriptionFull: "You hold a dragon scale in each hand and your hands momentarily turn into dragon heads spouting breath. Two breaths shoot out from you, each 5 ft wide and 120 ft long in directions you choose. Choose acid, cold, fire, lightning, or poison.  Each creature in a line must make a Dexterity saving throw. A creature takes 10d6 damage of the chosen type on a failed save, or half as much damage on a successful one.\n  If a creature is within both of the spell's lines, it takes damage as if it were in one line.\n  " + toUni("At Higher Levels") + ": When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d6 for each spell level above 5th.",
+};
