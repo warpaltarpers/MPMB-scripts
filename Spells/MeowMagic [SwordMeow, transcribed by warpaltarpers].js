@@ -991,3 +991,19 @@ SpellList["magic splinter"] = {
 	description: "All in 5 ft of point save or 1d4 Piercing dmg; +1d4 at levels 5, 11, 17",
 	descriptionFull: "You hurl a shard of magic that fractures into many splinters. Choose a point you can see within range. Each creature within 5 ft of that point must succeed on a Dexterity saving throw or take 1d4 piercing damage.\n  This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).",
 };
+
+SpellList["pen"] = {
+	name: "Pen",
+	classes: ["bard", "wizard"],
+	source: ["MMSR", 0],
+	level: 0,
+	school: "Trans",
+	time: "1 a",
+	range: "Touch",
+	components: "S,M\u2020",
+	compMaterial: "a liquid, of which some is consumed by this spell",
+	duration: "Instantaneous",
+	save: "Dex",
+	description: "Instantly write on object or willing creature with held liquid; one side + one side at levels 5, 11, 17",
+	descriptionFull: "You transform the liquid (most often ink) you are holding in a hand to an object or willing creature you touch. You instantly write any amount of desired text on the object or creature, which consumes as much liquid as if it had been written with a quill. It can only write onto one side of any object or creature per casting, such as a single page. If you attempt to write more than you have ink to support, the text stops when it runs out.\n  The spell fails if it is cast onto an object worn or carried by a creature other than you, unless the carrier or wearer is willing.\n  At 5th level, you can write on two sides of any object or creature per casting. You can write on three sides at 11th level, and four at 17th.",
+};
