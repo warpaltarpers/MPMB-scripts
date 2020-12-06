@@ -44,6 +44,7 @@ ClassList["angel"] = {
       description: "\n  You are an immortal, celestial being. Your creature type is now celestial and you no longer age. You don't require food, water or sleep.\nYou do however need to rest daily to retain this celestial strength through a prayer of contemplation with your deity. During a long rest, you need to spend at least 4 hours praying to your deity. You don't need to rest for the remainder of the rest, but if you do anything more complex or demanding than light activity you suffer all the effects of not completing a long rest.",
     },
     
+    // TODO: Level-based changes
     "wings": {
       name: "Wings",
       source: ["HB", 0],
@@ -74,6 +75,7 @@ ClassList["angel"] = {
       skillstxt : "\n\n" + toUni("Voice of Authority") + ": Persuasion and Intimidation.",
     },
     
+    // TODO: Level-based changes
     "angelic weapons": {
       name: "Angelic Weapons",
       source: ["HB", 0],
@@ -82,31 +84,75 @@ ClassList["angel"] = {
     },
     
     "healing touch": {
-      
+      name: "Healing Touch",
+      source: ["HB", 0],
+      minLevel: 9,
+      description: "\n  All angels have an innate ability to cure basic wounds and dispose of poisons and diseases. At 9th level, you can now channel this ability to perform a healing touch. You touch a willing creature and restore a number of hit points equal to your angel level times 2. You also rid the target of any poison, disease, blindness, or deafness. You can use this feature once between long rests.\nAt 15th level, your healing touch is empowered. It now restores a number of hit points equal to 3 times your angel level.\nIn addition, you can use your bonus action and spend 3 points from this healing pool to touch a creature, curing it from the following conditions: paralyzed, stunned, petrified and poisoned conditions. If more than one condition affects the target, you must choose which one you want to end.",
+      usages: 1,
+      recovery: "long rest",
     },
     
     "magic resistance": {
-      
+      name: "Magic Resistance",
+      source: ["HB", 0],
+      minLevel: 10,
+      description: "\n  Angels, being pure creatures of divine magic, have a natural ability to resist the effects of other magic. At 10th level, you now have advantage on all saving throws against spells and other magical effects.",
+      savetxt: {
+        adv_vs: ["spells", "other magical effects"]
+      },
     },
     
     "divine awareness": {
-      
+      name: "Divine Awareness",
+      source: ["HB", 0],
+      minLevel: 11,
+      description: "\n  Beginning at 11th level, you will always know if you hear a lie from a humanoid creature. It feels like a sudden onset of discomfort and irritation when you hear a lie. In addition, you have advantage on all Wisdom checks to perceive a lie.\nAlso, you now have the zone of truth spell permanently prepared and does not count against your number of prepared spells. You can cast this spell without expending a spell slot a number of times equal to your Charisma modifier. You regain all expended uses when you finish a long rest.",
+      spellcastingBonus: {
+        name: "Divine Awareness",
+        spells: ["zone of truth"],
+        prepared: true,
+        atwill: true,
+      },
+      usages: 1, // TODO: Set equal to Charisma mod
+      recovery: "long rest"
     },
     
     "supernatural senses": {
-      
+      name: "Supernatural Senses",
+      source: ["HB", 0],
+      minLevel: 13,
+      description: "\n  Angels have keen senses that help them to be such a threat to creatures on the battlefield, making it nearly impossible to sneak up on them. At 13th level, you gain Darkvision, out to a range of 120 feet. In addition, you can add half of your proficiency modifier in all Wisdom checks you aren't already proficient with.",
+      vision: [["Darkvision", 120]]
     },
     
     "my last testament": {
-      
+      name: "My Last Testament",
+      source: ["HB", 0],
+      minLevel: 17,
+      description: "\n  You let out your final words as your essence is drawn from you and ascends to the Upper Planes. At 17th level, when you die your divine essence is brought back into the Upper Planes where you were created. Your soul can never be trapped or ravaged in any way, regardless of how you die or what killed you. Upon death your essence engulfs the target that killed you, or if unavailable the next closest enemy, in bright radiant energy. The engulfed target must succeed on a Constitution saving throw taking 14d6 radiant damage on a failed save or half as much on a successful save. Whether the target succeeds or not your essence then disperses and returns to the Upper Planes."
     },
     
     "foresight": {
-      
+      name: "Foresight",
+      source: ["HB", 0],
+      minLevel: 18,
+      description: "\n  Your angelic nature is reaching its peak as you become a legendary force to be reckoned with. With this growing strength comes a multitude of dangers and you have grown capable of predicting these dangers over the years. At 18th level, when a creature makes an attack roll against you, you can expend your reaction to force the attack roll to be made at disadvantage and you cannot be surprised. Additionally, your Truesight extends to 120 feet.",
+      action: ["reaction", "Force Disadvantage"], // TODO: Check suffix
+      vision: [["Truesight", 120]]
     },
     
+    // TODO: Add Charisma score boost
     "deity's favor": {
-      
+      name: "Deity's Favor",
+      source: ["HB", 0],
+      minLevel: 20,
+      description: "\n  You have finally won your deity's favor, and as such are granted with incomparable power and glory of being a God's favorite. At 20th level, your Charisma increases by 4 as does your maximum for that ability. Also, you can cast Plane Shift at will, targeting only yourself, and you can only travel to the Upper Plane where your Deity resides and back to the Material Plane.",
+      spellcastingBonus: {
+        name: "Deity's Favor",
+        spells: ["plane shift"],
+        prepared: true,
+        atwill: true
+      },
     }
   }
 };
