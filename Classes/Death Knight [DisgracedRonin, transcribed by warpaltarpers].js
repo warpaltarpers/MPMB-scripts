@@ -37,11 +37,11 @@ ClassList["death knight"] = {
       description: "\n  All death knights learn the art of rune carving, allowing them to carve mystic runes into their weapons. Carving a rune into a weapon takes one hour and costs 50gp. The cost represents material components that are required in the carving.\nOnce a rune has been carved, you can fill it with power over the course of an hour, which you can do during a short rest. You must be touching the weapon that the rune is carved into during this time, and you can only fill one rune with power at a time. Additionally, all of your runes are filled with power when you finish a long rest.\nOnce a rune has been filled with power, you can then later use that rune to cast spells. In addition, any weapon with a power-filled rune carved into it counts as a magic weapon for the purposes of overcoming resistance and immunity to non-magical attacks and damage.",
     },
 
-    "rune magic" {
+    "rune magic": {
 
     },
 
-    "fighting style" {
+    "fighting style": {
       name: "Fighting Style",
       source: null,
       minLevel: 2,
@@ -54,23 +54,23 @@ ClassList["death knight"] = {
       },
     },
 
-    "death aspect" {
+    "death aspect": {
 
     },
 
-    "horn of winter" {
+    "horn of winter": {
 
     },
 
-    "forceful deflection" {
+    "forceful deflection": {
 
     },
 
-    "runic empowerment" {
+    "runic empowerment": {
 
     },
 
-    "master of death" {
+    "master of death": {
 
     },
   },
