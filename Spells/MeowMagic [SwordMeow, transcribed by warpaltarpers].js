@@ -865,8 +865,8 @@ SpellsList["thundersnap"] = {
 	range: "30 ft",
 	components: "S",
 	duration: "Instantaneous",
-	description: "Ranged spell attack for 1d8 thunder damage",
-	descriptionFull: "You snap at a creature within range, which hears it at magnified volume. Make a ranged spell attack against it. On a hit, the target takes 1d8 thunder damage.\n  On a critical hit with this cantrip, you roll triple the damage dice, instead of double.\n  At 5th level, the thunder damage increases to 2d8. It increases to 3d8 at 11th level, and 4d8 at 17th.",
+	description: "Ranged spell attack for 1d8 Thunder dmg; triple damage on crit; +1d8 at levels 5, 11, 17",
+	descriptionFull: "You audibly snap at a creature within range, sending a visible focused sonic wave at it. Make a ranged spell attack against the target. On a hit, the target takes 1d8 thunder damage. You can't miss objects with this spell that aren't being worn or carried.\n  On a critical hit with this cantrip, you roll triple the damage dice, instead of double.\n  At 5th level, the thunder damage increases to 2d8. It increases to 3d8 at 11th level, and 4d8 at 17th.",
 };
 
 SpellsList["devas mace"] = {
