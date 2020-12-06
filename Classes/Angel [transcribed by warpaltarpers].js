@@ -1,3 +1,9 @@
+/*  -INFORMATION-
+	Subject:  Class and Subclasses
+	Effect: This script adds the Angel class and its subclasses
+	Code by:  warpaltarpers
+	Date: 2020-12-06 (sheet v12.999)
+*/
 var iFileName = "Angel [transcribed by warpaltarpers].js";
 RequiredSheetVersion(12.999);
 
@@ -75,7 +81,6 @@ ClassList["angel"] = {
       skillstxt : "\n\n" + toUni("Voice of Authority") + ": Persuasion and Intimidation.",
     },
     
-    // TODO: Level-based changes
     "angelic weapons": {
       name: "Angelic Weapons",
       source: ["HB", 0],
@@ -113,7 +118,7 @@ ClassList["angel"] = {
         prepared: true,
         atwill: true,
       },
-      usages: 1, // TODO: Set equal to Charisma mod
+      usages: "Charisma modifier",
       recovery: "long rest"
     },
     
@@ -292,7 +297,7 @@ AddSubClass(
         source: ["HB", 0],
         minLevel: 7,
         description: "\n  After choosing this discipline at 7th level, you can imbue your weapon with holy fire, adding 2d6 damage to all attacks for 3 turns. This damage increases by 1d6 at 14th level (3d6) and 17th level (4d6). This feature can only be used (1 + Wisdom modifier) times per long rest.",
-        usages: 1, // TODO: Add calculation for Wisdom mod addition
+        usages: "1 + Wisdom modifier",
         recovery: "long rest"
       },
       
@@ -301,7 +306,7 @@ AddSubClass(
         source: ["HB", 0],
         minLevel: 14,
         description: "\n  At 14th level, you can cast staggering smite and flame strike without using a spell slot. This can be done (1 + Wisdom modifier) times per long rest.",
-        usages: 1, // TODO: Add calculation for Wisdom mod addition
+        usages: "1 + Wisdom modifier",
         recovery: "long rest"
       },
       
@@ -309,8 +314,10 @@ AddSubClass(
         name: "Holy Avenger",
         source: ["HB", 0],
         minLevel: 17,
-        description: "\n  At 17th level, your AC increases by 1, and you can add 1d4 to all damage dice. When reaching 0 hit points you can come back at half of your character's maximum hit points."
-        // TODO: Calculations on AC and extra damage dice
+        description: "\n  At 17th level, your AC increases by 1, and you can add 1d4 to all damage dice. When reaching 0 hit points you can come back at half of your character's maximum hit points.",
+        eval : "AddACMisc(1, 'Holy Avenger', 'Holy Avenger was gained from being a level 17 Avenger Angel')",
+        removeeval : "AddACMisc(0, 'Holy Avenger', 'Holy Avenger was gained from being a level 17 Avenger Angel')"
+        // TODO: Extra damage dice
       }
     },
   },
@@ -331,7 +338,7 @@ AddSubClass(
         minLevel: 1,
         description: "\n  After choosing this discipline at 1st level, you gain the ability to drain the essence from the dead. When you drain the nearby dead, you regenerate 1d4 hit points per body. The amount of health increases by 1d4 at 7th level (2d4), 14th level (3d4), and 17th level (4d4). You can use this feature a number of times equal 2 + Wisdom modifier, being unable to do so until you finish a long rest.",
         additional: ["1d4", "1d4", "1d4", "1d4", "1d4", "1d4", "2d4", "2d4", "2d4", "2d4", "2d4", "2d4", "2d4", "3d4", "3d4", "3d4", "4d4", "4d4", "4d4", "4d4"], // TODO: Correct usage?
-        usages: 2, // TODO: Add calculation for Wisdom mod addition
+        usages: "2 + Wisdom modifier",
         recovery: "long rest"
       },
       
@@ -363,7 +370,7 @@ AddSubClass(
         minLevel: 14,
         description: "\n  At 14th level, when making a weapon attack you may add 2d10 necrotic damage. You regenerate hit points worth 1/2 of the damage done, rounded down. The damage increases by 1d10 at 17th level (3d10). This feature can be used (2 + proficiency bonus) per short or long rest.",
         additional: ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "2d10", "2d10", "2d10", "3d10", "3d10", "3d10", "3d10"], // TODO: Correct usage?
-        usages: 2, // TODO: Add calculation for prof. bonus addition,
+        usages: "2 + proficiency bonus",
         recovery: "short rest" // TODO: recovered when "LR" clicked on sheet as well?
       },
       
