@@ -1,0 +1,23 @@
+{
+	"MeowMagic Spell": {
+		"prefix": ["mm-spell"],
+		"body": [
+			"SpellList[\"${1}\"] = {",
+			"\tname: \"${2}\",",
+			"\tclasses: [${3}],",
+			"\tsource: [\"MMSR\", 0],",
+			"\tlevel: ${4},",
+			"\tschool: \"${5|Abjur,Conj,Div,Ench,Evoc,Illus,Necro,Trans,Avatar,Awake,Immor,Nomad,Wu Jen|}\",",
+			"\ttime: \"${6}\",",
+			"\trange: \"${7}\",",
+			"\tcomponents: \"${8}\",",
+			"\tcompMaterial: \"${9}\",",
+			"\tduration: \"${10}\",",
+			"\tsave: \"${11|Str,Dex,Con,Int,Wis,Cha|}\",",
+			"\tdescription: \" \",",
+			"\tdescriptionFull: \"${12}\",",
+			"};"
+		],
+		"description": "MeowMagic Spell (v12.999)"
+	}
+}
