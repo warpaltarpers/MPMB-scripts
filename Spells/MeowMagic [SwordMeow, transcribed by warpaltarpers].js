@@ -650,12 +650,12 @@ SpellsList["shooting star"] = {
 	level: 4,
 	school: "Evoc",
 	time: "1 a",
-	range: "Self",
+	range: "Self (120 ft line)",
 	components: "S",
 	duration: "Instantaneous",
 	save: "Dex",
-	description: "Targeted creature must make Dex save; 5d4 force, 5d4 radiant, and 5d4 piercing on fail, half on save; on fail, next creature in line must make save; continues until success of 120 ft",
-	descriptionFull: "The first creature in a line stretching 120 ft from you must make a Dexterity saving throw or take 5d4 force, 5d4 radiant, and 5d4 piercing damage, or half as much on a success. On a failure, the star pierces through them and on to the next creature in the line, who must make the same saving throw, taking the same damage or half. The star continues until a creature succeeds or it travels 120 ft.\n  When you cast this spell using a spell slot of 5th level or higher, the range increases by 30 ft per slot level above 4th.",
+	description: "120 ft+30 ft/SL > 4 line from self; 4d6 Force + 4d6 Radiant + 4d6 Piercing; save halves; continues through creatures until save or length ends",
+	descriptionFull: "A star shoots out from your eye to pierce through space in front of it. The first creature in a line stretching 120 ft from you must make a Constitution saving throw or take 4d6 force, 4d6 radiant, and 4d6 piercing damage, or half as much on a success. On a failure, the star pierces through them and on to the next creature in the line, who must make the same saving throw, taking the same damage or half. The star continues until a creature succeeds, caught in their body to wink out, or it travels the spell's line length and fades away.\n  " + toUni("At Higher Levels") + ": When you cast this spell using a spell slot of 5th level or higher, the spell's line length increases by 30 ft per slot level above 4th.",
 };
 
 SpellsList["self petrification"] = {
