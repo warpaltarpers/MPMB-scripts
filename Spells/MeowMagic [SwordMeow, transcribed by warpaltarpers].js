@@ -945,3 +945,17 @@ SpellList["transposition"] = {
 	description: "Two Large or smaller creatures swap on failed save",
 	descriptionFull: "You warp the space of two Large or smaller creatures or objects you can see within range. A creature must make a Charisma saving throw, which it can choose to fail. On a failure, the two targets swap places. The spell fails if both creatures are unwilling and one or both succeed, and if a creature would be teleported into a space smaller than it.",
 };
+
+SpellList["lions maw"] = {
+	name: "Lion's Maw",
+	classes: ["druid", "ranger"],
+	source: ["MMSR", 0],
+	level: 1,
+	school: "Conj",
+	time: "1 a",
+	range: "Touch",
+	components: "V,S",
+	duration: "Instantaneous",
+	description: "Spell attack for 2d8+1d8/SL Piercing dmg and target is restrained until start of its next turn",
+	descriptionFull: "You attempt to bite a creature, with the ethereal visage of a great lion appearing over you. Make a melee spell attack against a creature you can reach. On a hit, a target takes 2d8 piercing damage and is restrained until the start of its next turn.\nAt Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.",
+};
