@@ -959,3 +959,19 @@ SpellList["lions maw"] = {
 	description: "Spell attack for 2d8+1d8/SL Piercing dmg and target is restrained until start of its next turn",
 	descriptionFull: "You attempt to bite a creature, with the ethereal visage of a great lion appearing over you. Make a melee spell attack against a creature you can reach. On a hit, a target takes 2d8 piercing damage and is restrained until the start of its next turn.\n  " + toUni("At Higher Levels") +": When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.",
 };
+
+SpellList["planar hounds"] = {
+	name: "Planar Hounds",
+	classes: ["warlock", "wizard"],
+	source: ["MMSR", 0],
+	level: 4,
+	school: "Conj",
+	time: "1 a",
+	range: "60 ft",
+	components: "V",
+	compMaterial: "",
+	duration: "Instantaneous",
+	save: "Str",
+	description: "30 ft cube; 7d6+1d6/SL>4 Cold, Fire, Necrotic, Psychic, or Radiant dmg and knocked prone; save halves, no prone; target chooses Str or Dex save",
+	descriptionFull: "You utter a command over canines and summon a pack aof planar hounds, which rage through a 30 ft cube within range before returning whence they came. Each creature in the area must make a Strength or Dexterity saving throw (target's choice). On a failed save, a creature takes 7d6 damage and is knocked prone, or it takes half as much damage on a success and itsn't knocked prone. You choose cold, fire, necrotic, psychic, or radiant damage.\n  " + toUni("At Higher Levels") + ": When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 for each slot level above 4th.",
+};
