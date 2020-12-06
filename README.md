@@ -7,7 +7,7 @@ Scripts above version 1.0.0 are complete and usable! Feel free to [message me on
 ### Classes
 Name | Author | Script Version | Min. Sheet Version | Requested By
 -----|--------|----------------|--------------------|--------------
-[Angel](https://github.com/warpaltarpers/MPMB-scripts/blob/master/Classes/Angel%20%5Btranscribed%20by%20warpaltarpers%5D.js) | N/A | 0.5.0 | 12.999 | [u/RaikamiKojin](https://www.reddit.com/r/mpmb/comments/k6h07t/angel_class_script_request/)
+[Angel](https://github.com/warpaltarpers/MPMB-scripts/blob/master/Classes/Angel%20%5Btranscribed%20by%20warpaltarpers%5D.js) | N/A | 0.5.1 | 12.999 | [u/RaikamiKojin](https://www.reddit.com/r/mpmb/comments/k6h07t/angel_class_script_request/)
 [Death Knight](https://github.com/warpaltarpers/MPMB-scripts/blob/master/Classes/Death%20Knight%20%5BDisgracedRonin%2C%20transcribed%20by%20warpaltarpers%5D.js) | N/A | 0.2.2 | 12.999 | [u/DisgracedRonin](https://www.reddit.com/r/mpmb/comments/ar6t1o/death_knight_class/)
 [Illrigger](https://github.com/warpaltarpers/MPMB-scripts/blob/master/Classes/Illrigger%20%5BMatt%20Colville%2C%20transcribed%20by%20warpaltarpers%5D.js) | Matt Colville | 0.1.1 | 12.999 | [u/Majidae](https://www.reddit.com/r/mpmb/comments/ammpm6/is_anybody_working_on_an_Illrigger_script/)
 [Warden](https://github.com/warpaltarpers/MPMB-scripts/blob/master/Classes/Warden%20%5BMage%20Hand%20Press%2C%20transcribed%20by%20warpaltarpers%5D.js) | Mage Hand Press | 0.4.0 | 12.999 | [u/Exiled_Eclipse](https://www.reddit.com/r/mpmb/comments/aq8bg8/a_humble_request_mage_hand_press_warden_class/)

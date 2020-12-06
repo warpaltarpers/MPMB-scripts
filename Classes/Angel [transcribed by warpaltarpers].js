@@ -10,7 +10,7 @@ RequiredSheetVersion(12.999);
 // Angel Class
 ClassList["angel"] = {
   // Info
-  regExpSearch: /^(?=.*angel).*$/i,
+  regExpSearch: /angel/i,
   name: "Angel",
   source: ["HB", 0],
   
@@ -50,7 +50,7 @@ ClassList["angel"] = {
       description: "\n  You are an immortal, celestial being. Your creature type is now celestial and you no longer age. You don't require food, water or sleep.\nYou do however need to rest daily to retain this celestial strength through a prayer of contemplation with your deity. During a long rest, you need to spend at least 4 hours praying to your deity. You don't need to rest for the remainder of the rest, but if you do anything more complex or demanding than light activity you suffer all the effects of not completing a long rest.",
     },
     
-    // TODO: Level-based changes
+    // TODO: Level-based changes to flying speed
     "wings": {
       name: "Wings",
       source: ["HB", 0],
@@ -146,7 +146,9 @@ ClassList["angel"] = {
       vision: [["Truesight", 120]]
     },
     
-    // TODO: Add Charisma score boost
+    /* TODO: Add Charisma score boost
+    According to safety-orange, this can't be done in v12.999; must be done manually for now
+    */
     "deity's favor": {
       name: "Deity's Favor",
       source: ["HB", 0],
@@ -167,7 +169,7 @@ AddSubClass(
   "angel",
   "protector",
   {
-    regExpSearch: /^(?=.*protector).*$/i,
+    regExpSearch: /protector/i,
     subname: "Protector",
     source: ["HB", 0],
     features: {
@@ -237,7 +239,7 @@ AddSubClass(
   "angel",
   "avenger",
   {
-    regExpSearch: /^(?=.*avenger).*$/i,
+    regExpSearch: /avenger/i,
     subname: "Avenger",
     source: ["HB", 0],
     features: {
