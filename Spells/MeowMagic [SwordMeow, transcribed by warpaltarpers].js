@@ -797,7 +797,7 @@ SpellsList["lantern walker"] = {
 
 SpellsList["snap star"] = {
 	name: "Snap Star",
-	classes: ["sorcerer", "warlock", "wizard"],
+	classes: ["bard", "sorcerer", "warlock", "wizard"],
 	source: ["MMSR", 0],
 	level: 1,
 	school: "Evoc",
@@ -806,8 +806,8 @@ SpellsList["snap star"] = {
 	components: "V,S",
 	duration: "Instantaneous",
 	save: "Con",
-	description: "Creatures in 15ft make Con save, blinded and 2d4 radiant damage on fail",
-	descriptionFull: "You snap and create a tiny facsimile of a star at a point you can see within range. Each creature that isn't blinded and within 15 ft of the point must succeed on a Constitution saving throw or take 2d4 radiant damage and be blinded until the end of their next turn, or no effect on a success.\n  When you cast this spell using a spell slot of 2nd level or higher, the radiant damage increases by 1d4 for each slot level above 1st.",
+	description: "All in 15 ft save or 2d4+1d4/SL Radiant dmg and blinded until end of their next turn",
+	descriptionFull: "You snap and create a tiny facsimile of a star at a point you can see within range. Each creature that isn't blinded and within 15 ft of the point must succeed on a Constitution saving throw or take 2d4 radiant damage and be blinded until the end of their next turn, or no effect on a success.\n  " + toUni("At Higher Levels") + ": When you cast this spell using a spell slot of 2nd level or higher, the radiant damage increases by 1d4 for each slot level above 1st.",
 };
 
 SpellsList["reap"] = {
