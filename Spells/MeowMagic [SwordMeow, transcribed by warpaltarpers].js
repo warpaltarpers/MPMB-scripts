@@ -929,3 +929,19 @@ SpellList["dogmatic edict"] = {
 	description: "Four 15 ft lines from point in range; 40 force dmg on fail, 20 on success",
 	descriptionFull: "You utter an edict of Law against the chaotic. Choose one point you can see within range. Four 15 ft long lines stretch out from that point facing in the exact cardinal directions. Each creature in a line must make a Charisma saving throw. A creature takes 40 force damage on a failed save, or 20 on a success.\nConstructs of Law, such as inevitables and those with the Axiomatic Mind feature, are immune to the damage of this spell.",
 };
+
+SpellList["transposition"] = {
+	name: "Transposition",
+	classes: ["wizard"],
+	source: ["MMSR", 0],
+	level: 2,
+	school: "Conj",
+	time: "1 a",
+	range: "30 ft",
+	components: "V,S,M",
+	compMaterial: "a folded piece of paper",
+	duration: "Instantaneous",
+	save: "Cha",
+	description: "Two Large or smaller creatures swap on failed save",
+	descriptionFull: "You warp the space of two Large or smaller creatures or objects you can see within range. A creature must make a Charisma saving throw, which it can choose to fail. On a failure, the two targets swap places. The spell fails if both creatures are unwilling and one or both succeed, and if a creature would be teleported into a space smaller than it.",
+};
