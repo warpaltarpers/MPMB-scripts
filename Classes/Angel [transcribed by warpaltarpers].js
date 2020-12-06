@@ -1,8 +1,8 @@
 /*  -INFORMATION-
-	Subject:  Class and Subclasses
-	Effect: This script adds the Angel class and its subclasses
-	Code by:  warpaltarpers
-	Date: 2020-12-06 (sheet v12.999)
+	Subject:	Class and Subclasses
+	Effect:		This script adds the Angel class and its subclasses
+	Code by:	warpaltarpers
+	Date:		  2020-12-06 (sheet v12.999)
 */
 var iFileName = "Angel [transcribed by warpaltarpers].js";
 RequiredSheetVersion(12.999);
