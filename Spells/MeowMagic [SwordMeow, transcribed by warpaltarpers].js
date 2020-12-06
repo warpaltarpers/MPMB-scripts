@@ -975,3 +975,19 @@ SpellList["planar hounds"] = {
 	description: "30 ft cube; 7d6+1d6/SL>4 Cold, Fire, Necrotic, Psychic, or Radiant dmg and knocked prone; save halves, no prone; target chooses Str or Dex save",
 	descriptionFull: "You utter a command over canines and summon a pack aof planar hounds, which rage through a 30 ft cube within range before returning whence they came. Each creature in the area must make a Strength or Dexterity saving throw (target's choice). On a failed save, a creature takes 7d6 damage and is knocked prone, or it takes half as much damage on a success and itsn't knocked prone. You choose cold, fire, necrotic, psychic, or radiant damage.\n  " + toUni("At Higher Levels") + ": When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 for each slot level above 4th.",
 };
+
+SpellList["magic splinter"] = {
+	name: "Magic Splinter",
+	classes: ["sorcerer", "warlock", "wizard"],
+	source: ["MMSR", 0],
+	level: 0,
+	school: "Evoc",
+	time: "1 a",
+	range: "30 ft",
+	components: "V,S,M",
+	compMaterial: "a piece of wood",
+	duration: "Instantaneous",
+	save: "Dex",
+	description: "All in 5 ft of point save or 1d4 Piercing dmg; +1d4 at levels 5, 11, 17",
+	descriptionFull: "You hurl a shard of magic that fractures into many splinters. Choose a point you can see within range. Each creature within 5 ft of that point must succeed on a Dexterity saving throw or take 1d4 piercing damage.\n  This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).",
+};
