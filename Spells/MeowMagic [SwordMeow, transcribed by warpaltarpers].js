@@ -4,9 +4,10 @@
 	Sheet:		v12.999 (2018-02-19)
 */
 
-var iFileName = "MeowMagic [SwordMeow, transcribed by warpaltarpers].js"; // Optional; This is how the file will be named in the sheet if you import it as a file and not copy-paste its content. Only the first occurrence of this variable will be used
-RequiredSheetVersion(12.999); // Optional; This is the minimum required version number of the sheet for the script to work. If the sheet being used to import the script is of an earlier version, the user will be warned
+var iFileName = "MeowMagic [SwordMeow, transcribed by warpaltarpers].js";
+RequiredSheetVersion(12.999);
 
+// MeowMagic Subreddit Source
 SourceList["MMSR"] = {
 	name : "MeowMagic Subreddit",
 	abbreviation : "MMSR",
@@ -26,7 +27,7 @@ SpellsList["locate bizarre creature"] = {
 	duration: "Instantaneous",
 	save: "Int",
 	description: "Find closest aberration, fey, or elemental within 10 miles; creature can make Int saving throw to avoid being detected",
-	descriptionFull: "Describe or name a specific kind of aberration, fey, or elemental. You learn the location of the closest creature of that kind to you within 10 miles, if at least one is present. An unwilling creature can make an Intelligence saving throw to avoid being located, and if successful, knows your location at the moment of casting the spell, knows that you attempted to locate it, and is immune to this spell cast by you for 24 hours.",
+	descriptionFull: "Describe or name a specific kind of aberration, fey, or elemental. You learn the location of the closest creature of that kind to you within 10 miles, if at least one is present. An unwilling creature can make an Intelligence saving throw to avoid being located, and if successful, knows your location at the moment of casting the spell, knows that you attempted to locate it, and is immune to this spell cast by you for 24 hr.",
 };
 
 SpellsList["wheel of force"] = {
@@ -41,8 +42,8 @@ SpellsList["wheel of force"] = {
 	compMaterial: "A fan",
 	duration: "Instantaneous",
 	save: "Str",
-	description: "Each creature within 30 feet must make Str save; creatures that fail save are incapcitated until end of their next turn",
-	descriptionFull: "A swirl of wind erupts from you. Choose clockwise or counterclockwise when you cast this spell. Each creature in a 30 foot radius around you must make a Strength saving throw. Huge and larger creatures automatically succeed. On a failed save, a creature is rotated around you in the direction of your choice half or a quarter of the circumference of the circle (you choose when you cast the spell). Each creature that failed the save is then incapcitated until the end of their next turn. While incapcitated by this spell, a creature has a speed of 0, and attack rolls against it have advantage.",
+	description: "Each creature within 30 ft must make Str save; creatures that fail save are incapcitated until end of their next turn",
+	descriptionFull: "A swirl of wind erupts from you. Choose clockwise or counterclockwise when you cast this spell. Each creature in a 30 ft radius around you must make a Strength saving throw. Huge and larger creatures automatically succeed. On a failed save, a creature is rotated around you in the direction of your choice half or a quarter of the circumference of the circle (you choose when you cast the spell). Each creature that failed the save is then incapcitated until the end of their next turn. While incapcitated by this spell, a creature has a speed of 0, and attack rolls against it have advantage.",
 };
 
 SpellsList["zone of lies"] = {
@@ -52,13 +53,13 @@ SpellsList["zone of lies"] = {
 	level: 2,
 	school: "Ench",
 	time: "1 a",
-	range: "60 feet",
+	range: "60 ft",
 	components: "M",
 	compMaterial: "A silver tongue",
-	duration: "10 minutes",
+	duration: "10 min",
 	save: "Cha",
-	description: "You make a 15 foot radius sphere. On a failed Cha save, creatures can't discern lies from truth.",
-	descriptionFull: "You create a magical zone that fosters deceit in a 15-foot radius sphere centered on a point of your choice within range. Until the spell ends, a creature that enters the spell's area for the first time on turn or starts its turn there must make a Charisma saving throw. On a failed save, a creature can't discern lies from truth while in the radius, as with making a Wisdom (Insight) check or another way. A creature that fails the save and that can automatically discern lies such as one with the Divine Awareness trait, can't automatically discern them, but can make Wisdom (Insight) checks to determine truth as normal.\nYou know whether each creature succeeds or fails on its saving throw. However, creatures affected by this spell don't know if they are or not. Any Wisdom (Insight) checks they make to determine truth are inconclusive. If this spell affects another player character, the DM makes their saving throw in secret.",
+	description: "You make a 15 ft radius sphere. On a failed Cha save, creatures can't discern lies from truth.",
+	descriptionFull: "You create a magical zone that fosters deceit in a 15 ft radius sphere centered on a point of your choice within range. Until the spell ends, a creature that enters the spell's area for the first time on turn or starts its turn there must make a Charisma saving throw. On a failed save, a creature can't discern lies from truth while in the radius, as with making a Wisdom (Insight) check or another way. A creature that fails the save and that can automatically discern lies such as one with the Divine Awareness trait, can't automatically discern them, but can make Wisdom (Insight) checks to determine truth as normal.\nYou know whether each creature succeeds or fails on its saving throw. However, creatures affected by this spell don't know if they are or not. Any Wisdom (Insight) checks they make to determine truth are inconclusive. If this spell affects another player character, the DM makes their saving throw in secret.",
 };
 
 SpellsList["crown of ice"] = {
@@ -69,7 +70,7 @@ SpellsList["crown of ice"] = {
 	time: "1 bns",
 	range: "Self",
 	components: "S",
-	duration: "Concentration, up to 1 hour",
+	duration: "conc, 1 hr",
 	save: "Con",
 	description: "Any creature that targets you with an attack must first make a Con saving throw; speed is 0 and creature is prone on failed save",
 	descriptionFull: "You don a crown of ice, marking your connection to an ancient ice monarch. Until the spell ends, any creature that targets you with an attack or a harmful spell must first make a Constitution saving throw. On a failed save, their speed is reduced to 0 and they become prone before they make their attack roll or cast the spell, and you gain advantage on any saving throw you must make against the attack or spell. Once a creature succeeds on the saving throw against this spell, it is immune to it for its duration.",
@@ -82,9 +83,9 @@ SpellsList["mass freeze"] = {
 	level: 5,
 	school: "Evoc",
 	time: "1 a",
-	range: "60 feet",
+	range: "60 ft",
 	components: "V,S",
-	duration: "Concentration, up to 1 min",
+	duration: "conc, 1 min",
 	save: "Con",
 	description: "Choose up to 6 creatures to make a Con save; paralyzed on fail; second fail is turned to ice; effect ends on success",
 	descriptionFull: "You choose up to 6 creatures within range who must each make a Constitution saving throw. Large and larger creatures have advantage on saving throws against this spell. On a failure, they are paralyzed. At the end of their next turn, they must make another Constitution saving throw. The spell ends on a success, but on a failure, they are petrified, turned to ice. The targets can repeat the saving throw at the end of each of their turns, ending the effect on a success.\nIf the spell lasts for its entire duration for a creature that failed every save, it is permanently turned to ice, which does not melt naturally, even through a blazing summer.",
@@ -99,7 +100,7 @@ SpellsList["call of justice"] = {
 	time: "1 min",
 	range: "Self",
 	components: "V",
-	duration: "Concentration, up to 1 hour",
+	duration: "conc, 1 hr",
 	description: "You pray to a lesser deity or great celestial, calling for its aid.",
 	descriptionFull: "You pray to a lesser deity or great celestial, calling for its aid. The being, or its avatar, appears in front of you. It likely takes the statistics, abilities, actions, and so on of the solar (Monster Manual 18) but the DM can rule it to use the statistics of another creature (though it should not have a significantly higher or lower CR than the solar). It acts on your turn in combat. A lesser deity or great celestial has no binding to you or requirement to behave as you wish. You can ask the creature as part of casting the spell what you wish for it to do. The creature can't exact payment or trade for its services—it will attempt to fulfill your prayer if it is in accordance with its ideals or not contrary.\nIf your prayer is contrary to its nature, or once your prayer is fulfilled or you lose concentration, the creature returns to its previous location, leaving a thin glowing halo on the ground where it disappeared, which can't be dispelled and fades after seven days."
 };
@@ -111,7 +112,7 @@ SpellsList["divine lance"] = {
 	level: 3,
 	school: "Conj",
 	time: "1 a",
-	range: "10 feet",
+	range: "10 ft",
 	components: "V,S",
 	duration: "Instantaneous",
 	description: "While impaled with the lance, it brilliantly shines within them, causing them to take 3d6 radiant damage at the start of each of their turns.",
@@ -124,7 +125,7 @@ SpellsList["profane lance"] = {
 	level: 3,
 	school: "Conj",
 	time: "1 a",
-	range: "10 feet",
+	range: "10 ft",
 	components: "V,S",
 	duration: "Instantaneous",
 	description: "While impaled with the lance, the target is crippled by a corruption running through them. The target's speed is halved, it can't take reactions, and it has disadvantage on Strength (Athletics) and Dexterity (Acrobatics) checks.",
@@ -137,12 +138,12 @@ SpellsList["divine profane lance"] = {
 	level: 3,
 	school: "Conj",
 	time: "1 a",
-	range: "10 feet",
+	range: "10 ft",
 	components: "V,S",
 	duration: "Instantaneous",
 	description: "You conjure a lance in two open hands, or enchant a lance you are already holding. " +
 	"On a hit, you deal the normal damage of hitting the creature with the lance, an additional 5d6 damage, and you impale the target with the lance.",
-	descriptionFull: "You conjure a lance in two open hands, or enchant a lance you are already holding. Make a melee attack with the weapon against a creature within range. You ignore disadvantage on the attack roll from being within 5 feet of the target. On a hit, you deal the normal damage of hitting the creature with the lance, an additional 5d6 damage, and you impale the target with the lance. On a miss it deals half as much damage, and the effect ends (the lance disappearing if conjured).\nA creature can remove the lance from the target as an action, causing the target no additional damage. Additionally, choose divine or profane. The added damage is radiant for the former and necrotic for the latter. On a hit, the spell causes another effect.",
+	descriptionFull: "You conjure a lance in two open hands, or enchant a lance you are already holding. Make a melee attack with the weapon against a creature within range. You ignore disadvantage on the attack roll from being within 5 ft of the target. On a hit, you deal the normal damage of hitting the creature with the lance, an additional 5d6 damage, and you impale the target with the lance. On a miss it deals half as much damage, and the effect ends (the lance disappearing if conjured).\nA creature can remove the lance from the target as an action, causing the target no additional damage. Additionally, choose divine or profane. The added damage is radiant for the former and necrotic for the latter. On a hit, the spell causes another effect.",
 	dependencies: ["divine lance", "profane lance"],
 };
 
@@ -157,8 +158,8 @@ SpellsList["dress undress"] = {
 	components: "V,S,M",
 	compMaterial: "A safety pin",
 	duration: "Instantaneous",
-	description: "A willing creature you touch instantly dons up to 10 unworn and uncarried articles of clothing you can see within 30 feet of you, or doffs as many articles it is wearing.",
-	descriptionFull: "A willing creature you touch instantly dons up to 10 unworn and uncarried articles of clothing you can see within 30 feet of you, or doffs as many articles it is wearing. If you doff clothing from it, it appears folded at your feet. Any donned clothing is worn in the order you wish, with any twists, ties, bows, or specific spacing and detail you desire. The clothing can't be behind glass or any other obstruction.\nWhen you reach 5th level, you can don or doff light armor when you cast this spell, At 11th, you can don or doff medium armor, and heavy armor at 17th.",
+	description: "A willing creature you touch instantly dons up to 10 unworn and uncarried articles of clothing you can see within 30 ft of you, or doffs as many articles it is wearing.",
+	descriptionFull: "A willing creature you touch instantly dons up to 10 unworn and uncarried articles of clothing you can see within 30 ft of you, or doffs as many articles it is wearing. If you doff clothing from it, it appears folded at your feet. Any donned clothing is worn in the order you wish, with any twists, ties, bows, or specific spacing and detail you desire. The clothing can't be behind glass or any other obstruction.\nWhen you reach 5th level, you can don or doff light armor when you cast this spell, At 11th, you can don or doff medium armor, and heavy armor at 17th.",
 };
 
 SpellsList["five point celestial brigade"] = {
@@ -169,7 +170,7 @@ SpellsList["five point celestial brigade"] = {
 	level: 5,
 	school: "Conj",
 	time: "1 a",
-	range: "90 feet",
+	range: "90 ft",
 	components: "V,S,M",
 	compMaterial: "A feather from a bird of prey",
 	duration: "Instantaneous",
@@ -203,8 +204,8 @@ SpellsList["eyes of ichor"] = {
 	range: "Self",
 	components: "S",
 	duration: "Up to 1 round",
-	description: "Until the end of your next turn, you are blinded, but know the location of every creature within 60 feet of you not behind full cover from you.",
-	descriptionFull: "For the duration, your eyes cover in a golden light. Until the end of your next turn, you are blinded, but know the location of every creature within 60 feet of you not behind full cover from you. You know the size, type, and potential race of these creatures, can determine if they are shapechangers and using a false or true form, and can see these creatures even into the Ethereal Plane. While blinded from this spell, you can see. the creatures within range and you don't make attacks against them with disadvantage, nor do they attack you with advantage. Finally, you have advantage on Wisdom (Insight) checks made against any creature you can see with this spell.",
+	description: "Until the end of your next turn, you are blinded, but know the location of every creature within 60 ft of you not behind full cover from you.",
+	descriptionFull: "For the duration, your eyes cover in a golden light. Until the end of your next turn, you are blinded, but know the location of every creature within 60 ft of you not behind full cover from you. You know the size, type, and potential race of these creatures, can determine if they are shapechangers and using a false or true form, and can see these creatures even into the Ethereal Plane. While blinded from this spell, you can see. the creatures within range and you don't make attacks against them with disadvantage, nor do they attack you with advantage. Finally, you have advantage on Wisdom (Insight) checks made against any creature you can see with this spell.",
 };
 
 SpellsList["true dragons breath"] = {
@@ -217,10 +218,10 @@ SpellsList["true dragons breath"] = {
 	range: "Touch",
 	components: "V,S,M\u2020",
 	compMaterial: "A ghost pepper",
-	duration: "Concentration, up to 10 minutes",
+	duration: "conc, 10 min",
 	save: "Dex",
 	description: "Willing touched creature can use an action to exhale energy of the chosen type; each targeted creature makes Dex save; 12d6 if failed, half if success.",
-	descriptionFull: "You touch one willing creature and imbue it with the immense power to breathe out a magical frenzy from its mouth, provided it has one. Choose acid, cold, fire, lightning, or poison. Until the spell ends, the creature can use an action to exhale energy of the chosen type in a 30-foot cone or 30 foot long, 5 foot wide line (it chooses each time it takes the action). Each creature in that area must make a Dexterity saving throw, taking 12d6 damage of the chosen type on a failed save, or half as much damage on a successful one.",
+	descriptionFull: "You touch one willing creature and imbue it with the immense power to breathe out a magical frenzy from its mouth, provided it has one. Choose acid, cold, fire, lightning, or poison. Until the spell ends, the creature can use an action to exhale energy of the chosen type in a 30 ft cone or 30 ft long, 5 ft wide line (it chooses each time it takes the action). Each creature in that area must make a Dexterity saving throw, taking 12d6 damage of the chosen type on a failed save, or half as much damage on a successful one.",
 };
 
 SpellsList["blood money"] = {
@@ -230,7 +231,7 @@ SpellsList["blood money"] = {
 	level: 3,
 	school: "Conj",
 	time: "1 a",
-	range: "60 feet",
+	range: "60 ft",
 	components: "V,S,M\u2020",
 	compMaterial: "up to 30gp",
 	duration: "Instantaneous",
@@ -250,8 +251,8 @@ SpellsList["animate lord"] = {
 	components: "V,S,M\u2020",
 	compMaterial: "A black diamond worth at least 10,000gp, which the spell consumes",
 	duration: "Concentration, special",
-	description: "You control an undead mummy lord with a telepathic link; the spell continues for 24 hours, even if concentration is dropped, though you lose control until concentrating again.",
-	descriptionFull: "This spell can only be cast in a desert or similarly dry environment. You instill great power into a mummified Medium or Small humanoid. You must have that humanoid's heart to cast this spell and you cast it on their corpse. The corpse becomes a mummy lord under your control (the DM has the statistics for the creature).\nYou form a telepathic link with the mummy lord and can communicate back and forth across any distance if you are both on the same plane. You can issue basic or complex orders, from guarding a corridor, to animating lesser undead in a certain time and place, or even greater intelligent commands, such as forming a cult. It acts on your initiative while controlled by you.\nIf the mummy lord dies, it isn't gone forever. It rises from dust in close proximity to its heart. If you still have its heart, it remains under your control Its heart has 5 AC, 25 hitpoints, and immunity to all damage except fire. If it is destroyed, the spell ends, and the mummy lord perishes.\nYou can drop concentration on this spell at any point and the spell will not end. If you are no longer concentrating on it, the mummy lord acts of its own accord, and the mummy lord is no longer under your direct control. It may well continue to follow your direction, or it may plot to take its heart from you. Once animated, you can't dismiss or deanimate the mummy lord.\nYou can't cast this spell again while the mummy lord you animated previously still exists, even if you don't control it anymore. The creature is animated for 24 hours, after which it and its heart would turn to dust. To keep the creature animated for another 24 hours, you must cast this spell on the creature before the current 24-hour period ends. When you cast the spell on a mummy lord you animated, the range is unlimited if you are both on the same plane. This use of the spell keeps the current mummy lord animated rather than animating a new one.",
+	description: "You control an undead mummy lord with a telepathic link; the spell continues for 24 hr, even if concentration is dropped, though you lose control until concentrating again.",
+	descriptionFull: "This spell can only be cast in a desert or similarly dry environment. You instill great power into a mummified Medium or Small humanoid. You must have that humanoid's heart to cast this spell and you cast it on their corpse. The corpse becomes a mummy lord under your control (the DM has the statistics for the creature).\nYou form a telepathic link with the mummy lord and can communicate back and forth across any distance if you are both on the same plane. You can issue basic or complex orders, from guarding a corridor, to animating lesser undead in a certain time and place, or even greater intelligent commands, such as forming a cult. It acts on your initiative while controlled by you.\nIf the mummy lord dies, it isn't gone forever. It rises from dust in close proximity to its heart. If you still have its heart, it remains under your control Its heart has 5 AC, 25 hitpoints, and immunity to all damage except fire. If it is destroyed, the spell ends, and the mummy lord perishes.\nYou can drop concentration on this spell at any point and the spell will not end. If you are no longer concentrating on it, the mummy lord acts of its own accord, and the mummy lord is no longer under your direct control. It may well continue to follow your direction, or it may plot to take its heart from you. Once animated, you can't dismiss or deanimate the mummy lord.\nYou can't cast this spell again while the mummy lord you animated previously still exists, even if you don't control it anymore. The creature is animated for 24 hr, after which it and its heart would turn to dust. To keep the creature animated for another 24 hr, you must cast this spell on the creature before the current 24- hr period ends. When you cast the spell on a mummy lord you animated, the range is unlimited if you are both on the same plane. This use of the spell keeps the current mummy lord animated rather than animating a new one.",
 };
 
 SpellsList["deadline"] = {
@@ -266,7 +267,7 @@ SpellsList["deadline"] = {
 	duration: "Instantaneous",
 	save: "Con",
 	description: "Creatures make Con save; 3d6 necrotic on fail; gain 1d6 hitpoints if at least on target takes damage",
-	descriptionFull: "You attempt to pull the life from creatures in a line 15 feet long and 5 feet wide in a direction you choose. Each creature in the line must make a Constitution saving throw taking 3d6 necrotic damage on a failed save. If at least one target takes damage from this spell, you additionally regain 1d6 hitpoints.\nWhen you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 2nd.",
+	descriptionFull: "You attempt to pull the life from creatures in a line 15 ft long and 5 ft wide in a direction you choose. Each creature in the line must make a Constitution saving throw taking 3d6 necrotic damage on a failed save. If at least one target takes damage from this spell, you additionally regain 1d6 hitpoints.\nWhen you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 2nd.",
 };
 
 SpellsList["greater entomb"] = {
@@ -276,10 +277,10 @@ SpellsList["greater entomb"] = {
 	level: 5,
 	school: "Necro",
 	time: "1 a",
-	range: "30 feet",
+	range: "30 ft",
 	components: "V,S,M",
 	compMaterial: "A lock",
-	duration: "Concentration, up to 1 min",
+	duration: "conc, 1 min",
 	save: "Con",
 	description: "You entomb a creature; on a failed Con save, creature takes 5d12 damage; damage continues on each failed save, until success",
 	descriptionFull: "You choose a creature within range to construct a tomb around, keeping them trapped inside its walls. The target must make a Constitution saving throw. On a failure, it is locked within and pierced with a thousand spikes, and magically dealt 5d12 piercing damage. The target makes the saving throw at the end of each of its turns, taking the same damage on a failure. On any success, the tomb shatters apart and fades away, freeing the target. The creature has total cover while the tomb lasts and can't move or escape by any means other than teleporting.\nAn undead target has disadvantage on its first saving throw against this spell.\nA creature that fails every save against this spell or is reduced to 0 hitpoints while inside is locked within. The duration becomes permanent. A dispel magic spell can end the spell only if it is cast at 5th-level or higher on the tomb. The tomb has 50 hitpoints, 15 AC, immunity to poison and psychic damage, and resistance to all other damage except force.\nWhen you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d12 for each slot level above 5th.",
@@ -292,13 +293,13 @@ SpellsList["black fireball"] = {
 	level: 5,
 	school: "Evoc",
 	time: "1 a",
-	range: "180 feet",
+	range: "180 ft",
 	components: "V,S,M",
 	compMaterial: "Sulfur and ash",
-	duration: "Concentration, up to 1 round",
+	duration: "conc, 1 round",
 	save: "Dex",
 	description: "Each creature makes Dex save, takes 6d6 fire and 6d6 necrotic on fail, half on save",
-	descriptionFull: "A maelstrom of swirling black fire appears near your hands. On your next turn, you choose a spot within range as an action, provided this spell hasn't ended. The maelstrom disappears from your hands and reappears centered on that point, grown exponentially. Each creature in a 30-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 6d6 fire and 6d6 necrotic damage on a failed save, or half as much damage on a successful one.\nThe maelstrom spreads around corners. It ignites flammable objects in the area that aren't being worn or carried, and it withers nonmagical, normal plants.\nWhen you cast this spell using a spell slot of 6th level or higher, the fire damage or the necrotic damage (your choice) increases by 1d6 for each slot level above 5th.",
+	descriptionFull: "A maelstrom of swirling black fire appears near your hands. On your next turn, you choose a spot within range as an action, provided this spell hasn't ended. The maelstrom disappears from your hands and reappears centered on that point, grown exponentially. Each creature in a 30 ft radius sphere centered on that point must make a Dexterity saving throw. A target takes 6d6 fire and 6d6 necrotic damage on a failed save, or half as much damage on a successful one.\nThe maelstrom spreads around corners. It ignites flammable objects in the area that aren't being worn or carried, and it withers nonmagical, normal plants.\nWhen you cast this spell using a spell slot of 6th level or higher, the fire damage or the necrotic damage (your choice) increases by 1d6 for each slot level above 5th.",
 };
 
 SpellsList["mustangs flame alchemy"] = {
@@ -308,13 +309,13 @@ SpellsList["mustangs flame alchemy"] = {
 	level: 3,
 	school: "Trans",
 	time: "1 a",
-	range: "60 feet",
+	range: "60 ft",
 	components: "S,M",
 	compMaterial: "An inscribed magic circle",
 	duration: "Instantaneous",
 	save: "Con",
 	description: "Any creature chosen or in a chosen space is a target and must make a Con save; 3d10 on fail and is blinded or deafened until next turn; half on save with no effects",
-	descriptionFull: "A spark erupts into a torrent of flame from your hand. Choose up to eight creatures within range. If you don't know their location or can't see them, you can choose a 5 foot cube in place of one or more of the creatures. Any creature chosen or in a chosen space is a target and must make a Constitution saving throw. A target takes 3d10 fire damage on a failed saving throw and is blinded or deafened (your choice) until the start of their next turn, or takes half as much damage on a success and isn't blinded or deafened.\nWhen you cast this spell using a spell slot of 4th level or higher, the fire damage increases by 1d10 for each slot level above 3rd.",
+	descriptionFull: "A spark erupts into a torrent of flame from your hand. Choose up to eight creatures within range. If you don't know their location or can't see them, you can choose a 5 ft cube in place of one or more of the creatures. Any creature chosen or in a chosen space is a target and must make a Constitution saving throw. A target takes 3d10 fire damage on a failed saving throw and is blinded or deafened (your choice) until the start of their next turn, or takes half as much damage on a success and isn't blinded or deafened.\nWhen you cast this spell using a spell slot of 4th level or higher, the fire damage increases by 1d10 for each slot level above 3rd.",
 };
 
 SpellsList["onyx skull"] = {
@@ -329,7 +330,7 @@ SpellsList["onyx skull"] = {
 	duration: "Instantaneous",
 	save: "Con",
 	description: "Each creature caught in half-ring makes Con save; on fail, 5d10 necrotic, half on save",
-	descriptionFull: "An ethereal onyx skull spawns all around you and bites down. You choose a half ring 60 feet in diameter, 10 feet high, and 1 foot thick within range. The ring must be centered on you. Each creature caught with any part of the half ring in their space must make a Constitution saving throw. On a failure, the onyx skull's teeth scissor and crunch, and each creature takes 5d10 necrotic damage or half as much on a success. Undead creatures take an additional d10 of damage. The skull then collapses, leaving a thin layer of ash behind.\nWhen you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d10 for every second slot level above 3rd.",
+	descriptionFull: "An ethereal onyx skull spawns all around you and bites down. You choose a half ring 60 ft in diameter, 10 ft high, and 1 ft thick within range. The ring must be centered on you. Each creature caught with any part of the half ring in their space must make a Constitution saving throw. On a failure, the onyx skull's teeth scissor and crunch, and each creature takes 5d10 necrotic damage or half as much on a success. Undead creatures take an additional d10 of damage. The skull then collapses, leaving a thin layer of ash behind.\nWhen you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d10 for every second slot level above 3rd.",
 };
 
 SpellsList["starsee"] = {
@@ -341,7 +342,7 @@ SpellsList["starsee"] = {
 	time: "1 a",
 	range: "Self",
 	components: "S",
-	duration: "Concentration, up to 1 min",
+	duration: "conc, 1 min",
 	description: "A stellar map appears above your head; you can see in dim as if bright; +5 to passive perception and any Search action",
 	descriptionFull: "You can only cast this spell at dusk, night, or dawn. A stellar map appears above your head, revealing stars and constellations, named as they are in this land (or else unnamed). Until the spell ends, you add +5 to your passive perception and any ability check made with the Search action, and you can see in dim light as if it were bright.",
 };
@@ -353,12 +354,12 @@ SpellsList["storm of crows"] = {
 	level: 5,
 	school: "Conj",
 	time: "1 a",
-	range: "180 feet",
+	range: "180 ft",
 	components: "V,S",
-	duration: "Concentration, up to 1 min",
+	duration: "conc, 1 min",
 	save: "Con",
 	description: "A murder of crows appears; any creature under cloud makes Con save; blinded on fail, end on success",
-	descriptionFull: "A tempestuous murder of crows appears, centered on a point you can see within range and spreading to a radius of 45 feet. Crows cry, winds buffer, and fire roars. Each creature under the cloud (no more than 90 feet beneath the cloud) when it appears must make a Constitution saving throw. On a failed save, a creature becomes blinded for 1 min. A blinded creature can repeat the save at the end of each of their turns, ending the effect on a success. At the start of each of your turns until the spell ends, the following effects alternate taking place. When you cast this spell, choose the order of the effects.\nFlock\nCrows dive and swarm. The area under the cloud becomes complete magical darkness until the start of your next turn and each creature takes 1d6 slashing damage.\nFlames\nYou call five pillars of fire from the cloud to strike five creatures or objects of your choice beneath the cloud. A given creature or object can't he struck by more than one pillar. A struck creature must make a Dexterity saving throw. The creature takes 5d6 fire damage on a failed save, or half as much damage on a successful one.",
+	descriptionFull: "A tempestuous murder of crows appears, centered on a point you can see within range and spreading to a radius of 45 ft. Crows cry, winds buffer, and fire roars. Each creature under the cloud (no more than 90 ft beneath the cloud) when it appears must make a Constitution saving throw. On a failed save, a creature becomes blinded for 1 min. A blinded creature can repeat the save at the end of each of their turns, ending the effect on a success. At the start of each of your turns until the spell ends, the following effects alternate taking place. When you cast this spell, choose the order of the effects.\nFlock\nCrows dive and swarm. The area under the cloud becomes complete magical darkness until the start of your next turn and each creature takes 1d6 slashing damage.\nFlames\nYou call five pillars of fire from the cloud to strike five creatures or objects of your choice beneath the cloud. A given creature or object can't he struck by more than one pillar. A struck creature must make a Dexterity saving throw. The creature takes 5d6 fire damage on a failed save, or half as much damage on a successful one.",
 };
 
 SpellsList["glasswings"] = {
@@ -372,7 +373,7 @@ SpellsList["glasswings"] = {
 	components: "S",
 	duration: "Instantaneous",
 	description: "",
-	descriptionFull: "Wings of glass unfold from your back. You gain a flying speed of 30 feet. Additionally, if you are adjacent to a creature, you can give up some or all of your remaining flying speed to strike it with your glass cut wings. Make a melee spell attack against the creature. On a hit, it takes 1d6 slashing damage for every 5 remaining movement you gave up, to a maximum of 30. Additionally, the creature's speed is reduced by 15 until the end of its next turn. The spell ends at the end of your turn, the wings shattering to glitter and fading away.\nWhen you cast this spell using a spell slot of 3rd level or higher, you gain an additional 10 feet of flying speed for each slot level above 2nd, and you can gain damage to a maximum increased by the same amount.",
+	descriptionFull: "Wings of glass unfold from your back. You gain a flying speed of 30 ft. Additionally, if you are adjacent to a creature, you can give up some or all of your remaining flying speed to strike it with your glass cut wings. Make a melee spell attack against the creature. On a hit, it takes 1d6 slashing damage for every 5 remaining movement you gave up, to a maximum of 30. Additionally, the creature's speed is reduced by 15 until the end of its next turn. The spell ends at the end of your turn, the wings shattering to glitter and fading away.\nWhen you cast this spell using a spell slot of 3rd level or higher, you gain an additional 10 ft of flying speed for each slot level above 2nd, and you can gain damage to a maximum increased by the same amount.",
 };
 
 SpellsList["maegis"] = {
@@ -385,10 +386,10 @@ SpellsList["maegis"] = {
 	range: "Touch",
 	components: "V,S,M\u2020",
 	compMaterial: "An ornate shield worth 1,000sp, which the spell consumes",
-	duration: "Concentration, up to 1 hour",
+	duration: "conc, 1 hr",
 	save: "Dex",
 	description: "Each targeted creature must make Dex save; 6d12 force damage on fail, half on save",
-	descriptionFull: "You shatter a valuable shield, moving its thousand tiny pieces over the skin of a creature, a protective magic filling in the gaps between each piece, forming its aegis. Until the spell ends, the target has resistance to all damage except force damage. As an action, you can dismiss this spell and cause the aegis to explode. Each creature of your choice that you can see within 30 feet of the aegis wearer must make a Dexterity saving throw. On a failure, they take 6d12 force damage, or half as much on a success.",
+	descriptionFull: "You shatter a valuable shield, moving its thousand tiny pieces over the skin of a creature, a protective magic filling in the gaps between each piece, forming its aegis. Until the spell ends, the target has resistance to all damage except force damage. As an action, you can dismiss this spell and cause the aegis to explode. Each creature of your choice that you can see within 30 ft of the aegis wearer must make a Dexterity saving throw. On a failure, they take 6d12 force damage, or half as much on a success.",
 };
 
 SpellsList["call treant spirit"] = {
@@ -402,7 +403,7 @@ SpellsList["call treant spirit"] = {
 	components: "V,S",
 	duration: "Instantaneous",
 	description: "You awaken a tree's spirit; it will answer three questions or fight for you (for two attacks)",
-	descriptionFull: "You touch a Large or Huge tree, awakening its spirit for a moment. You must immediately direct it to fight with you or to answer up to 3 questions it may or may not know the answer to, but will generally attempt to answer honestly unless you are known by it to be an enemy of wilderness. If you direct it to fight, you choose a target within 30 feet of the tree, and the tree animates, uprooting itself, charging towards the target. The treant spirit has 50 hitpoints, AC of 15, and resistance  to all damage except fire. It can make two attacks against the target, forgoing either or both for a shove or grapple attempt as normal. The treant spirit uses your spellcasting ability modifier for all its saves, ability checks, and attack rolls, and is proficient with its attacks and Athletics (your proficiency bonus). On a hit, the target takes 3d6+6 force damage, or half as much on a miss. After answering 3 questions or making its attacks, the tree takes root in its current location, ends any grapples, becomes a normal tree once again, and the spell ends.",
+	descriptionFull: "You touch a Large or Huge tree, awakening its spirit for a moment. You must immediately direct it to fight with you or to answer up to 3 questions it may or may not know the answer to, but will generally attempt to answer honestly unless you are known by it to be an enemy of wilderness. If you direct it to fight, you choose a target within 30 ft of the tree, and the tree animates, uprooting itself, charging towards the target. The treant spirit has 50 hitpoints, AC of 15, and resistance  to all damage except fire. It can make two attacks against the target, forgoing either or both for a shove or grapple attempt as normal. The treant spirit uses your spellcasting ability modifier for all its saves, ability checks, and attack rolls, and is proficient with its attacks and Athletics (your proficiency bonus). On a hit, the target takes 3d6+6 force damage, or half as much on a miss. After answering 3 questions or making its attacks, the tree takes root in its current location, ends any grapples, becomes a normal tree once again, and the spell ends.",
 };
 
 SpellsList["prayer for the wicked"] = {
@@ -411,7 +412,7 @@ SpellsList["prayer for the wicked"] = {
 	source: ["MMSR", 0],
 	level: 9,
 	school: "Abjur",
-	time: "1 hour",
+	time: "1 hr",
 	range: "Sight",
 	components: "V,M\u2020",
 	compMaterial: "A magic weapon, thrust into the heart of a titan, laid upon an altar to an extraplanar deity, all of which the spell consumes by burning it to ash when the spell is cast",
@@ -433,7 +434,7 @@ SpellsList["corrode inner flesh"] = {
 	duration: "Instantaneous",
 	save: "Con",
 	description: "A creature you touch must make Con save; on fail, 12d4 acid damage and 6d4 acid damage at end of turn; half initial and no damage at end on success",
-	descriptionFull: "You shove an acid vial inside the body of a creature and exponentially intensify the acid within. Any creature that lacks an organic body is immune to this spell, such as elementals, constructs, and creatures with the incorporeal movement feature. A creature you touch must make a Constitution saving throw. On a failed save, the target is eaten from the inside out by corrosion, taking 12d4 acid damage and another 6d4 acid damage at the end of its next turn. On a success, a creature takes half the initial damage and no damage at the end of its next turn. If a creature is reduced to 0 hitpoints by the acid damage from this spell, it explodes in a radius of 15 feet. Any creature other than you caught in the radius must make a Constitution saving throw, taking 4d4 acid damage and another 2d4 acid damage at the end of its next turn, or half the initial damage on and no damage at the end of its next turn a success.\nWhen you cast this spell using a spell slot of 6th level or higher, the initial damage the first target takes increases by 2d4 for each slot level above 5th.",
+	descriptionFull: "You shove an acid vial inside the body of a creature and exponentially intensify the acid within. Any creature that lacks an organic body is immune to this spell, such as elementals, constructs, and creatures with the incorporeal movement feature. A creature you touch must make a Constitution saving throw. On a failed save, the target is eaten from the inside out by corrosion, taking 12d4 acid damage and another 6d4 acid damage at the end of its next turn. On a success, a creature takes half the initial damage and no damage at the end of its next turn. If a creature is reduced to 0 hitpoints by the acid damage from this spell, it explodes in a radius of 15 ft. Any creature other than you caught in the radius must make a Constitution saving throw, taking 4d4 acid damage and another 2d4 acid damage at the end of its next turn, or half the initial damage on and no damage at the end of its next turn a success.\nWhen you cast this spell using a spell slot of 6th level or higher, the initial damage the first target takes increases by 2d4 for each slot level above 5th.",
 };
 
 SpellsList["mantis knight blade"] = {
@@ -446,7 +447,7 @@ SpellsList["mantis knight blade"] = {
 	range: "Self",
 	components: "V,S,M\u0192",
 	compMaterial: "A staff worth at least 5gp",
-	duration: "Concentration, up to 1 min",
+	duration: "conc, 1 min",
 	description: "You summon a blade capable of 2d6 slashing damage; if you roll same result on both dice, you make another attack.",
 	descriptionFull: "You magically part a nonmagical staff, summoning a weapon of the feywild used by the nimblest of their knights, the Mantis. This magic weapon counts as a simple melee weapon with which you are proficient. It deals 2d6 slashing damage on a hit and has the finesse property. When you roll the same result on both of the first two damage dice, you can immediately make another attack against the same target, potentially provoking this feature again. Additionally, when you attack charmed targets with this weapon, you make the attack roll with advantage. The spell ends if you cast it again or if you let go of the weapon. When the spell ends, the staff grows back together, the weapon returning to its Mantis in the feywild.\nWhen you cast this spell using a 3rd-or 4th-level spell slot, the damage increases to 3d6. When you cast it using a 5th- or 6th-level spell slot, the damage increases to 4d6. When you cast it using a spell slot of 7th level or higher, the damage increases to 5d6.",
 };
@@ -488,9 +489,9 @@ SpellsList["fist"] = {
 	time: "1 a",
 	range: "Self",
 	components: "V,S",
-	duration: "Concentration, up to 1 min",
+	duration: "conc, 1 min",
 	description: "Choose to Punch, Crush, or Toss target",
-	descriptionFull: "A magic gauntlet envelops your fist. You can't wield a weapon in this hand and you can't cast spells with a casting time of 1 a or longer. Your AC becomes 17 if it wasn't already higher, and when you cast this spell and as an action while the spell lasts, you can choose an option below. When the spell ends, the gauntlet fades slowly, and the spell's effects last until the end of your next turn.\nPunch\nMake a melee spell attack against a creature within 5 feet of you, and add your Strength modifier to the attack roll On a hit, a target takes 3d6 + your Strength modifier in bludgeoning damage and is grappled by you if it is Huge or smaller. Grapple and shove checks with this hand are Athletics (Strength) + your spellcasting ability modifier, and you can grapple and shove Huge creatures.\nCrush\nYou smash a grappled creature in your fist. The target automatically takes 2d6 + your Strength modifier in bludgeoning damage and is restrained until the end of your next turn or until your grapple ends.\nToss\nYou toss a Huge or smaller creature within 5 feet of you back a number of feet away from you up to 5 x (your spellcasting ability + your Strength modifiers). A creature can make a Strength saving throw to avoid being tossed. A tossed creature takes 3d6 bludgeoning damage, or twice as much if it collides with an object or creature that is a size smaller than it or larger. If you toss a creature you are grappling, you can choose to toss it down or any horizontal direction, and you can toss it twice as far, ending the grapple on either a success or fail.",
+	descriptionFull: "A magic gauntlet envelops your fist. You can't wield a weapon in this hand and you can't cast spells with a casting time of 1 a or longer. Your AC becomes 17 if it wasn't already higher, and when you cast this spell and as an action while the spell lasts, you can choose an option below. When the spell ends, the gauntlet fades slowly, and the spell's effects last until the end of your next turn.\nPunch\nMake a melee spell attack against a creature within 5 ft of you, and add your Strength modifier to the attack roll On a hit, a target takes 3d6 + your Strength modifier in bludgeoning damage and is grappled by you if it is Huge or smaller. Grapple and shove checks with this hand are Athletics (Strength) + your spellcasting ability modifier, and you can grapple and shove Huge creatures.\nCrush\nYou smash a grappled creature in your fist. The target automatically takes 2d6 + your Strength modifier in bludgeoning damage and is restrained until the end of your next turn or until your grapple ends.\nToss\nYou toss a Huge or smaller creature within 5 ft of you back a number of feet away from you up to 5 x (your spellcasting ability + your Strength modifiers). A creature can make a Strength saving throw to avoid being tossed. A tossed creature takes 3d6 bludgeoning damage, or twice as much if it collides with an object or creature that is a size smaller than it or larger. If you toss a creature you are grappling, you can choose to toss it down or any horizontal direction, and you can toss it twice as far, ending the grapple on either a success or fail.",
 };
 
 SpellsList["saving hand"] = {
@@ -500,13 +501,13 @@ SpellsList["saving hand"] = {
 	level: 3,
 	school: "Evoc",
 	time: "1 a",
-	range: "60 feet",
+	range: "60 ft",
 	components: "V,S",
 	compMaterial: "Clasping hands with the target",
 	duration: "Instantaneous",
 	save: "Str",
 	description: "Target regains hitpoints equal to 3d10 + spellcasting ability mod; each creature within 30ft make Str save, get moved 15ft back on fail",
-	descriptionFull: "You leap to the air, flying towards a creature within range, taking their hand and rejuvenating them. They regain a number of hitpoints equal to 3d10 + your spellcasting ability modifier, can immediately stand if they are prone, and lose one disease or condition afflicting them, which could be blinded, deafened, or poisoned. Additionally, after you heal the target, each creature of your choice within 30 feet of you must succeed on a Strength saving throw or be pushed back 15 feet by a blast of divine light emitted from your hands.",
+	descriptionFull: "You leap to the air, flying towards a creature within range, taking their hand and rejuvenating them. They regain a number of hitpoints equal to 3d10 + your spellcasting ability modifier, can immediately stand if they are prone, and lose one disease or condition afflicting them, which could be blinded, deafened, or poisoned. Additionally, after you heal the target, each creature of your choice within 30 ft of you must succeed on a Strength saving throw or be pushed back 15 ft by a blast of divine light emitted from your hands.",
 };
 
 SpellsList["lilianders hellspear"] = {
@@ -516,11 +517,11 @@ SpellsList["lilianders hellspear"] = {
 	level: 3,
 	school: "Evoc",
 	time: "1 a",
-	range: "60 feet",
+	range: "60 ft",
 	components: "V,S",
 	duration: "Instantaneous",
 	description: "Target(s) take 3d10 piercing and 3d10 psychic, and their speed drops to 0 until start of your next turn",
-	descriptionFull: "You summon a burning incorporeal spear and launch it towards a target within range. Make a ranged spell attack against that target. If there are any creatures 10 feet or less directly behind the target from you in a line and the attack roll would also hit them, they are also hit. On a hit, a creature takes 3d10 piercing and 3d10 fire damage. Additionally, their speed drops to 0 until the start of your next turn, when the spear dissipates.\nWhen you cast this spell using a spell slot of 4th level or higher, the piercing damage or the fire damage (your choice) increases by Id 10 for each slot level above 3rd. ",
+	descriptionFull: "You summon a burning incorporeal spear and launch it towards a target within range. Make a ranged spell attack against that target. If there are any creatures 10 ft or less directly behind the target from you in a line and the attack roll would also hit them, they are also hit. On a hit, a creature takes 3d10 piercing and 3d10 fire damage. Additionally, their speed drops to 0 until the start of your next turn, when the spear dissipates.\nWhen you cast this spell using a spell slot of 4th level or higher, the piercing damage or the fire damage (your choice) increases by Id 10 for each slot level above 3rd. ",
 };
 
 SpellsList["objectify"] = {
@@ -530,10 +531,10 @@ SpellsList["objectify"] = {
 	level: 2,
 	school: "Trans",
 	time: "1 a",
-	range: "30 feet",
+	range: "30 ft",
 	components: "V,S,M",
 	compMaterial: "A piece of a mimic's corpse",
-	duration: "Concentration, up to 1 hour",
+	duration: "conc, 1 hr",
 	save: "Wis",
 	description: "You transform a creature into a nonmagical object with 10 temporary hit points",
 	descriptionFull: "Choose one creature you can see within range. You transform that creature into a nonmagical object. An unwilling creature can make a Wisdom saving throw, and if it succeeds, isn't affected by this spell. A target can make a Wisdom saving throw at the end of each of its turns, ending the effect on a success.\nThe target transforms along with whatever it is wearing and carrying into that form, as long as the object's size is no larger than the creature's size. The target gains 10 temporary hit points. These temporary hit points can't be replaced by temporary hit points from another source. A target reverts to its normal form when it has no more temporary hit points, dies, or the spell ends. If the spell ends before then, the creature loses all its temporary hit points and reverts to its normal form. The creature has no memory of time spent in this form after the spell ends and it returns to its normal form.",
@@ -548,10 +549,10 @@ SpellsList["aspect of pride"] = {
 	time: "1 a",
 	range: "Self",
 	components: "V,S",
-	duration: "Concentration, up to 1 min",
+	duration: "conc, 1 min",
 	save: "Dex",
-	description: "Choose a point; every creature within 5 feet must make a Dex save; creature takes 6d12 piercing on failed save",
-	descriptionFull: "If you are in complete darkness when you cast or for the duration of the spell, the spell immediately fails and ends. For the duration, black shadowy tendrils with many eyes and teeth surround you, waiting for a command.\nWhen you cast the spell, a tendril stretches out to a point you can see within range. Each creature within 5 feet of that point must make a Dexterity saving throw. A creature takes 6d12 piercing damage on a failed save and is moved 10 feet in any direction of your choice except up. On each of your turns until the spell ends, you can use your action to outstretch tendrils again, targeting the same point or a different one.\nWhen you cast this spell using a spell slot of 7th or higher level, the damage increases by 1d12 for each slot level above 6th.",
+	description: "Choose a point; every creature within 5 ft must make a Dex save; creature takes 6d12 piercing on failed save",
+	descriptionFull: "If you are in complete darkness when you cast or for the duration of the spell, the spell immediately fails and ends. For the duration, black shadowy tendrils with many eyes and teeth surround you, waiting for a command.\nWhen you cast the spell, a tendril stretches out to a point you can see within range. Each creature within 5 ft of that point must make a Dexterity saving throw. A creature takes 6d12 piercing damage on a failed save and is moved 10 ft in any direction of your choice except up. On each of your turns until the spell ends, you can use your action to outstretch tendrils again, targeting the same point or a different one.\nWhen you cast this spell using a spell slot of 7th or higher level, the damage increases by 1d12 for each slot level above 6th.",
 };
 
 SpellsList["freeze"] = {
@@ -563,7 +564,7 @@ SpellsList["freeze"] = {
 	time: "1 a",
 	range: "Touch",
 	components: "V,S",
-	duration: "Concentration, up to 1 min",
+	duration: "conc, 1 min",
 	save: "Con",
 	description: "You freeze a creature you touch; they must make a Con save; they're frozen on the first fail, and turned to ice on a second fail; creature makes Con save each turn, and spell ends on success",
 	descriptionFull: "You grasp the flesh or armaments of a creature and disperse their heat to the air, freezing them. The target must make a Constitution saving throw. On a failure, it is paralyzed. At the end of its next turn, it must make another Constitution saving throw, and it does so with advantage if it is Large or larger. The spell ends on a success, but on a failure, they are petrified, turned to ice. The creature can repeat the saving throw at the end of each of its turns, ending the effect completely on a success.\nIf the spell lasts for its entire duration and the creature failed every save, it is permanently turned to ice, which does not melt naturally, even through a blazing summer.",
@@ -578,10 +579,10 @@ SpellsList["fracture spirit"] = {
 	time: "1 a",
 	range: "Self",
 	components: "S",
-	duration: "Concentration, up to 1 min",
+	duration: "conc, 1 min",
 	save: "Int",
-	description: "You create illusory images of yourself every 5 feet, staying in space but still appearing as if it were you",
-	descriptionFull: "When you cast this spell, you magically replicate a hall of mirrors for yourself in thin air. For the duration an illusory double of you spawns every 5 feet that you move, staying in that space but still appearing as if it were you; for example, if you speak, they all seem to speak. When you end your turn under this spell, you can immediately choose one double to swap places with.\nA creature with truesight sees the illusions and you for the reality, and any creature can make an Intelligence (Investigation) check as an action against your spell save DC to determine which is the real you, if any, among those it can see. On a success, it knows which is real until you make more doubles. A double dissipates upon being attacked or forced to save or contest an ability check, and all doubles dissipate when the spell ends.",
+	description: "You create illusory images of yourself every 5 ft, staying in space but still appearing as if it were you",
+	descriptionFull: "When you cast this spell, you magically replicate a hall of mirrors for yourself in thin air. For the duration an illusory double of you spawns every 5 ft that you move, staying in that space but still appearing as if it were you; for example, if you speak, they all seem to speak. When you end your turn under this spell, you can immediately choose one double to swap places with.\nA creature with truesight sees the illusions and you for the reality, and any creature can make an Intelligence (Investigation) check as an action against your spell save DC to determine which is the real you, if any, among those it can see. On a success, it knows which is real until you make more doubles. A double dissipates upon being attacked or forced to save or contest an ability check, and all doubles dissipate when the spell ends.",
 };
 
 SpellsList["amelias painted tie"] = {
@@ -591,7 +592,7 @@ SpellsList["amelias painted tie"] = {
 	level: 5,
 	school: "Necro",
 	time: "1 a",
-	range: "60 feet",
+	range: "60 ft",
 	components: "V,S",
 	duration: "Up to 1 round",
 	description: "Two creatures are in the loops of an infinity symbol. When the first creature loses health, the second regains that much health",
@@ -605,7 +606,7 @@ SpellsList["entomb"] = {
 	level: 3,
 	school: "Necro",
 	time: "1 a",
-	range: "30 feet",
+	range: "30 ft",
 	components: "V,S,M",
 	compMaterial: "A handful of nails",
 	duration: "Instantaneous",
@@ -639,7 +640,7 @@ SpellsList["reach of the astral dreadnought"] = {
 	compMaterial: "A cord of silver",
 	duration: "Instantaneous",
 	description: "You summon an astral dreadnought that swallows your target if you reduce the target to 0 hitpoints across three attacks",
-	descriptionFull: "You momentarily conjoin parts of the astral and your current plane, allowing an astral dreadnought through via your summons. Choose one creature you can seen within 90 feet of you as the target for the astral dreadnought. Make three melee or ranged spell attacks against it. If the first or second hit, they each deal 3d6+9 slashing damage.\nIf the third hits, it deals 5d10+9 piercing damage. If the target is Huge or smaller and this damage reduces it to 0 hit points, the astral dreadnought swallows it. The swallowed target, along with everything it is wearing and carrying, appears in an unoccupied space on the floor of the dreadnought's Demiplanar Donjon. This is a demiplane that can be entered by no other means except a wish spell or the astral dreadnought's Donjon Visit ability. A creature can leave the demiplane only by using magic that enables planar travel, such as the plane shift spell. The demiplane resembles a stone cave roughly 1,000 feet in diameter with a ceiling 100 feet high. Like a stomach, it contains the remains of the dreadnought's past meals. The dreadnought can't be harmed from within the demiplane. If the dreadnought dies, the demiplane disappears, and everything inside it appears around the corpse. The demiplane is otherwise indestructible.\nAfter you make the three attacks, the planes realign and the dreadnought is shunted to the astral once more. While conjured by you, the dreadnought is a façade, and not a true creature. Additionally, this spell fails if cast on the astral plane.",
+	descriptionFull: "You momentarily conjoin parts of the astral and your current plane, allowing an astral dreadnought through via your summons. Choose one creature you can seen within 90 ft of you as the target for the astral dreadnought. Make three melee or ranged spell attacks against it. If the first or second hit, they each deal 3d6+9 slashing damage.\nIf the third hits, it deals 5d10+9 piercing damage. If the target is Huge or smaller and this damage reduces it to 0 hit points, the astral dreadnought swallows it. The swallowed target, along with everything it is wearing and carrying, appears in an unoccupied space on the floor of the dreadnought's Demiplanar Donjon. This is a demiplane that can be entered by no other means except a wish spell or the astral dreadnought's Donjon Visit ability. A creature can leave the demiplane only by using magic that enables planar travel, such as the plane shift spell. The demiplane resembles a stone cave roughly 1,000 ft in diameter with a ceiling 100 ft high. Like a stomach, it contains the remains of the dreadnought's past meals. The dreadnought can't be harmed from within the demiplane. If the dreadnought dies, the demiplane disappears, and everything inside it appears around the corpse. The demiplane is otherwise indestructible.\nAfter you make the three attacks, the planes realign and the dreadnought is shunted to the astral once more. While conjured by you, the dreadnought is a façade, and not a true creature. Additionally, this spell fails if cast on the astral plane.",
 };
 
 SpellsList["shooting star"] = {
@@ -653,8 +654,8 @@ SpellsList["shooting star"] = {
 	components: "S",
 	duration: "Instantaneous",
 	save: "Dex",
-	description: "Targeted creature must make Dex save; 5d4 force, 5d4 radiant, and 5d4 piercing on fail, half on save; on fail, next creature in line must make save; continues until success of 120 feet",
-	descriptionFull: "The first creature in a line stretching 120 feet from you must make a Dexterity saving throw or take 5d4 force, 5d4 radiant, and 5d4 piercing damage, or half as much on a success. On a failure, the star pierces through them and on to the next creature in the line, who must make the same saving throw, taking the same damage or half. The star continues until a creature succeeds or it travels 120 feet.\nWhen you cast this spell using a spell slot of 5th level or higher, the range increases by 30 feet per slot level above 4th.",
+	description: "Targeted creature must make Dex save; 5d4 force, 5d4 radiant, and 5d4 piercing on fail, half on save; on fail, next creature in line must make save; continues until success of 120 ft",
+	descriptionFull: "The first creature in a line stretching 120 ft from you must make a Dexterity saving throw or take 5d4 force, 5d4 radiant, and 5d4 piercing damage, or half as much on a success. On a failure, the star pierces through them and on to the next creature in the line, who must make the same saving throw, taking the same damage or half. The star continues until a creature succeeds or it travels 120 ft.\nWhen you cast this spell using a spell slot of 5th level or higher, the range increases by 30 ft per slot level above 4th.",
 };
 
 SpellsList["self petrification"] = {
@@ -669,7 +670,7 @@ SpellsList["self petrification"] = {
 	components: "V,S",
 	duration: "Varies",
 	description: "You petrify yourself into stone for 1 min to 1 year with as many conditions as you want; revert immediately if you take damage",
-	descriptionFull: "You petrify yourself into stone. You can choose how long you remain petrified, from as little time as a minute to as long as a year. If you take damage while petrified in this way, you immediately revert. Additionally, you can set any number of conditions for you to revert early of the duration, such as a word someone speaks to your petrified form or an amount of blood poured over your stone.\nWhen you cast this spell using a spell slot of 5th level or higher, the amount of time you can petrify yourself multiplies by five years for each slot level above 4th.",
+	descriptionFull: "You petrify yourself into stone. You can choose how long you remain petrified, from as little time as a min to as long as a year. If you take damage while petrified in this way, you immediately revert. Additionally, you can set any number of conditions for you to revert early of the duration, such as a word someone speaks to your petrified form or an amount of blood poured over your stone.\nWhen you cast this spell using a spell slot of 5th level or higher, the amount of time you can petrify yourself multiplies by five years for each slot level above 4th.",
 };
 
 SpellsList["lesser passwall"] = {
@@ -683,8 +684,8 @@ SpellsList["lesser passwall"] = {
 	components: "V,S,M",
 	compMaterial: "One sesame seed",
 	duration: "1 min",
-	description: "You create a passage that lasts for a minute; any creature still in the passage takes 4d6 bludgeoning damage",
-	descriptionFull: "A passage appears at a point of your choice that you can see on a wooden, plaster, or stone surface (such as a wall, a ceiling, or a floor) within range, and lasts for the duration. You choose the opening's dimensions: up to 3 feet wide, 4 feet tall, and 5 feet deep. The passage creates no instability in a structure surrounding it. A Medium sized creature must squeeze to move through the opening if the opening is created at its maximum dimensions.\nWhen the opening disappears, any creatures or objects still in the passage created by the spell are ejected to an unoccupied space nearest to the surface on which you cast the spell and take 4d6 bludgeoning damage.",
+	description: "You create a passage that lasts for a min; any creature still in the passage takes 4d6 bludgeoning damage",
+	descriptionFull: "A passage appears at a point of your choice that you can see on a wooden, plaster, or stone surface (such as a wall, a ceiling, or a floor) within range, and lasts for the duration. You choose the opening's dimensions: up to 3 ft wide, 4 ft tall, and 5 ft deep. The passage creates no instability in a structure surrounding it. A Medium sized creature must squeeze to move through the opening if the opening is created at its maximum dimensions.\nWhen the opening disappears, any creatures or objects still in the passage created by the spell are ejected to an unoccupied space nearest to the surface on which you cast the spell and take 4d6 bludgeoning damage.",
 };
 
 SpellsList["cold iron strike"] = {
@@ -698,8 +699,8 @@ SpellsList["cold iron strike"] = {
 	components: "S,M",
 	compMaterial: "A melee weapon made of iron",
 	duration: "Instantaneous",
-	description: "You melee attack up to 3 creatures within a 30 foot line from you; each hit is 4d10 cold damage",
-	descriptionFull: "You flourish the weapon used in casting and then disappear in a flash of iron. Choose up to three creatures in a line extending 30 feet from you and make a melee spell attack against each. On a hit, a target takes 4d10 cold damage and can't take reactions until the end of your next turn. You can then teleport to an unoccupied space you can see within 5 feet of the last target of the spell. Fey take an additional 1d10 cold damage from this spell.",
+	description: "You melee attack up to 3 creatures within a 30 ft line from you; each hit is 4d10 cold damage",
+	descriptionFull: "You flourish the weapon used in casting and then disappear in a flash of iron. Choose up to three creatures in a line extending 30 ft from you and make a melee spell attack against each. On a hit, a target takes 4d10 cold damage and can't take reactions until the end of your next turn. You can then teleport to an unoccupied space you can see within 5 ft of the last target of the spell. Fey take an additional 1d10 cold damage from this spell.",
 };
 
 SpellsList["feebleform"] = {
@@ -743,7 +744,7 @@ SpellsList["snakemake"] = {
 	compMaterial: "An object you are holding",
 	duration: "Instantaneous",
 	description: "You turn any non-artifact item you are holding into a giant constrictor snake under your control",
-	descriptionFull: "When you cast this spell, you turn any non-artifact item you are holding into a giant constrictor snake under your control, the stats of which can be found in the Monster Manual on page 324. When you cast this spell, and as an action on each of your subsequent turns, you can control the action of the creature, using its senses when you do so. If it could take a reaction, you must use your reaction to do so. If you don't control the creature, it takes the Dodge action if there are hostile creatures around it, or otherwise does nothing. When you are controlling the creature and it deals damage, you are healed for half the damage it dealt. The snake turns hack into the object after 1 hour or when it is killed.",
+	descriptionFull: "When you cast this spell, you turn any non-artifact item you are holding into a giant constrictor snake under your control, the stats of which can be found in the Monster Manual on page 324. When you cast this spell, and as an action on each of your subsequent turns, you can control the action of the creature, using its senses when you do so. If it could take a reaction, you must use your reaction to do so. If you don't control the creature, it takes the Dodge action if there are hostile creatures around it, or otherwise does nothing. When you are controlling the creature and it deals damage, you are healed for half the damage it dealt. The snake turns hack into the object after 1 hr or when it is killed.",
 };
 
 SpellsList["bind"] = {
@@ -759,7 +760,7 @@ SpellsList["bind"] = {
 	compMaterial: "A pair of manacles worth at least 2gp, which the spell consumes",
 	duration: "Up to 3 days",
 	description: "Crea speed 10ft, can't speak or move more than 60ft away from caster",
-	descriptionFull: "You grasp the wrists of an unconscious Huge or smaller creature with 0 hitpoints remaining and create a magical bind that holds its hands together, with similar binds appearing around its ankles and mouth. While bound, the creature can't speak, its speed is reduced to 10 feet, it can't fly if it could, and it can't move more than 60 feet away from the caster unless the caster allows it. Additionally, it can't regain more than 1 hitpoint.\nWhen you cast this spell, set a code word in your mind. When you speak it, regardless of where you are, the creature is released and the spell ends. Otherwise, the spell ends after 3 days.",
+	descriptionFull: "You grasp the wrists of an unconscious Huge or smaller creature with 0 hitpoints remaining and create a magical bind that holds its hands together, with similar binds appearing around its ankles and mouth. While bound, the creature can't speak, its speed is reduced to 10 ft, it can't fly if it could, and it can't move more than 60 ft away from the caster unless the caster allows it. Additionally, it can't regain more than 1 hitpoint.\nWhen you cast this spell, set a code word in your mind. When you speak it, regardless of where you are, the creature is released and the spell ends. Otherwise, the spell ends after 3 days.",
 };
 
 SpellsList["field of chains"] = {
@@ -769,13 +770,13 @@ SpellsList["field of chains"] = {
 	level: 5,
 	school: "Conj",
 	time: "1 a",
-	range: "60 feet",
+	range: "60 ft",
 	components: "V,S,M",
 	compMaterial: "Two interlocked chain links",
 	duration: "Instantaneous",
 	save: "Str/Dex",
 	description: "Each creature takes 4d8 on fail, can attempt on each turn with same effect on fail",
-	descriptionFull: "You choose a number of targets you can see within range up to twice your spellcasting modifier. Chains leap from the ground or nearby objects and structures to grasp and hold the targets, each of which must make a Strength or Dexterity saving throw to avoid the effect (target's choice). On a failure, each target is restrained and is moved up to 15 feet in any direction you choose, bound by the chains from multiple angles. Additionally, a creature who failed the save takes 4d8 bludgeoning damage.\nA creature can attempt to break or slip free as an action, and repeats the save. On a success, its chains fade away. On a failure, it takes another 4d8 bludgeoning damage and remain chained.\nA creature killed by this spell is permanently chained to the ground, structure, or object it was chained to. If removed, the chains shatter into tiny flakes of iron.",
+	descriptionFull: "You choose a number of targets you can see within range up to twice your spellcasting modifier. Chains leap from the ground or nearby objects and structures to grasp and hold the targets, each of which must make a Strength or Dexterity saving throw to avoid the effect (target's choice). On a failure, each target is restrained and is moved up to 15 ft in any direction you choose, bound by the chains from multiple angles. Additionally, a creature who failed the save takes 4d8 bludgeoning damage.\nA creature can attempt to break or slip free as an action, and repeats the save. On a success, its chains fade away. On a failure, it takes another 4d8 bludgeoning damage and remain chained.\nA creature killed by this spell is permanently chained to the ground, structure, or object it was chained to. If removed, the chains shatter into tiny flakes of iron.",
 };
 
 SpellsList["lantern walker"] = {
@@ -789,9 +790,9 @@ SpellsList["lantern walker"] = {
 	range: "Touch",
 	components: "V,S,M\u0192",
 	compMaterial: "A lantern worth at least 5gp",
-	duration: "1 hour",
+	duration: "1 hr",
 	description: "Lantern sprouts legs, can be directed to move up to 30ft",
-	descriptionFull: "A lantern you hold for the casting of this spell sprouts metal legs. On your turn, you can direct it to move up to 30 feet. The latern shines light when lit as normal, whether it be a hooded, bullseye, or some other.\nAs an action while the spell lasts, you can look from the lantern's location, as if the lantern's wick was an eye. You are blind to your own senses until the end of your next turn. The lantern can't move more than a mile away from you, and if it becomes more than a mile away, the spell ends. The spell also ends if the lantern is the target of an attack or a spell that deals damage.\nThe lantern can walk up vertical surfaces, but not upside down. All of its attributes are 1. It can't take any actions.\nWhen the spell ends, the lantern returns to normal, and could be reused for the casting of this spell again.",
+	descriptionFull: "A lantern you hold for the casting of this spell sprouts metal legs. On your turn, you can direct it to move up to 30 ft. The latern shines light when lit as normal, whether it be a hooded, bullseye, or some other.\nAs an action while the spell lasts, you can look from the lantern's location, as if the lantern's wick was an eye. You are blind to your own senses until the end of your next turn. The lantern can't move more than a mile away from you, and if it becomes more than a mile away, the spell ends. The spell also ends if the lantern is the target of an attack or a spell that deals damage.\nThe lantern can walk up vertical surfaces, but not upside down. All of its attributes are 1. It can't take any actions.\nWhen the spell ends, the lantern returns to normal, and could be reused for the casting of this spell again.",
 };
 
 SpellsList["snap star"] = {
@@ -801,12 +802,12 @@ SpellsList["snap star"] = {
 	level: 1,
 	school: "Evoc",
 	time: "1 a",
-	range: "30 feet",
+	range: "30 ft",
 	components: "V,S",
 	duration: "Instantaneous",
 	save: "Con",
 	description: "Creatures in 15ft make Con save, blinded and 2d4 radiant damage on fail",
-	descriptionFull: "You snap and create a tiny facsimile of a star at a point you can see within range. Each creature that isn't blinded and within 15 feet of the point must succeed on a Constitution saving throw or take 2d4 radiant damage and be blinded until the end of their next turn, or no effect on a success.\nWhen you cast this spell using a spell slot of 2nd level or higher, the radiant damage increases by 1d4 for each slot level above 1st.",
+	descriptionFull: "You snap and create a tiny facsimile of a star at a point you can see within range. Each creature that isn't blinded and within 15 ft of the point must succeed on a Constitution saving throw or take 2d4 radiant damage and be blinded until the end of their next turn, or no effect on a success.\nWhen you cast this spell using a spell slot of 2nd level or higher, the radiant damage increases by 1d4 for each slot level above 1st.",
 };
 
 SpellsList["reap"] = {
@@ -837,7 +838,7 @@ SpellsList["cone of wind"] = {
 	duration: "Instantaneous",
 	save: "Str",
 	description: "6d6 slashing on fail + move 15ft, half dmg on success + no move",
-	descriptionFull: "A sudden gale swirls and buffets in a 60-foot cone stretching from you. You choose to push or pull when you cast this spell. Each creature caught in the cone must make a Strength saving throw. Huge and larger creatures have advantage. On a failed save, a target is moved 15 feet closer or farther from you and takes 6d6 slashing damage. On a success, a creature isn't moved and takes half as much damage.\nWhen you cast this spell using a spell slot of 5th level or higher, the slashing damage increases by 1d6 for each slot level above 4th.",
+	descriptionFull: "A sudden gale swirls and buffets in a 60 ft cone stretching from you. You choose to push or pull when you cast this spell. Each creature caught in the cone must make a Strength saving throw. Huge and larger creatures have advantage. On a failed save, a target is moved 15 ft closer or farther from you and takes 6d6 slashing damage. On a success, a creature isn't moved and takes half as much damage.\nWhen you cast this spell using a spell slot of 5th level or higher, the slashing damage increases by 1d6 for each slot level above 4th.",
 };
 
 SpellsList["form of wind"] = {
@@ -851,7 +852,7 @@ SpellsList["form of wind"] = {
 	components: "V,S",
 	duration: "1 r",
 	description: "Speed doubled, incorporeal, res to all dmg, move through obj and cre as if diff. terrain",
-	descriptionFull: "When you cast this spell, your physical body becomes a tempestuous wind until the start of your next turn. For the duration, your speed is doubled, you are incorporeal, you have resistance to all damage, and you can move through objects and creatures as if they were difficult terrain. If you end your turn in the space of a Large or smaller creature, you can make a spellcasting ability check contested by its Strength (Athletics). If you win the contest, the creature is shunted 5 feet to the nearest empty space. If you end your turn inside the space of an object, whichever of you is lighter than the other is similarly shunted 5 feet.",
+	descriptionFull: "When you cast this spell, your physical body becomes a tempestuous wind until the start of your next turn. For the duration, your speed is doubled, you are incorporeal, you have resistance to all damage, and you can move through objects and creatures as if they were difficult terrain. If you end your turn in the space of a Large or smaller creature, you can make a spellcasting ability check contested by its Strength (Athletics). If you win the contest, the creature is shunted 5 ft to the nearest empty space. If you end your turn inside the space of an object, whichever of you is lighter than the other is similarly shunted 5 ft.",
 };
 
 SpellsList["thundersnap"] = {
@@ -896,7 +897,7 @@ SpellsList["balors onslaught"] = {
 	duration: "Instantaneous",
 	save: "Str",
 	description: "Two melee spell attacks, 2d6+8 slash + 3d6 fire, second attack 3d8 + 8 slash + 3d8 lightning",
-	descriptionFull: "The incarnation of fire and ash, the visage of a balor, appears behind you. You hold up the handle of the Iongsword and whip for it to take, which magnify in its hands. Choose a creature you can see within range. Make two melee spell attacks against the target.\nIf the first hits, the target takes 2d6+8 slashing damage + 3d6 fire damage, and the target must succeed on a Strength saving throw or you can pull it up to 25 feet closer to you. If the target succeeds or the first attack misses, the balor's visage moves closer to attack again, using the longsword.\nIf the second hits, the target takes 3d8+8 slashing damage + 3d8 lightning damage. If this hit is a critical hit, you roll triple the damage dice, instead of double.\nYou then catch the weapons, tossed back to you.",
+	descriptionFull: "The incarnation of fire and ash, the visage of a balor, appears behind you. You hold up the handle of the Iongsword and whip for it to take, which magnify in its hands. Choose a creature you can see within range. Make two melee spell attacks against the target.\nIf the first hits, the target takes 2d6+8 slashing damage + 3d6 fire damage, and the target must succeed on a Strength saving throw or you can pull it up to 25 ft closer to you. If the target succeeds or the first attack misses, the balor's visage moves closer to attack again, using the longsword.\nIf the second hits, the target takes 3d8+8 slashing damage + 3d8 lightning damage. If this hit is a critical hit, you roll triple the damage dice, instead of double.\nYou then catch the weapons, tossed back to you.",
 };
 
 SpellsList["conjure invisible stalker"] = {
