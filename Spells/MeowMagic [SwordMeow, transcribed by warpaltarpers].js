@@ -1039,3 +1039,19 @@ SpellList["fiery leap"] = {
 	description: "All in your path 3d6+1d6/SL Fire dmg; save halved; no opportunity attk. on you",
 	descriptionFull: "You choose an unoccupied space you can see within range to leap toward, stringing fire behind you and beside you. Each creature other than you within 5 ft of the path between your space and the one you leap toward must make a Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much on a success. You don't provoke attacks of opportunity when leaping this way.\n  " + toUni("At Higher Levels") + ": When you cast this spell using a spell slot of 3rd level or higher, the fire damage increases by 1d6 for each slot level above 2nd.",
 };
+
+SpellList["empathic image"] = {
+	name: "Empathic Image",
+	classes: ["bard", "sorcerer", "warlock", "wizard"],
+	source: ["MMSR", 0],
+	level: 0,
+	school: "Ench",
+	time: "1 a",
+	range: "30 ft",
+	components: "S,M",
+	compMaterial: "a small color square",
+	duration: "Instantaneous",
+	save: "Int",
+	description: "Project what you see or memory into creature's mind; save avoids projection; creating an image Deception check vs. Insight",
+	descriptionFull: "You project an image into the mind of a creature you can see within range. It can be an image you see now, or a memory, as detailed as you can see or recall. An unwilling creature can make an Intelligence saving throw to avoid the projection.\n  You can create an image you haven't seen before as well. Make a Deception check using your spellcasting ability contested by the target's Wisdom (Insight). On a failure, the target can discern it as fake.",
+};
