@@ -33,7 +33,7 @@ ClassList["angel"] = {
   abilitySave: 5,
   spellcastingFactor: 2,
   spellcastingKnown: {
-    prepared: true,
+    prepared: true
   },
   spellcastingList: {
     class: "cleric",
@@ -322,7 +322,7 @@ AddSubClass(
         // TODO: Extra damage dice
       }
     },
-  },
+  }
 );
 
 // The Reaper subclass
@@ -383,5 +383,5 @@ AddSubClass(
         description: "\n  At 17th level, an aura surrounds you and saps the life of anything within 5 feet of you. If a creature ends its turn within range it must succeed on a Constitution saving throw or lose hit points equal to 6d6 + proficiency bonus + Wisdom modifier. You gain hit points equal to half the hit points the creature lost, rounded up."
       }
     },
-  },
+  }
 );
